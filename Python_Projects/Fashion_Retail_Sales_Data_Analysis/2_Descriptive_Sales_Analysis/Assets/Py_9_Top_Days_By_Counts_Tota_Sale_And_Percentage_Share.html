@@ -1,0 +1,997 @@
+
+    <html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+            body {
+                margin: 40px;
+                padding: 40px;
+                font-family: Arial, sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <div style="caption-side:top;text-align:justify;text-decoration:underline;background-color:none;color:red;font-family:Arial;font-style:normal;font-weight:900;font-size:18px;    ">Top Days By Counts, Total Sales And Percentage Share</div>
+        <style type="text/css">
+#T_47f99 th:hover {
+  background-color: grey;
+  color: cyan;
+  font-family: georgia;
+  font-style: italic;
+  font-weight: 900;
+  font-size: 18px;
+  text-align: center;
+}
+#T_47f99 tr:hover {
+  background-color: white;
+  color: purple;
+  font-family: georgia;
+  font-style: italic;
+  font-weight: 900;
+  font-size: 18px;
+  text-align: center;
+}
+#T_47f99 td:hover {
+  background-color: white;
+  color: green;
+  font-family: consolas;
+  font-style: italic;
+  font-weight: 900;
+  font-size: 18px;
+  text-align: center;
+}
+#T_47f99 tr:hover td:hover {
+  background-color: white;
+  color: green;
+  font-family: consolas;
+  font-style: italic;
+  font-weight: 900;
+  font-size: 18px;
+  text-align: center;
+}
+#T_47f99 caption {
+  caption-side: top;
+  background-color: white;
+  color: red;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  text-align: center;
+}
+#T_47f99_row0_col0, #T_47f99_row1_col0, #T_47f99_row2_col0, #T_47f99_row3_col0, #T_47f99_row4_col0, #T_47f99_row5_col0, #T_47f99_row6_col0 {
+  color: white;
+  background-color: lightseagreen;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+}
+#T_47f99_row0_col1 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #fefefc;
+  color: #000000;
+  color: magenta;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_47f99_row0_col2 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #845454;
+  color: #f1f1f1;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_47f99_row0_col3 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #ba7979;
+  color: #f1f1f1;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_47f99_row0_col4, #T_47f99_row0_col5, #T_47f99_row0_col10, #T_47f99_row0_col11 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #000000;
+  color: #f1f1f1;
+}
+#T_47f99_row0_col6 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #89ce80;
+  color: #000000;
+  color: dodgerblue;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_47f99_row0_col7 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #fdfedb;
+  color: #000000;
+  color: aquamarine;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_47f99_row0_col8 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #379e54;
+  color: #f1f1f1;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_47f99_row0_col9 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #51b365;
+  color: #f1f1f1;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_47f99_row1_col1, #T_47f99_row2_col1, #T_47f99_row4_col1 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #ffffff;
+  color: #000000;
+  color: darkblue;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_47f99_row1_col2 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #f1f1d1;
+  color: #000000;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_47f99_row1_col3 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #f6f6e3;
+  color: #000000;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_47f99_row1_col4, #T_47f99_row1_col5, #T_47f99_row2_col10, #T_47f99_row2_col11 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #b3cde3;
+  color: #000000;
+  color: red;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_47f99_row1_col6 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #5cb86b;
+  color: #f1f1f1;
+  color: dodgerblue;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_47f99_row1_col7 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #feffde;
+  color: #000000;
+  color: aquamarine;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_47f99_row1_col8 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #79c679;
+  color: #000000;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_47f99_row1_col9 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #93d284;
+  color: #000000;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_47f99_row1_col10, #T_47f99_row2_col4, #T_47f99_row2_col5 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #decbe4;
+  color: #000000;
+  color: red;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_47f99_row1_col11 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #ccebc5;
+  color: #000000;
+  color: red;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_47f99_row2_col2, #T_47f99_row2_col3 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #ffffff;
+  color: #000000;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_47f99_row2_col6 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #f1fab5;
+  color: #000000;
+  color: dodgerblue;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_47f99_row2_col7, #T_47f99_row5_col7 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #ffffe5;
+  color: #000000;
+  color: deeppink;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_47f99_row2_col8, #T_47f99_row2_col9 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #ffffe5;
+  color: #000000;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_47f99_row3_col1 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #fdfdfa;
+  color: #000000;
+  color: magenta;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_47f99_row3_col2, #T_47f99_row3_col3 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #1e0000;
+  color: #f1f1f1;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_47f99_row3_col4, #T_47f99_row3_col5, #T_47f99_row6_col10, #T_47f99_row6_col11 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #f2f2f2;
+  color: #000000;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_47f99_row3_col6 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #ffffe5;
+  color: #000000;
+  color: dodgerblue;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_47f99_row3_col7 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #feffe1;
+  color: #000000;
+  color: deeppink;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_47f99_row3_col8 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #bce395;
+  color: #000000;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_47f99_row3_col9 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #d9f0a3;
+  color: #000000;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_47f99_row3_col10 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #ffffcc;
+  color: #000000;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_47f99_row3_col11, #T_47f99_row5_col4, #T_47f99_row5_col5, #T_47f99_row6_col4, #T_47f99_row6_col5 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #fed9a6;
+  color: #000000;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_47f99_row4_col2 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #e1d7aa;
+  color: #000000;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_47f99_row4_col3 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #f0f0d0;
+  color: #000000;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_47f99_row4_col4, #T_47f99_row4_col5, #T_47f99_row5_col10, #T_47f99_row5_col11 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #fbb4ae;
+  color: #000000;
+  color: red;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_47f99_row4_col6 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #005a31;
+  color: #f1f1f1;
+  color: dodgerblue;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_47f99_row4_col7 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #fcfed7;
+  color: #000000;
+  color: aquamarine;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_47f99_row4_col8 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #0b713b;
+  color: #f1f1f1;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_47f99_row4_col9 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #13773d;
+  color: #f1f1f1;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_47f99_row4_col10, #T_47f99_row4_col11 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #e5d8bd;
+  color: #000000;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_47f99_row5_col1 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #fffffe;
+  color: #000000;
+  color: darkblue;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_47f99_row5_col2 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #d0ac94;
+  color: #000000;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_47f99_row5_col3 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #e2d9ab;
+  color: #000000;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_47f99_row5_col6 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #fdfedd;
+  color: #000000;
+  color: dodgerblue;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_47f99_row5_col8 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #edf8b2;
+  color: #000000;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_47f99_row5_col9 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #feffe2;
+  color: #000000;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_47f99_row6_col1 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #fefefd;
+  color: #000000;
+  color: darkblue;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_47f99_row6_col2 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #b97878;
+  color: #f1f1f1;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_47f99_row6_col3 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #dac6a1;
+  color: #000000;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_47f99_row6_col6 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #004529;
+  color: #f1f1f1;
+  color: dodgerblue;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_47f99_row6_col7 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #fcfed4;
+  color: #000000;
+  color: aqua;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_47f99_row6_col8, #T_47f99_row6_col9 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #004529;
+  color: #f1f1f1;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_47f99_row7_col0 {
+  color: white;
+  background-color: lightseagreen;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  color: white;
+  background-color: black;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_47f99_row7_col1 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #1e0000;
+  color: #f1f1f1;
+  color: lime;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+  color: orange;
+  background-color: black;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+}
+#T_47f99_row7_col2, #T_47f99_row7_col8 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #000000;
+  color: #f1f1f1;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+  color: white;
+  background-color: black;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_47f99_row7_col3, #T_47f99_row7_col4, #T_47f99_row7_col5, #T_47f99_row7_col6, #T_47f99_row7_col9, #T_47f99_row7_col10, #T_47f99_row7_col11 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #000000;
+  color: #f1f1f1;
+  color: white;
+  background-color: black;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_47f99_row7_col7 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #004529;
+  color: #f1f1f1;
+  color: chartreuse;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+  color: gold;
+  background-color: black;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+</style>
+<table id="T_47f99">
+  <thead>
+    <tr>
+      <th class="blank level0" >&nbsp;</th>
+      <th id="T_47f99_level0_col0" class="col_heading level0 col0" >day</th>
+      <th id="T_47f99_level0_col1" class="col_heading level0 col1" >count</th>
+      <th id="T_47f99_level0_col2" class="col_heading level0 col2" >count_rank</th>
+      <th id="T_47f99_level0_col3" class="col_heading level0 col3" >pct_count</th>
+      <th id="T_47f99_level0_col4" class="col_heading level0 col4" >count_diff</th>
+      <th id="T_47f99_level0_col5" class="col_heading level0 col5" >count_pct_diff</th>
+      <th id="T_47f99_level0_col6" class="col_heading level0 col6" >avg_total_sales</th>
+      <th id="T_47f99_level0_col7" class="col_heading level0 col7" >total_sales</th>
+      <th id="T_47f99_level0_col8" class="col_heading level0 col8" >sales_rank</th>
+      <th id="T_47f99_level0_col9" class="col_heading level0 col9" >pct_total_sales</th>
+      <th id="T_47f99_level0_col10" class="col_heading level0 col10" >total_sales_diff</th>
+      <th id="T_47f99_level0_col11" class="col_heading level0 col11" >total_sales_pct_diff</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th id="T_47f99_level0_row0" class="row_heading level0 row0" >0</th>
+      <td id="T_47f99_row0_col0" class="data row0 col0" >Monday</td>
+      <td id="T_47f99_row0_col1" class="data row0 col1" >504</td>
+      <td id="T_47f99_row0_col2" class="data row0 col2" >2</td>
+      <td id="T_47f99_row0_col3" class="data row0 col3" >14.82%</td>
+      <td id="T_47f99_row0_col4" class="data row0 col4" ></td>
+      <td id="T_47f99_row0_col5" class="data row0 col5" ></td>
+      <td id="T_47f99_row0_col6" class="data row0 col6" >$148</td>
+      <td id="T_47f99_row0_col7" class="data row0 col7" >$74,543</td>
+      <td id="T_47f99_row0_col8" class="data row0 col8" >3</td>
+      <td id="T_47f99_row0_col9" class="data row0 col9" >14.90%</td>
+      <td id="T_47f99_row0_col10" class="data row0 col10" ></td>
+      <td id="T_47f99_row0_col11" class="data row0 col11" ></td>
+    </tr>
+    <tr>
+      <th id="T_47f99_level0_row1" class="row_heading level0 row1" >1</th>
+      <td id="T_47f99_row1_col0" class="data row1 col0" >Tuesday</td>
+      <td id="T_47f99_row1_col1" class="data row1 col1" >468</td>
+      <td id="T_47f99_row1_col2" class="data row1 col2" >6</td>
+      <td id="T_47f99_row1_col3" class="data row1 col3" >13.76%</td>
+      <td id="T_47f99_row1_col4" class="data row1 col4" >-36</td>
+      <td id="T_47f99_row1_col5" class="data row1 col5" >-7.14%</td>
+      <td id="T_47f99_row1_col6" class="data row1 col6" >$152</td>
+      <td id="T_47f99_row1_col7" class="data row1 col7" >$71,309</td>
+      <td id="T_47f99_row1_col8" class="data row1 col8" >4</td>
+      <td id="T_47f99_row1_col9" class="data row1 col9" >14.26%</td>
+      <td id="T_47f99_row1_col10" class="data row1 col10" >$-3,234</td>
+      <td id="T_47f99_row1_col11" class="data row1 col11" >-4.34%</td>
+    </tr>
+    <tr>
+      <th id="T_47f99_level0_row2" class="row_heading level0 row2" >2</th>
+      <td id="T_47f99_row2_col0" class="data row2 col0" >Wednesday</td>
+      <td id="T_47f99_row2_col1" class="data row2 col1" >461</td>
+      <td id="T_47f99_row2_col2" class="data row2 col2" >7</td>
+      <td id="T_47f99_row2_col3" class="data row2 col3" >13.56%</td>
+      <td id="T_47f99_row2_col4" class="data row2 col4" >-7</td>
+      <td id="T_47f99_row2_col5" class="data row2 col5" >-1.50%</td>
+      <td id="T_47f99_row2_col6" class="data row2 col6" >$135</td>
+      <td id="T_47f99_row2_col7" class="data row2 col7" >$62,099</td>
+      <td id="T_47f99_row2_col8" class="data row2 col8" >7</td>
+      <td id="T_47f99_row2_col9" class="data row2 col9" >12.41%</td>
+      <td id="T_47f99_row2_col10" class="data row2 col10" >$-9,210</td>
+      <td id="T_47f99_row2_col11" class="data row2 col11" >-12.92%</td>
+    </tr>
+    <tr>
+      <th id="T_47f99_level0_row3" class="row_heading level0 row3" >3</th>
+      <td id="T_47f99_row3_col0" class="data row3 col0" >Thursday</td>
+      <td id="T_47f99_row3_col1" class="data row3 col1" >526</td>
+      <td id="T_47f99_row3_col2" class="data row3 col2" >1</td>
+      <td id="T_47f99_row3_col3" class="data row3 col3" >15.47%</td>
+      <td id="T_47f99_row3_col4" class="data row3 col4" >65</td>
+      <td id="T_47f99_row3_col5" class="data row3 col5" >14.10%</td>
+      <td id="T_47f99_row3_col6" class="data row3 col6" >$128</td>
+      <td id="T_47f99_row3_col7" class="data row3 col7" >$67,427</td>
+      <td id="T_47f99_row3_col8" class="data row3 col8" >5</td>
+      <td id="T_47f99_row3_col9" class="data row3 col9" >13.48%</td>
+      <td id="T_47f99_row3_col10" class="data row3 col10" >$5,328</td>
+      <td id="T_47f99_row3_col11" class="data row3 col11" >8.58%</td>
+    </tr>
+    <tr>
+      <th id="T_47f99_level0_row4" class="row_heading level0 row4" >4</th>
+      <td id="T_47f99_row4_col0" class="data row4 col0" >Friday</td>
+      <td id="T_47f99_row4_col1" class="data row4 col1" >472</td>
+      <td id="T_47f99_row4_col2" class="data row4 col2" >5</td>
+      <td id="T_47f99_row4_col3" class="data row4 col3" >13.88%</td>
+      <td id="T_47f99_row4_col4" class="data row4 col4" >-54</td>
+      <td id="T_47f99_row4_col5" class="data row4 col5" >-10.27%</td>
+      <td id="T_47f99_row4_col6" class="data row4 col6" >$168</td>
+      <td id="T_47f99_row4_col7" class="data row4 col7" >$79,233</td>
+      <td id="T_47f99_row4_col8" class="data row4 col8" >2</td>
+      <td id="T_47f99_row4_col9" class="data row4 col9" >15.84%</td>
+      <td id="T_47f99_row4_col10" class="data row4 col10" >$11,806</td>
+      <td id="T_47f99_row4_col11" class="data row4 col11" >17.51%</td>
+    </tr>
+    <tr>
+      <th id="T_47f99_level0_row5" class="row_heading level0 row5" >5</th>
+      <td id="T_47f99_row5_col0" class="data row5 col0" >Saturday</td>
+      <td id="T_47f99_row5_col1" class="data row5 col1" >482</td>
+      <td id="T_47f99_row5_col2" class="data row5 col2" >4</td>
+      <td id="T_47f99_row5_col3" class="data row5 col3" >14.18%</td>
+      <td id="T_47f99_row5_col4" class="data row5 col4" >10</td>
+      <td id="T_47f99_row5_col5" class="data row5 col5" >2.12%</td>
+      <td id="T_47f99_row5_col6" class="data row5 col6" >$129</td>
+      <td id="T_47f99_row5_col7" class="data row5 col7" >$62,308</td>
+      <td id="T_47f99_row5_col8" class="data row5 col8" >6</td>
+      <td id="T_47f99_row5_col9" class="data row5 col9" >12.46%</td>
+      <td id="T_47f99_row5_col10" class="data row5 col10" >$-16,925</td>
+      <td id="T_47f99_row5_col11" class="data row5 col11" >-21.36%</td>
+    </tr>
+    <tr>
+      <th id="T_47f99_level0_row6" class="row_heading level0 row6" >6</th>
+      <td id="T_47f99_row6_col0" class="data row6 col0" >Sunday</td>
+      <td id="T_47f99_row6_col1" class="data row6 col1" >487</td>
+      <td id="T_47f99_row6_col2" class="data row6 col2" >3</td>
+      <td id="T_47f99_row6_col3" class="data row6 col3" >14.32%</td>
+      <td id="T_47f99_row6_col4" class="data row6 col4" >5</td>
+      <td id="T_47f99_row6_col5" class="data row6 col5" >1.04%</td>
+      <td id="T_47f99_row6_col6" class="data row6 col6" >$171</td>
+      <td id="T_47f99_row6_col7" class="data row6 col7" >$83,314</td>
+      <td id="T_47f99_row6_col8" class="data row6 col8" >1</td>
+      <td id="T_47f99_row6_col9" class="data row6 col9" >16.66%</td>
+      <td id="T_47f99_row6_col10" class="data row6 col10" >$21,006</td>
+      <td id="T_47f99_row6_col11" class="data row6 col11" >33.71%</td>
+    </tr>
+    <tr>
+      <th id="T_47f99_level0_row7" class="row_heading level0 row7" >Total</th>
+      <td id="T_47f99_row7_col0" class="data row7 col0" ></td>
+      <td id="T_47f99_row7_col1" class="data row7 col1" >3,400</td>
+      <td id="T_47f99_row7_col2" class="data row7 col2" ></td>
+      <td id="T_47f99_row7_col3" class="data row7 col3" ></td>
+      <td id="T_47f99_row7_col4" class="data row7 col4" ></td>
+      <td id="T_47f99_row7_col5" class="data row7 col5" ></td>
+      <td id="T_47f99_row7_col6" class="data row7 col6" ></td>
+      <td id="T_47f99_row7_col7" class="data row7 col7" >$500,233</td>
+      <td id="T_47f99_row7_col8" class="data row7 col8" ></td>
+      <td id="T_47f99_row7_col9" class="data row7 col9" ></td>
+      <td id="T_47f99_row7_col10" class="data row7 col10" ></td>
+      <td id="T_47f99_row7_col11" class="data row7 col11" ></td>
+    </tr>
+  </tbody>
+</table>
+
+    </body>
+    </html>
+    
