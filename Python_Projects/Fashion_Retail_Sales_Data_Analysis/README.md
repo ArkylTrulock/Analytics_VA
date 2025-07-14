@@ -1,7 +1,7 @@
 # Introduction.
 📊 Dive into the Fashion Retail Market.
 
-Python code for fashion retail sales anaylsis? Check them out here: [python_projects_folder](/GH_Projects/Python_Projects/)
+Python code for fashion retail sales anaylsis? Check them out here: [python_projects_folder](//GH_Projects/Python_Projects/Fashion_Retail_Sales_Data_Analysis/)
 
 # Background.
 **TBC.**
