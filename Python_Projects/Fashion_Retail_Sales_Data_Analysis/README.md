@@ -1,7 +1,12 @@
 # Introduction.
 📊 Dive into the Fashion Retail Market.
 
-Python code for fashion retail sales anaylsis? Check them out here: [python_projects_folder](//GH_Projects/Python_Projects/Fashion_Retail_Sales_Data_Analysis/)
+Python code for fashion retail sales anaylsis? Check them out here: 
+
+1. **Descriptive Sales Analysis[.ipynb](../Fashion_Retail_Sales_Data_Analysis/2_Descriptive_Sales_Analysis/Descriptive_Sales_Analysis.ipynb)**
+2. **Diagnostic Sales Analysis[.ipynb](../Fashion_Retail_Sales_Data_Analysis/3_Diagnostic_Sales_Analysis/Diagnostic_Sales_Analysis.ipynb)**
+3. **Predictive Sales Analysis[.ipynb](../Fashion_Retail_Sales_Data_Analysis/4_Predictive_Sales_Analysis/Predictive_Sales_Analysis.ipynb)**
+4. **Prescriptive Sales Analysis[.ipynb](../Fashion_Retail_Sales_Data_Analysis/5_Prescriptive_Sales_Analysis/Prescriptive_Sales_Analysis.ipynb)**
 
 # Background.
 **TBC.**
@@ -36,7 +41,7 @@ For my deep dive into the fashion retail sales, I harnessed the power of several
 
 ## Assets
 
-### 1. 💰The Counts, Total Sales And Percentange Share By Payment Metho
+### 1. 💰The Counts, Total Sales And Percentange Share By Payment Methods.
 
 **Columns**: **`payment_method`, `count`, `count_rank`, `pct_count`, `count_diff`, `count_pct_diff`, `avg_total_sales`, `total_sales`, `sales_rank`, `pct_total_sales`, `total_sales_diff` and `total_sales_pct_diff`.**
 
