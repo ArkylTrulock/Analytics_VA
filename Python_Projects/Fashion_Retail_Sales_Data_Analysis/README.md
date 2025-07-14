@@ -76,3 +76,4 @@ For my deep dive into the fashion retail sales, I harnessed the power of several
 ![Top 10 Items Purchased By Counts And Total Sales (2022 Vs 2023) - Barplot 3](../Fashion_Retail_Sales_Data_Analysis/2_Descriptive_Sales_Analysis/Assets/Py_04C_Top_10_Items_Purchased_By_Counts_And_Total_Sales_2022_Vs_2023_Barplot.png)
 *Generated using seaborn library*
 
+**Descriptve Sales Analysis Overview[.xlsx](../Fashion_Retail_Sales_Data_Analysis/2_Descriptive_Sales_Analysis/Assets/Descriptive_Sales_Analysis_Excel.xlsx)**
