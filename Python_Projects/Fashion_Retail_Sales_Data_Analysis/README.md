@@ -50,7 +50,7 @@ For my deep dive into the fashion retail sales, I harnessed the power of several
 ![The Counts, Total Sales And Percentange Share By Payment Methods - Table](../Fashion_Retail_Sales_Data_Analysis/2_Descriptive_Sales_Analysis/Assets/Py_01_The_Counts_Total_Sales_And_Percentage_Share_By_Payment_Methods.png)
 *Generated using pandas library*
 
-![The Counts, Total Sales And Percentange Share By Payment Methods - Pie Chart](../Fashion_Retail_Sales_Data_Analysis/2_Descriptive_Sales_Analysis/Assets/Py_02_Count_And_Percentage_Of_Payment_Method_Pie_Chart.png)
+![The Counts, Total Sales And Percentange Share By Payment Methods - Pie Chart](../Fashion_Retail_Sales_Data_Analysis/2_Descriptive_Sales_Analysis/Assets/Py_02_The_Counts_Total_Sales_And_Percentage_Share_By_Payment_Method_Pie_Chart.png)
 *Generated using seaborn library*
 
 
