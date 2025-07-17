@@ -56,7 +56,7 @@ As mentioned earlier, we want to find out what is happening. Through the manipul
 **Columns**: **`payment_method`, `count`, `count_rank`, `pct_count`, `count_diff`, `count_pct_diff`, `avg_total_sales`, `total_sales`, `sales_rank`, `pct_total_sales`, `total_sales_diff` and `total_sales_pct_diff`.**
 
 **Filter**: **`total_sales` in `descending order`.**
-
+#
 ![The Counts, Total Sales And Percentange Share By Payment Methods - Table](../Fashion_Retail_Sales_Data_Analysis/2_Descriptive_Sales_Analysis/Assets/Py_01_The_Counts_Total_Sales_And_Percentage_Share_By_Payment_Methods.png)
 *Generated using pandas library*
 #
