@@ -249,3 +249,7 @@ As mentioned earlier, we want to find out what is happening. Through the manipul
 *Generated using seaborn library*
 #
 **Descriptive Sales Analysis Excel Overview[.xlsx](../Fashion_Retail_Sales_Data_Analysis/2_Descriptive_Sales_Analysis/Assets/Descriptive_Sales_Analysis_Excel.xlsx)**
+#
+## 📬 Contact
+*Built by [Arkyl Trulock](https://github.com/ArkylTrulock)*  
+For collaborations or feedback: X@gmail.com 
