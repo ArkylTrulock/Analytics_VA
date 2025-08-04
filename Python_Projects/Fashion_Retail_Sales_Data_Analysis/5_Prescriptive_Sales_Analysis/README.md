@@ -12,7 +12,7 @@ This project focuses on **Prescriptive Analytics** techniques to identify **what
 - 📈 **Promotion Effectiveness** based on temporal windows  
 - 💥 **Sales Lift Analysis** comparing pre-, during-, and post-promotion periods  
 - 📊 **Customer Segmentation** using **RFM Analysis + CLTV**  
-- 🧪 **Campaign Simulation & Optimization** for targeting high-value segments
+- 🧪 **Campaign Simulation & Optimisation** for targeting high-value segments
 
 #
 
