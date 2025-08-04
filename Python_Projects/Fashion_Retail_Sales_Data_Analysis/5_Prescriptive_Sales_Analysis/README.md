@@ -38,11 +38,34 @@ This project focuses on **Prescriptive Analytics** techniques to identify **what
 
 ## 🔍 Key Techniques & Methodologies
 
-### 🧺 Association Rule Mining (Apriori)
-- Used to find frequently co-purchased product sets
-- Generates actionable rules like:  
-  `If {Product A, Product B}, then {Product C}`  
-- Metrics evaluated: **support**, **confidence**, **lift**
+### 🧺 Apriori Algorithm & Association Rule Mining (Apriori)
+- Association rule mining has become essential for businesses aiming to understand customer behaviors and purchasing patterns. 
+- This technique identifies items frequently bought together, helping companies optimize product placement, promotions, and recommendations.
+- Such analysis improves business strategies by clearly revealing trends hidden within transaction data.
+ 
+### Key Metrics Evaluated
+- **Support**: The frequency with which an item appears in the dataset. (`How often the rule occurs in data`) 
+- **Confidence**: The likelihood that item B is purchased when item A is purchased. (`Probability of B given A`) 
+- **Lift**: The strength of a rule. (`measuring how much more likely item B is bought when item A is bought compared to when bought independently`)
+
+### 🏦Visualisations
+
+**Network Plot 1 - Top 10 Items Purchased - Association Rules By Lift**
+![Network Plot 1 - Top 10 Items Purchased - Association Rules By Lift](../5_Prescriptive_Sales_Analysis/Assets/Py_04_Top_10_Items_Purchased_Association_Rules_By_Lift.png)  
+*Generated using seaborn library*
+#
+**Network Plot 2 - Top 10 Items Purchased - Association Rules By Confidence And Lift**
+![Network Plot 2 - Top 10 Items Purchased - Association Rules By Confidence And Lift](../5_Prescriptive_Sales_Analysis/Assets/Py_05_Top_10_Items_Purchased_Association_Rules_By_Confidence_And_Lift.png)  
+*Generated using seaborn library*
+#
+**Barplot - Top 10 Items Purchased - Association Rules By Confidence**
+![Barplot - Top 10 Items Purchased - Association Rules By Confidence](../5_Prescriptive_Sales_Analysis/Assets/Py_06_Top_10_Items_Purchased_Association_Rules_By_Confidence_Barplot.png)  
+*Generated using seaborn library*
+#
+**Barplot - Top 10 Items Purchased - Association Rules By Lift**
+![Barplot - Top 10 Items Purchased - Association Rules By Lift](../5_Prescriptive_Sales_Analysis/Assets/Py_07_Top_10_Items_Purchased_Association_Rules_By_Lift_Barplot.png)  
+*Generated using seaborn library*
+#
 
 ### 🛒 Time-Based Promotion Effectiveness
 - Analysed impact of promotional events on sales volume
@@ -51,7 +74,7 @@ This project focuses on **Prescriptive Analytics** techniques to identify **what
   - **During Promotion**
   - **Post-Promotion**
 
-### 📉 Sales Lift Analysis
+### 📉 Sales Lift Analysis (Pre vs During vs Post Promotion)
 - Quantified the **true effectiveness** of promotions
 - Metrics included:  
   - Absolute sales change  
