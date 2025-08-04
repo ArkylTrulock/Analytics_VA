@@ -50,6 +50,7 @@ This project focuses on **Prescriptive Analytics** techniques to identify **what
 
 ### 🏦Visualisations
 
+#
 **Network Plot 1 - Top 10 Items Purchased - Association Rules By Lift**
 ![Network Plot 1 - Top 10 Items Purchased - Association Rules By Lift](../5_Prescriptive_Sales_Analysis/Assets/Py_04_Top_10_Items_Purchased_Association_Rules_By_Lift.png)  
 *Generated using seaborn library*
@@ -74,12 +75,32 @@ This project focuses on **Prescriptive Analytics** techniques to identify **what
   - **During Promotion**
   - **Post-Promotion**
 
+### 🏦Visualisations
+
+#
+**Lineplot - Time-Based Promotional Effectiveness**
+![Lineplot - Time-Based Promotional Effectiveness](../5_Prescriptive_Sales_Analysis/Assets/Py_08_Time_Based_Promotional_Effectiveness_Sales_&_Review_Ratings_Linelot.png)  
+*Generated using seaborn library*
+#
+**Lineplot - Time-Based Promotional Effectiveness With Promotion Overlays**
+![Lineplot - Time-Based Promotional Effectiveness With Promotion Overlays](../5_Prescriptive_Sales_Analysis/Assets/Py_09_Time_Based_Promotional_Effectiveness_Sales_&_Review_Ratings_Linelot.png)  
+*Generated using seaborn library*
+#
+
 ### 📉 Sales Lift Analysis (Pre vs During vs Post Promotion)
 - Quantified the **true effectiveness** of promotions
 - Metrics included:  
   - Absolute sales change  
   - Relative % improvement  
   - Baseline vs. uplift performance
+
+### 🏦Visualisation
+
+#
+**Barplot - Sales Lift Analysis: Pre Vs During Vs Post Promotion**
+![Barplot - Sales Lift Analysis: Pre Vs During Vs Post Promotion](../5_Prescriptive_Sales_Analysis/Assets/Py_10_Sales_Lift_Analysis_Pre_Vs_During_Vs_Post_Promotion_Barplot.png)  
+*Generated using seaborn library*
+#
 
 ### 📦 RFM Segmentation + CLTV
 - **Recency**, **Frequency**, and **Monetary** values used to segment customers
