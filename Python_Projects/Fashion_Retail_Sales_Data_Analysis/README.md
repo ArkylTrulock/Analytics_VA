@@ -1,7 +1,7 @@
 # Introduction.
-🛍️Dive into the Fashion Retail Market.
+**👗🛍️Dive into the Fashion Retail Market.**
 #
-🚀Python code for my fashion retail sales anaylsis? Check them out here!: 
+**🚀Python code for my fashion retail sales anaylsis? Check them out here!:**
 #
 1. **Descriptive Sales Analysis[.ipynb](../Fashion_Retail_Sales_Data_Analysis/2_Descriptive_Sales_Analysis/Descriptive_Sales_Analysis.ipynb)**
 2. **Diagnostic Sales Analysis[.ipynb](../Fashion_Retail_Sales_Data_Analysis/3_Diagnostic_Sales_Analysis/Diagnostic_Sales_Analysis.ipynb)**
@@ -34,8 +34,13 @@ Before beginning a data analysis project, a good starting point is to have a bus
 3. **🗠Predictive Analytics - What is likely to happen in the future❓** It is about forecasting. This type of analytics uses historical data to make predictions about the future.
 4. **🫧What should happen❓** Combines the insight from all previous data analysis to determine a course of action to take to address a problem or make a decision. It uses advanced tools and technologies, like machine learning, business rules, and algorithms. This makes prescriptive analytics sophisticated to implement and manage.
 #
-# 🧰Libraries/Tools I Used:
+# 🧰 Tech Stack
+- Python (`pandas`, `numpy`, `seaborn`, `sklearn`, `statsmodels`,`prophet`, `pmdarima`, `networkx`, `mlxtend`, `lifetimes`, )  
+- Jupyter Notebook 
+#
+# 🧠 Methods & Tools:
 For my deep dive into the fashion retail sales, I harnessed the power of several key libraries/tools:
+### **Python Libraries**:
 
 - **Pandas**: Data analysis and manipulation tool, built on top of the Python programming language.
 - **Numpy (Numerical Python)**: Mathematical and scientific computing library for Python programming tasks.

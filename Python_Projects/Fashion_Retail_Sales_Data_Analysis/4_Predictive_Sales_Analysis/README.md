@@ -11,7 +11,7 @@ Accurate sales forecasting is critical for optimizing **inventory management**, 
 #
 
 ## 🎯 Project Goal
-To forecast **monthly product sales** for a fashion retailer using time-series modeling.  
+To forecast **monthly product sales** and **yearly product sales**  for a fashion retailer using time-series modeling.  
 The goal is to reduce inventory risk and enable data-driven planning across retail operations.
 
 #
@@ -62,7 +62,7 @@ Using **Exponential Smoothing models**, I analysed historical sales data and bui
 
 #
 
-### 📈 Interpretation & Next Steps
+## 📈 Interpretation & Next Steps
 
 All current models exhibit **high forecast errors**, primarily due to the **limited historical data available** - only two years of monthly sales (2022 and 2023). This data scarcity hinders the models’ ability to reliably capture seasonal patterns and long-term trends, which are crucial for accurate forecasting.
 
