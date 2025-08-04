@@ -1,8 +1,8 @@
 # 🧠 Prescriptive Sales Analysis for Fashion Retail
 
-![Prescriptive Sales Analysis](https://img.shields.io/badge/Analysis-Type%3A%20Prescriptive-blueviolet)
-![Status](https://img.shields.io/badge/Status-Complete-brightgreen)
-![Toolset](https://img.shields.io/badge/Toolset-Python%2C%20Apriori%2C%20Statsmodels%2C%20Seaborn-turquoise)
+![Prescriptive Sales Analysis](https://img.shields.io/badge/Analysis-Type%3A%20Prescriptive-blueviolet?labelColor=darkblue)
+![Status](https://img.shields.io/badge/Status-Complete-brightgreen?labelColor=crimson)
+![Toolset](https://img.shields.io/badge/Toolset-Python%2C%20Apriori%2C%20Statsmodels%2C%20Seaborn-turquoise?labelColor=gold)
 #
 ## 📌 Project Overview
 
