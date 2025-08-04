@@ -35,7 +35,7 @@ Before beginning a data analysis project, a good starting point is to have a bus
 4. **🫧What should happen❓** Combines the insight from all previous data analysis to determine a course of action to take to address a problem or make a decision. It uses advanced tools and technologies, like machine learning, business rules, and algorithms. This makes prescriptive analytics sophisticated to implement and manage.
 #
 # 🧰 Tech Stack
-- Python (`pandas`, `numpy`, `seaborn`, `sklearn`, `statsmodels`,`prophet`, `pmdarima`, `networkx`, `mlxtend`, `lifetimes`, )  
+- Python (`pandas`, `numpy`, `seaborn`, `scikit-learn`, `statsmodels`,`prophet`, `pmdarima`, `networkx`, `mlxtend`, `lifetimes`)  
 - Jupyter Notebook 
 #
 # 🧠 Methods & Tools:
@@ -45,11 +45,11 @@ For my deep dive into the fashion retail sales, I harnessed the power of several
 - **Pandas**: Data analysis and manipulation tool, built on top of the Python programming language.
 - **Numpy (Numerical Python)**: Mathematical and scientific computing library for Python programming tasks.
 - **Seaborn**: Python data visualisation library based on matplotlib. It provides a high-level interface for drawing attractive and informative statistical graphics.
-- **Sklearn**: Machine learning library for the Python programming language.
+- **Scikit-learn**: Machine learning library for the Python programming language.
 - **Statsmodels**: Python library that provides classes and functions for the estimation of many different statistical models, as well as for conducting statistical tests, and statistical data exploration.
 - **Prophet**: Tool for producing high quality forecasts for time series data that has multiple seasonality with linear or non-linear growth..
-- **Pmdarima**: A statistical library designed to fill the void in Python's time series analysis capabilities, including the equivalent of R's auto.arima function..
-- **Networkx**: Python package for the creation, manipulation, and study of the structure, dynamics, and functions of complex networks..
+- **Pmdarima**: A statistical library designed to fill the void in Python's time series analysis capabilities, including the equivalent of R's auto.arima function.
+- **Networkx**: Python package for the creation, manipulation, and study of the structure, dynamics, and functions of complex networks.
 - **Mlxtend (Machine Learning Extensions)**: Python library of useful tools for the day-to-day data science tasks.
 - **Lifetimes**: Python library used to forecast the total revenue a business expects to generate from a single customer relationship over their entire lifespan.
 - **Visual Studio Code**: My go-to for database management and executing python code.
