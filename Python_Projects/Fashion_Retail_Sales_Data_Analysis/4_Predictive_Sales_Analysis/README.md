@@ -1,4 +1,4 @@
-# 👗 Fashion Retail Sales Forecasting
+# 🔮👗🛍️ Predictive Sales Analysis for Fashion Retail
 
 ## 📌 Business Problem
 Fashion retailers often struggle with **stock imbalances** due to fluctuating customer demand. 

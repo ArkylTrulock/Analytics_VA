@@ -1,4 +1,4 @@
-# 🧠 Prescriptive Sales Analysis for Fashion Retail
+# 💊👗🛍️ Prescriptive Sales Analysis for Fashion Retail
 
 ![Prescriptive Sales Analysis](https://img.shields.io/badge/Analysis-Type%3A%20Prescriptive-blueviolet?labelColor=darkblue)
 ![Status](https://img.shields.io/badge/Status-Complete-brightgreen?labelColor=crimson)
@@ -117,7 +117,7 @@ This project focuses on **Prescriptive Analytics** techniques to identify **what
 - Lift vs Pre (%) = ((During - Pre) / Pre) × 100
 - Lift vs Post (%) = ((During - Post) / Post) × 100
 
-### **Diagnostics**:
+### **🩺 Diagnostics**:
   - Barplot
 
 ### 🖼️ Results Snapshot
