@@ -113,7 +113,7 @@ This project focuses on **Prescriptive Analytics** techniques to identify **what
   - Relative % improvement  
   - Baseline vs. uplift performance
 
-### **Lift Math**:
+### **🧮 Lift Math**:
 - Lift vs Pre (%) = ((During - Pre) / Pre) × 100
 - Lift vs Post (%) = ((During - Post) / Post) × 100
 
