@@ -165,15 +165,15 @@ End-of-Year Sale|$ 26,798.0|$ 22,311.0|$ 13,361.0|🔻-16.74 %|🔼66.99 %|
 - Calculated the number of customers per cluster.
 
 ### Key Metrics Evaluated
-  - Cluster: **3**, **2**, **1** and **0**.
-  - Customer_Count: The number of customers per cluster.
-  - Recency: Mean days since last purchase.
-  - Frequency: Mean number of purchases.
-  - Monetary: Mean total spending.
-  - RFM_Score: Mean metric score.
-  - Profile summary: **"Champions"**, **"Loyal"**, **"Potential"**, **"At Risk"** and **"Lost"**.
-  - Customer value: **"Very High"**, **"High"**, **"Medium"**, **"Low"** and **"Very Low"**.
-  - Recommended Strategy: **Please refer to insights for more information**.
+  - `Cluster`: **3**, **2**, **1** and **0**.
+  - `Customer_Count`: **The number of customers per cluster**.
+  - `Recency`: **Mean days since last purchase**.
+  - `Frequency`: **Mean number of purchases**.
+  - `Monetary`: **Mean total spending**.
+  - `RFM_Score`: **Mean metric score**.
+  - `Profile summary`: **"Champions"**, **"Loyal"**, **"Potential"**, **"At Risk"** and **"Lost"**.
+  - `Customer value`: **"Very High"**, **"High"**, **"Medium"**, **"Low"** and **"Very Low"**.
+  - `Recommended Strategy`: **Please refer to insights for more information**.
 
 ### **🩺 Diagnostics**
   - Line Plots.
