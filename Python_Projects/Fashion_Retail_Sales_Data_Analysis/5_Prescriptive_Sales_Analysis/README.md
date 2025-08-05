@@ -33,7 +33,7 @@ This project focuses on **Prescriptive Analytics** techniques to identify **what
 - **Statsmodels**: Statistical modeling and forecasting.
 - **Networkx**: Creation, manipulation, and study of the structure, dynamics, and functions of complex networks.
 - **Mlxtend**: Apriori Association Rules.
-- **Lifetimes**: Forecasting CLTV (Customer lifetime value)
+- **Lifetimes**: Forecasting CLTV (Customer lifetime value).
 
 #
 
@@ -86,7 +86,7 @@ This project focuses on **Prescriptive Analytics** techniques to identify **what
   - **Post-Promotion**
 
 ### **🩺 Diagnostics**:
-  - Line Plots
+  - Line Plots.
 
 ### **🔍 Insights:**
 
@@ -109,16 +109,16 @@ This project focuses on **Prescriptive Analytics** techniques to identify **what
 ### 📉 Sales Lift Analysis (Pre vs During vs Post Promotion)
 - Quantified the **true effectiveness** of promotions
 - Metrics included:  
-  - Absolute sales change  
-  - Relative % improvement  
-  - Baseline vs. uplift performance
+  - Absolute sales change.
+  - Relative % improvement.
+  - Baseline vs. uplift performance.
 
 ### 🧮 Lift Math
 - Lift vs Pre (%) = ((During - Pre) / Pre) × 100
 - Lift vs Post (%) = ((During - Post) / Post) × 100
 
-### **🩺 Diagnostics**:
-  - Barplot
+### **🩺 Diagnostics**
+  - Barplot.
 
 ### 🖼️ Results Snapshot
 |Promotion|Pre_Sales|During_Sales|Post_Sales|Lift_vs_Pre(%)|Lift_vs_Post(%)|
@@ -145,42 +145,79 @@ End-of-Year Sale|$ 26,798.0|$ 22,311.0|$ 13,361.0|🔻-16.74 %|🔼66.99 %|
 - Unsupervised machine learning technique that allows the identification of clusters (similar groups of data points) within the data.
 
 ### Key Metrics Evaluated
-- The **`Elbow Method`** was used to choose the optimal number of clusters **`(k)`**.
-- The k value corresponding to the **`"elbow"`** in the WCSS vs k graph is considered the optimal choice.
+- Calculated `RFM metrics` per customer.
+  - **Recency**: Days since last purchase (how recently the customer bought).
+  - **Frequency**: Total number of purchases.
+  - **Monetary**: Total spending.
 
-### **🩺 Diagnostics**:
-  - Line Plots
+- Scored each metric on a scale of `1` to `5` using quantiles.
+  - Higher scores indicate better performance, except Recency (lower is better).
 
-### **🔍 Insights:**
- - The optimal number of clusters **`k`** choosen was **`4`**.
+- Combined the metric scores into `RFM Segment`.
+
+- Calculated the `RFM Score` by summing the values in `RFM Segment`.
+
+- Selected only the numerical features of the metrics, standardised data and chose the optimal number of clusters **`(k = 4)`** using the **`Elbow Method`**.
+  - The k value corresponding to the **`"elbow"`** in the WCSS vs k graph is considered the optimal choice.
+
+- Grouped metrics by cluster and calculated mean values.
+
+- Calculated the number of customers per cluster.
+
+### Key Metrics Evaluated
+  - Cluster: **3**, **2**, **1** and **0**.
+  - Customer_Count: The number of customers per cluster.
+  - Recency: Mean days since last purchase.
+  - Frequency: Mean number of purchases.
+  - Monetary: Mean total spending.
+  - RFM_Score: Mean metric score.
+  - Profile summary: **"Champions"**, **"Loyal"**, **"Potential"**, **"At Risk"** and **"Lost"**.
+  - Customer value: **"Very High"**, **"High"**, **"Medium"**, **"Low"** and **"Very Low"**.
+  - Recommended Strategy: **Please refer to insights for more information**.
+
+### **🩺 Diagnostics**
+  - Line Plots.
+  - Barplot.
+  - Scatterplots.
+.
+### **🔍 Insights**
+ - **TBC**.
 
 ### 📷 Visualisation
 
 #
-**Lineplot - K-Means Clustering - Identifying The Optimal Number Of Clusters (k) Using The Yellowbrick Elbow Method**
-![Lineplot - K-Means Clustering - Identifying The Optimal Number Of Clusters (k) Using The Yellowbrick Elbow Method](../5_Prescriptive_Sales_Analysis/Assets/Py_11_Identifying_The_Optimal_Number_Of_Clusters_k_Using_The_Yellowbrick_Elbow_Method.Line_Plot.png)  
-*Generated using seaborn library*
-#
-**Lineplot - K-Means Clustering - Identifying The Optimal Number Of Clusters (k) Using The Elbow Method**
+**Lineplot - K-Means Clustering - Identifying The Optimal Number Of Clusters `(k)` Using The Elbow Method**
 ![Lineplot - K-Means Clustering - Identifying The Optimal Number Of Clusters (k) Using The Elbow Method](../5_Prescriptive_Sales_Analysis/Assets/Py_12_Identifying_The_Optimal_Number_Of_Clusters_k_Using_The_Elbow%20Method_Line_Plot.png)  
 *Generated using seaborn library*
 #
-
+**Barplot - Profile Summary, Customer Value And Recommended Strategy Of KMeans Clusters**
+![Barplot - Profile Summary, Customer Value And Recommended Strategy Of KMeans Clusters](../5_Prescriptive_Sales_Analysis/Assets/Py_15_Profile%20Summary_Customer_Value_And_Recommended_Strategy_Of_KMeans_Clusters_Barplot.png)  
+*Generated using seaborn library*
+#
+**Scatterplot - Customer Segments - Recency Vs Frequency**
+![Scatterplot - Customer Segments - Recency Vs Frequency](../5_Prescriptive_Sales_Analysis/Assets/Py_16_Customer_Segments_Recency_Vs_Frequency_Scatterplot.png)  
+*Generated using seaborn library*
+#
+**Scatterplot - Customer Segments - Recency Vs Monetary**
+![Scatterplot - Customer Segments - Recency Vs Monetary](../5_Prescriptive_Sales_Analysis/Assets/Py_17_Customer_Segments_Recency_Vs_Monetary_Scatterplot.png)  
+*Generated using seaborn library*
+#
+**Scatterplot - Customer Segments - Frequency Vs Monetary**
+![Scatterplot - Customer Segments - Frequency Vs Monetary](../5_Prescriptive_Sales_Analysis/Assets/Py_18_Customer_Segments_Frequency_Vs_Monetary_Scatterplot.png)  
+*Generated using seaborn library*
+#
 
 ### 📦 RFM Segmentation + CLTV
-- **Recency**, **Frequency**, and **Monetary** values used to segment customers
+
 - Combined with **Historical CLTV** to estimate customer value
 - Result:
-  - Profiled RFM: **3**, **2**, **1** and **0**
+  - Profiled RFM clusters: **3**, **2**, **1** and **0**
   - Profiled RFM segments: **"Champions"**, **"Loyal"**, **"Potential"**, **"At Risk"** and **"Lost"**
   - Profiled cltv segments: **"Very High"**, **"High"**, **"Medium"**, **"Low"** and **"Very Low"**
   - Profiled cltv strategies: **"Retain + Reward"**, **"Upsell + Personalise"**, **"Educate + Re-target"**, **"Incentivise + Survey"** and **"Re-engage + Exit"**
-  
-  
   - Profiled cltv marketing channels: **"Email, SMS, App Push, 1:1 service"**, **"Email, Paid Ads, Mobile App"**, **"Email Series, Blog, Social Media"**, **"Email, Push Notification"** and **"Email, Re-targeting Ads"**
 
-
-
+#
 ### 🎯 Campaign Optimisation
 - Targeting rules built using RFM + CLTV outputs
 - Simulated campaign strategies for uplift impact
