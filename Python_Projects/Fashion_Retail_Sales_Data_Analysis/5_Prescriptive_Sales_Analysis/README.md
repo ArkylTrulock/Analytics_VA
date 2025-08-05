@@ -6,12 +6,12 @@
 #
 ## 📌 Project Overview
 
-This project focuses on **Prescriptive Analytics** techniques to identify **what actions to take** to optimize sales and customer retention in a fashion retail setting. Building on previous descriptive and predictive analyses, we dive into:
+This project focuses on **Prescriptive Analytics** techniques to identify **what actions to take** to optimise sales and customer retention in a fashion retail setting. Building on previous descriptive and predictive analyses, we dive into:
 
-- 🧺 **Basket Analysis** using the **Apriori algorithm**  
-- 📈 **Promotion Effectiveness** based on temporal windows  
+- 🧺 **Basket Analysis** using the **Apriori Algorithm & Association Rule Mining**  
+- 📈 **Time-Based Promotional Effectiveness** a powerful tool used to drive sales, increase engagement, and achieve marketing goals. Success is contingent on careful consideration of various factors.
 - 💥 **Sales Lift Analysis** comparing pre-, during-, and post-promotion periods  
-- 📊 **Customer Segmentation** using **RFM Analysis + CLTV**  
+- 📊 **Customer Segmentation** using **RFM (Recency, Frequency, Monetary) Analysis + CLTV (Customer lifetime value)**  
 - 🧪 **Campaign Simulation & Optimisation** for targeting high-value segments
 
 #
@@ -23,6 +23,7 @@ This project focuses on **Prescriptive Analytics** techniques to identify **what
 #
 
 ## 🧠 Methods & Tools
+
 ### **Python Libraries**:
 
 - **Pandas**: Data analysis and manipulation. 
@@ -31,15 +32,15 @@ This project focuses on **Prescriptive Analytics** techniques to identify **what
 - **Scikit-learn**: Clustering and uplift modeling.
 - **Statsmodels**: Statistical modeling and forecasting.
 - **Networkx**: Creation, manipulation, and study of the structure, dynamics, and functions of complex networks.
-- **Mlxtend (Machine Learning Extensions)**: Apriori Association Rules.
-- **Lifetimes**: Forecasting the total revenue a business expects to generate from a single customer relationship over their entire lifespan.
+- **Mlxtend**: Apriori Association Rules.
+- **Lifetimes**: Forecasting CLTV (Customer lifetime value)
 
 #
 
-## 🔍 Key Techniques & Methodologies
+## 🧠 Key Techniques & Methodologies
 
-### 🧺 Apriori Algorithm & Association Rule Mining (Apriori)
-- Association rule mining has become essential for businesses aiming to understand customer behaviors and purchasing patterns. 
+### 🧺 Apriori Algorithm & Association Rule Mining
+- Association rule mining has become essential for businesses aiming to understand customer behaviours and purchasing patterns. 
 - This technique identifies items frequently bought together, helping companies optimize product placement, promotions, and recommendations.
 - Such analysis improves business strategies by clearly revealing trends hidden within transaction data.
  
@@ -48,7 +49,16 @@ This project focuses on **Prescriptive Analytics** techniques to identify **what
 - **Confidence**: The likelihood that item B is purchased when item A is purchased. (`Probability of B given A`) 
 - **Lift**: The strength of a rule. (`measuring how much more likely item B is bought when item A is bought compared to when bought independently`)
 
-### 🏦Visualisations
+### **🩺 Diagnostics**:
+  - Network Plots
+  - Barplots
+
+### **🔍 Insights**:
+  - Lift score **`> 1`** indicates a **`strong positive association between items and not likely due to random chance`**.
+  - Confidence score **`> 0.6`** indicates a **`stronger relationship between the antecedent (if purchased) and consequent (will likely be purchased) item, suggesting the rule is more reliable`**.
+  - Support score **`> 0.2`** indicates a **`more frequently occurring itemset in the dataset`**. A lower score indicates a **`less frequently occuring itemset in the dataset`**.
+
+### 📷 Visualisations
 
 #
 **Network Plot 1 - Top 10 Items Purchased - Association Rules By Lift**
@@ -75,7 +85,16 @@ This project focuses on **Prescriptive Analytics** techniques to identify **what
   - **During Promotion**
   - **Post-Promotion**
 
-### 🏦Visualisations
+### **🩺 Diagnostics**:
+  - Line Plots
+
+### **🔍 Insights:**
+
+- Shaded areas indicate active promotional campaigns.
+- You can observe spikes or trends in sales and ratings during these periods.
+- Helps evaluate campaign success visually.
+
+### 📷 Visualisations
 
 #
 **Lineplot - Time-Based Promotional Effectiveness**
@@ -94,7 +113,27 @@ This project focuses on **Prescriptive Analytics** techniques to identify **what
   - Relative % improvement  
   - Baseline vs. uplift performance
 
-### 🏦Visualisation
+### **Lift Math**:
+- Lift vs Pre (%) = ((During - Pre) / Pre) × 100
+- Lift vs Post (%) = ((During - Post) / Post) × 100
+
+### **Diagnostics**:
+  - Barplot
+
+### 🖼️ Results Snapshot
+|Promotion|Pre_Sales|During_Sales|Post_Sales|Lift_vs_Pre(%)|Lift_vs_Post(%)|
+|---------|---------|------------|----------|--------------|---------------|
+Summer Sale|0.0|0.0|0.0|N/A|N/A|
+Black Friday|$ 20,474.0|$ 4,263.0|$ 20,689.0|🔻-79.18 %|🔻-79.39 %|
+End-of-Year Sale|$ 26,798.0|$ 22,311.0|$ 13,361.0|🔻-16.74 %|🔼66.99 %|
+
+### **🔍 Insights:**
+
+- **Summer Sale**: No data available for analysis.
+- **Black Friday**: Sales significantly dropped during the promotion compared to both pre and post periods.
+- **End-of-Year Sale**: Slight drop during the promotion vs pre-period, but significantly higher than post-period → demand likely pulled forward.
+
+### 📷 Visualisation
 
 #
 **Barplot - Sales Lift Analysis: Pre Vs During Vs Post Promotion**

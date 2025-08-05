@@ -51,7 +51,7 @@ Using **Exponential Smoothing models**, I analysed historical sales data and bui
 
 #
 
-## 📊 Results Snapshot
+## 🖼️ Results Snapshot
 
 |Model|MAE|RMSE|MAPE|MAE Eval|RMSE Eval|MAPE Eval|Best Practise|
 |-----|---|----|----|--------|---------|---------|-------------|
