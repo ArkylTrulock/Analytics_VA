@@ -45,9 +45,9 @@ This project focuses on **Prescriptive Analytics** techniques to identify **what
 - Such analysis improves business strategies by clearly revealing trends hidden within transaction data.
  
 ### Key Metrics Evaluated
-- **Support**: The frequency with which an item appears in the dataset. (`How often the rule occurs in data`) 
-- **Confidence**: The likelihood that item B is purchased when item A is purchased. (`Probability of B given A`) 
-- **Lift**: The strength of a rule. (`measuring how much more likely item B is bought when item A is bought compared to when bought independently`)
+- **Support**: The frequency with which an item appears in the dataset. **(`How often the rule occurs in data`)** 
+- **Confidence**: The likelihood that item B is purchased when item A is purchased. **(`Probability of B given A`)**
+- **Lift**: The strength of a rule. **(`measuring how much more likely item B is bought when item A is bought compared to when bought independently`)**
 
 ### **🩺 Diagnostics**:
   - Network Plots
@@ -113,7 +113,7 @@ This project focuses on **Prescriptive Analytics** techniques to identify **what
   - Relative % improvement  
   - Baseline vs. uplift performance
 
-### **🧮 Lift Math**:
+### 🧮 Lift Math
 - Lift vs Pre (%) = ((During - Pre) / Pre) × 100
 - Lift vs Post (%) = ((During - Post) / Post) × 100
 
@@ -141,6 +141,32 @@ End-of-Year Sale|$ 26,798.0|$ 22,311.0|$ 13,361.0|🔻-16.74 %|🔼66.99 %|
 *Generated using seaborn library*
 #
 
+### K-Means Clustering
+- Unsupervised machine learning technique that allows the identification of clusters (similar groups of data points) within the data.
+
+### Key Metrics Evaluated
+- The **`Elbow Method`** was used to choose the optimal number of clusters **`(k)`**.
+- The k value corresponding to the **`"elbow"`** in the WCSS vs k graph is considered the optimal choice.
+
+### **🩺 Diagnostics**:
+  - Line Plots
+
+### **🔍 Insights:**
+ - The optimal number of clusters **`k`** choosen was **`4`**.
+
+### 📷 Visualisation
+
+#
+**Lineplot - K-Means Clustering - Identifying The Optimal Number Of Clusters (k) Using The Yellowbrick Elbow Method**
+![Lineplot - K-Means Clustering - Identifying The Optimal Number Of Clusters (k) Using The Yellowbrick Elbow Method](../5_Prescriptive_Sales_Analysis/Assets/Py_11_Identifying_The_Optimal_Number_Of_Clusters_k_Using_The_Yellowbrick_Elbow_Method.Line_Plot.png)  
+*Generated using seaborn library*
+#
+**Lineplot - K-Means Clustering - Identifying The Optimal Number Of Clusters (k) Using The Elbow Method**
+![Lineplot - K-Means Clustering - Identifying The Optimal Number Of Clusters (k) Using The Elbow Method](../5_Prescriptive_Sales_Analysis/Assets/Py_12_Identifying_The_Optimal_Number_Of_Clusters_k_Using_The_Elbow%20Method_Line_Plot.png)  
+*Generated using seaborn library*
+#
+
+
 ### 📦 RFM Segmentation + CLTV
 - **Recency**, **Frequency**, and **Monetary** values used to segment customers
 - Combined with **Historical CLTV** to estimate customer value
@@ -149,7 +175,11 @@ End-of-Year Sale|$ 26,798.0|$ 22,311.0|$ 13,361.0|🔻-16.74 %|🔼66.99 %|
   - Profiled RFM segments: **"Champions"**, **"Loyal"**, **"Potential"**, **"At Risk"** and **"Lost"**
   - Profiled cltv segments: **"Very High"**, **"High"**, **"Medium"**, **"Low"** and **"Very Low"**
   - Profiled cltv strategies: **"Retain + Reward"**, **"Upsell + Personalise"**, **"Educate + Re-target"**, **"Incentivise + Survey"** and **"Re-engage + Exit"**
+  
+  
   - Profiled cltv marketing channels: **"Email, SMS, App Push, 1:1 service"**, **"Email, Paid Ads, Mobile App"**, **"Email Series, Blog, Social Media"**, **"Email, Push Notification"** and **"Email, Re-targeting Ads"**
+
+
 
 ### 🎯 Campaign Optimisation
 - Targeting rules built using RFM + CLTV outputs
