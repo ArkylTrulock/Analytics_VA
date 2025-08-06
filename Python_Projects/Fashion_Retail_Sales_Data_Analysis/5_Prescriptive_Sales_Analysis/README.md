@@ -158,28 +158,39 @@ End-of-Year Sale|$ 26,798.0|$ 22,311.0|$ 13,361.0|🔻-16.74 %|🔼66.99 %|
 - Calculated the `RFM Score` by summing the values in `RFM Segment`.
 
 - Selected only the numerical features of the metrics, standardised data and chose the optimal number of clusters **`(k = 4)`** using the **`Elbow Method`**.
-  - The k value corresponding to the **`"elbow"`** in the WCSS vs k graph is considered the optimal choice.
+  - The **`k value`** corresponding to the **`"elbow"`** in the WCSS vs k graph is considered the optimal choice.
 
 - Grouped metrics by cluster and calculated mean values.
 
 - Calculated the number of customers per cluster.
 
-### Key Metrics Evaluated
-  - `Cluster`: **3**, **2**, **1** and **0**.
-  - `Customer_Count`: **The number of customers per cluster**.
-  - `Recency`: **Mean days since last purchase**.
-  - `Frequency`: **Mean number of purchases**.
-  - `Monetary`: **Mean total spending**.
-  - `RFM_Score`: **Mean metric score**.
-  - `Profile summary`: **"Champions"**, **"Loyal"**, **"Potential"**, **"At Risk"** and **"Lost"**.
-  - `Customer value`: **"Very High"**, **"High"**, **"Medium"**, **"Low"** and **"Very Low"**.
-  - `Recommended Strategy`: **Please refer to insights for more information**.
+### Columns
+  - **`Cluster`**: **3**, **2**, **1** and **0**.
+  
+  - **`Customer_Count`**: **The number of customers per cluster**.
+  - **`Recency`**: **Mean days since last purchase**.
+  - **`Frequency`**: **Mean number of purchases**.
+  - **`Monetary`**: **Mean total spending**.
+  - **`RFM_Score`**: **Mean metric score**.
+  - **`Profile summary`**: **"Champions"**, **"Loyal"**, **"Potential"**, **"At Risk"** and **"Lost"**.
+  - **`Customer Value`**: **"Very High"**, **"High"**, **"Medium"**, **"Low"** and **"Very Low"**.
+  - **`Recommended Strategy`**: 
+    - **Prioritise with exclusive offers, early product access, or referral programs. Maintain relationship with premium experience**.
+    
+    - **Reward loyalty with targeted upsells, bundles, or loyalty points. Keep engaged with consistent communication.**.
+    - **Educate about products, offer onboarding support.\nPush toward loyalty tier with incentives.**.
+    - **Send re-engagement campaigns with strong discounts. Consider email reminders, feedback forms, or exit surveys.**.
+    - **Consider removing from active campaigns. Test win-back strategies or reduce marketing spend.**.
+    
 
 ### **🩺 Diagnostics**
   - Line Plots.
   - Barplot.
   - Scatterplots.
-.
+
+### 🖼️ Results Snapshot
+
+
 ### **🔍 Insights**
  - **TBC**.
 
