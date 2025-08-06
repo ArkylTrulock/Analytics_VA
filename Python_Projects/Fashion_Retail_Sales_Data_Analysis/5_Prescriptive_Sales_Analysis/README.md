@@ -182,14 +182,19 @@ End-of-Year Sale|$ 26,798.0|$ 22,311.0|$ 13,361.0|🔻-16.74 %|🔼66.99 %|
     - **Send re-engagement campaigns with strong discounts. Consider email reminders, feedback forms, or exit surveys.**.
     - **Consider removing from active campaigns. Test win-back strategies or reduce marketing spend.**.
     
-
 ### **🩺 Diagnostics**
   - Line Plots.
   - Barplot.
   - Scatterplots.
 
 ### 🖼️ Results Snapshot
-
+|Cluster|Recency|Frequency|Customer_Count|Monetary|RFM_Score|Profile Summary|Customer Value|Recommended Strategy|
+|-------|-------|---------|--------------|--------|---------|---------------|--------------|--------------------|
+|0|13.83|16.69|54|$ 2,039.30|7.04|New / Promising|Medium|Educate about products, offer onboarding support. Push toward loyalty tier with incentives.|
+|1|
+|2|
+|3|
+|4|
 
 ### **🔍 Insights**
  - **TBC**.
