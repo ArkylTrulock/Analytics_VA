@@ -178,12 +178,19 @@ End-of-Year Sale|$ 26,798.0|$ 22,311.0|$ 13,361.0|🔻-16.74 %|🔼66.99 %|
   - **`Profile summary`**: **"Champions"**, **"Loyal"**, **"Potential"**, **"At Risk"** and **"Lost"**.
   - **`Customer Value`**: **"Very High"**, **"High"**, **"Medium"**, **"Low"** and **"Very Low"**.
   - **`Recommended Strategy`**: 
-    - **Prioritise with exclusive offers, early product access, or referral programs. Maintain relationship with premium experience**.
+    - **Exclusive offers, loyalty rewards**.
     
-    - **Reward loyalty with targeted upsells, bundles, or loyalty points. Keep engaged with consistent communication.**.
-    - **Educate about products, offer onboarding support. Push toward loyalty tier with incentives.**.
-    - **Send re-engagement campaigns with strong discounts. Consider email reminders, feedback forms, or exit surveys.**.
-    - **Consider removing from active campaigns. Test win-back strategies or reduce marketing spend.**.
+    - **Early access, product sneak peeks**.
+    - **Nurture campaigns, discounts, product education**.
+    - **Re-engagement offers, feedback surveys**.
+    - **Win-back with bold offers, remove after attempts**.
+  - **`Marketing Channel`**: 
+    - **Email, VIP newsletters, App push.**.
+    
+    - **SMS, Email drip campaigns, Loyalty app.**.
+    - **Retargeting Ads, Email, Social media**.
+    - **Email reactivation, Discount codes, SMS**.
+    - **Paid Ads, Remarketing, Personalised mail**.
     
 ### **🩺 Diagnostics**
   - Line Plots.
@@ -193,10 +200,10 @@ End-of-Year Sale|$ 26,798.0|$ 22,311.0|$ 13,361.0|🔻-16.74 %|🔼66.99 %|
 ### 🖼️ Results Snapshot
 |Cluster|Recency|Frequency|Customer_Count|Monetary|RFM_Score|Profile Summary|Customer Value|Recommended Strategy|Marketing Channel|
 |-------|-------|---------|--------------|--------|---------|---------------|--------------|--------------------|------|
-|0|13.83|16.69|54|$ 2,039.30|7.04|🔃 New / Promising|🥉 Medium|Nurture campaigns, discounts, product education|Retargeting Ads, Email, Social media|
-|1|58.32|17.32|22|$ 2,087.50|4.77|❗At-Risk / Churned|🎁 Low|Re-engagement offers, feedback surveys|Email reactivation, Discount codes, SMS|
-|2|12.89|23.71|63|$ 2,679.35|11.11|✅ Loyal Customers|🥈 Medium-High|Early access, product sneak peeks|SMS, Email drip campaigns, Loyalty app|
-|3|16.04|23.11|27|$ 6,495.81|11.89|💎 Champions / VIP|🥇 Very High|Exclusive offers, loyalty rewards |Email, VIP newsletters, App push|
+|0|13.83|16.69|54|$ 2,039.30|7.04|🔃 New / Promising|🥉 Medium|Nurture campaigns, discounts, product education.|Retargeting Ads, Email, Social media.|
+|1|58.32|17.32|22|$ 2,087.50|4.77|❗At-Risk / Churned|🎁 Low|Re-engagement offers, feedback surveys.|Email reactivation, Discount codes, SMS.|
+|2|12.89|23.71|63|$ 2,679.35|11.11|✅ Loyal Customers|🥈 Medium-High|Early access, product sneak peeks.|SMS, Email drip campaigns, Loyalty app.|
+|3|16.04|23.11|27|$ 6,495.81|11.89|💎 Champions / VIP|🥇 Very High|Exclusive offers, loyalty rewards.|Email, VIP newsletters, App push.|
 
 ### **🔍 Insights**
  - **TBC**.
