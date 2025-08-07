@@ -141,12 +141,12 @@ End-of-Year Sale|$ 26,798.0|$ 22,311.0|$ 13,361.0|🔻-16.74 %|🔼66.99 %|
 *Generated using seaborn library*
 #
 
-## Customer Segmentation Using RFM Analysis And K-Means Clustering With Targeting Strategy And Marketing Channels
+### Customer Segmentation Using RFM Analysis And K-Means Clustering With Targeting Strategy And Marketing Channels
 
-### What is K-Means Clustering?
+#### What is K-Means Clustering?
 - Unsupervised machine learning technique that allows the identification of clusters (similar groups of data points) within the data.
 
-### RFM Analysis
+#### RFM Analysis
 - Calculated **`RFM metrics`** per customer.
   - **Recency**: Days since last purchase (how recently the customer bought).
   - **Frequency**: Total number of purchases.
@@ -159,7 +159,7 @@ End-of-Year Sale|$ 26,798.0|$ 22,311.0|$ 13,361.0|🔻-16.74 %|🔼66.99 %|
 
 - Calculated the **`RFM Score`** totals by summing the values in **`RFM Segment`**.
 
-### K-Means Clustering
+#### K-Means Clustering
 - Selected only the numerical features of the RFM metrics, standardised data and chose the optimal number of clusters **`(k = 4)`** using the **`Elbow Method`**.
   - The **`k value`** corresponding to the **`"elbow"`** in the WCSS vs k graph is considered the optimal choice.
 
@@ -167,7 +167,7 @@ End-of-Year Sale|$ 26,798.0|$ 22,311.0|$ 13,361.0|🔻-16.74 %|🔼66.99 %|
   - Mean RFM metric scores.
   - Customer counts.
 
-### Results
+#### Results
   - **`Cluster`**: **3**, **2**, **1** and **0**.
   
   - **`Customer_Count`**: **The total number of customers**.
@@ -232,17 +232,23 @@ End-of-Year Sale|$ 26,798.0|$ 22,311.0|$ 13,361.0|🔻-16.74 %|🔼66.99 %|
 *Generated using seaborn library*
 #
 
-### 📦 RFM Segmentation + CLTV
+### 📦 Predicted 6-Month CLTV - Customer Segmentation Using RFM Analysis And K-Means Clustering With Targeting Strategy And Marketing Channels
 
-- Combined with **Historical CLTV** to estimate customer value
-- Result:
-  - Profiled RFM clusters: **3**, **2**, **1** and **0**
-  - Profiled RFM segments: **"Champions"**, **"Loyal"**, **"Potential"**, **"At Risk"** and **"Lost"**
-  - Profiled cltv segments: **"Very High"**, **"High"**, **"Medium"**, **"Low"** and **"Very Low"**
-  - Profiled cltv strategies: **"Retain + Reward"**, **"Upsell + Personalise"**, **"Educate + Re-target"**, **"Incentivise + Survey"** and **"Re-engage + Exit"**
-  - Profiled cltv marketing channels: **"Email, SMS, App Push, 1:1 service"**, **"Email, Paid Ads, Mobile App"**, **"Email Series, Blog, Social Media"**, **"Email, Push Notification"** and **"Email, Re-targeting Ads"**
+#### What is CLTV (Customer Lifetime Value)?
+- A **`monetary value`** that represents the **`amount of revenue or profit a customer will give the company over the period of the relationship`**.
 
-#
+- A technique used to forecast the total revenue a business expects to generate from a single customer relationship over their entire lifespan.
+
+- It helps businesses understand the long-term value of their customers, enabling them to make more informed decisions about customer acquisition, retention, and marketing strategies.
+
+#### Results
+- **`Cluster`**: **3**, **2**, **1** and **0**.
+- **`count`**:
+- **`cltv_segment`**:	
+- **`cltv_strategy`**:	
+- **`cltv_marketing_channel`**:
+
+
 ### 🎯 Campaign Optimisation
 - Targeting rules built using RFM + CLTV outputs
 - Simulated campaign strategies for uplift impact
