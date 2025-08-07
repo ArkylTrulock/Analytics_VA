@@ -216,7 +216,7 @@ End-of-Year Sale|$ 26,798.0|$ 22,311.0|$ 13,361.0|🔻-16.74 %|🔼66.99 %|
 *Generated using seaborn library*
 #
 **Barplot - RFM Metric Scores, Customer Count, Customer Value, Profile Summary, Recommended Strategy And Marketing Channel Of KMeans Clusters**
-![Barplot - RFM Metric Scores, Customer Count, Customer Value, Profile Summary, Recommended Strategy And Marketing Channel Of KMeans Clusters](../5_Prescriptive_Sales_Analysis/Assets/Py_15_Profile%20Summary_Customer_Value_And_Recommended_Strategy_Of_KMeans_Clusters_Barplot.png)  
+![Barplot - RFM Metric Scores, Customer Count, Customer Value, Profile Summary, Recommended Strategy And Marketing Channel Of KMeans Clusters](../5_Prescriptive_Sales_Analysis/Assets/Py_15_RFM_Metric_Scores_Cust_Count_Cust_Value_Prof_Summary_Recommended_Strategy_Marketing_Channel_Of_KMeans_Clusters_Barplot.png)  
 *Generated using seaborn library*
 #
 **Scatterplot - Customer Segments - Recency Vs Frequency**
