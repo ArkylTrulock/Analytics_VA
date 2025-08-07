@@ -141,33 +141,36 @@ End-of-Year Sale|$ 26,798.0|$ 22,311.0|$ 13,361.0|🔻-16.74 %|🔼66.99 %|
 *Generated using seaborn library*
 #
 
-### K-Means Clustering
+## Customer Segmentation Using RFM Analysis And K-Means Clustering With Targeting Strategy And Marketing Channels
+
+### What is K-Means Clustering?
 - Unsupervised machine learning technique that allows the identification of clusters (similar groups of data points) within the data.
 
-### Key Metrics Evaluated
-- Calculated `RFM metrics` per customer.
+### RFM Analysis
+- Calculated **`RFM metrics`** per customer.
   - **Recency**: Days since last purchase (how recently the customer bought).
   - **Frequency**: Total number of purchases.
   - **Monetary**: Total spending.
 
-- Scored each metric on a scale of `1` to `5` using quantiles.
+- Scored each RFM metric on a scale of **`1`** to **`5`** using quantiles.
   - Higher scores indicate better performance, except Recency (lower is better).
 
-- Combined the metric scores into `RFM Segment`.
+- Combined the RFM metric scores into **`RFM Segment`**.
 
-- Calculated the `RFM Score` by summing the values in `RFM Segment`.
+- Calculated the **`RFM Score`** totals by summing the values in **`RFM Segment`**.
 
-- Selected only the numerical features of the metrics, standardised data and chose the optimal number of clusters **`(k = 4)`** using the **`Elbow Method`**.
+### K-Means Clustering
+- Selected only the numerical features of the RFM metrics, standardised data and chose the optimal number of clusters **`(k = 4)`** using the **`Elbow Method`**.
   - The **`k value`** corresponding to the **`"elbow"`** in the WCSS vs k graph is considered the optimal choice.
 
-- Grouped metrics by cluster and calculated mean values.
+- Grouped RFM metrics by cluster and calculated :
+  - Mean RFM metric scores.
+  - Customer counts.
 
-- Calculated the number of customers per cluster.
-
-### Columns
+### Results
   - **`Cluster`**: **3**, **2**, **1** and **0**.
   
-  - **`Customer_Count`**: **The number of customers per cluster**.
+  - **`Customer_Count`**: **The total number of customers**.
   - **`Recency`**: **Mean days since last purchase**.
   - **`Frequency`**: **Mean number of purchases**.
   - **`Monetary`**: **Mean total spending**.
@@ -178,7 +181,7 @@ End-of-Year Sale|$ 26,798.0|$ 22,311.0|$ 13,361.0|🔻-16.74 %|🔼66.99 %|
     - **Prioritise with exclusive offers, early product access, or referral programs. Maintain relationship with premium experience**.
     
     - **Reward loyalty with targeted upsells, bundles, or loyalty points. Keep engaged with consistent communication.**.
-    - **Educate about products, offer onboarding support.\nPush toward loyalty tier with incentives.**.
+    - **Educate about products, offer onboarding support. Push toward loyalty tier with incentives.**.
     - **Send re-engagement campaigns with strong discounts. Consider email reminders, feedback forms, or exit surveys.**.
     - **Consider removing from active campaigns. Test win-back strategies or reduce marketing spend.**.
     
@@ -188,12 +191,12 @@ End-of-Year Sale|$ 26,798.0|$ 22,311.0|$ 13,361.0|🔻-16.74 %|🔼66.99 %|
   - Scatterplots.
 
 ### 🖼️ Results Snapshot
-|Cluster|Recency|Frequency|Customer_Count|Monetary|RFM_Score|Profile Summary|Customer Value|Recommended Strategy|
-|-------|-------|---------|--------------|--------|---------|---------------|--------------|--------------------|
-|0|13.83|16.69|54|$ 2,039.30|7.04|🔃 New / Promising|🥉 Medium|Educate about products, offer onboarding support. Push toward loyalty tier with incentives.|
-|1|58.32|17.32|22|$ 2,087.50|4.77|❗At-Risk / Churned|🎁 Low|Send re-engagement campaigns with strong discounts. Consider email reminders, feedback forms, or exit surveys.|
-|2|12.89|23.71|63|$ 2,679.35|11.11|✅ Loyal Customers|🥈 Medium-High|Reward loyalty with targeted upsells, bundles, or loyalty points. Keep engaged with consistent communication.|
-|3|16.04|23.11|27|$ 6,495.81|11.89|💎 Champions / VIP|🥇 Very High|Prioritise with exclusive offers, early product access, or referral programs. Maintain relationship with premium experience.|
+|Cluster|Recency|Frequency|Customer_Count|Monetary|RFM_Score|Profile Summary|Customer Value|Recommended Strategy|Marketing Channel|
+|-------|-------|---------|--------------|--------|---------|---------------|--------------|--------------------|------|
+|0|13.83|16.69|54|$ 2,039.30|7.04|🔃 New / Promising|🥉 Medium|Nurture campaigns, discounts, product education|Retargeting Ads, Email, Social media|
+|1|58.32|17.32|22|$ 2,087.50|4.77|❗At-Risk / Churned|🎁 Low|Re-engagement offers, feedback surveys|Email reactivation, Discount codes, SMS|
+|2|12.89|23.71|63|$ 2,679.35|11.11|✅ Loyal Customers|🥈 Medium-High|Early access, product sneak peeks|SMS, Email drip campaigns, Loyalty app|
+|3|16.04|23.11|27|$ 6,495.81|11.89|💎 Champions / VIP|🥇 Very High|Exclusive offers, loyalty rewards |Email, VIP newsletters, App push|
 
 ### **🔍 Insights**
  - **TBC**.
