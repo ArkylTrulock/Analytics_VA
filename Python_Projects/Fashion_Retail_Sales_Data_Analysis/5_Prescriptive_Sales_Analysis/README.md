@@ -146,6 +146,8 @@ End-of-Year Sale|$ 26,798.0|$ 22,311.0|$ 13,361.0|🔻-16.74 %|🔼66.99 %|
 #### What is K-Means Clustering?
 - Unsupervised machine learning technique that allows the identification of clusters (similar groups of data points) within the data.
 
+### Key Metrics Evaluated
+
 #### RFM Analysis
 - Calculated **`RFM metrics`** per customer.
   - **Recency**: Days since last purchase (how recently the customer bought).
@@ -178,15 +180,13 @@ End-of-Year Sale|$ 26,798.0|$ 22,311.0|$ 13,361.0|🔻-16.74 %|🔼66.99 %|
   - **`Profile summary`**: **"Champions"**, **"Loyal"**, **"Potential"**, **"At Risk"** and **"Lost"**.
   - **`Customer Value`**: **"Very High"**, **"High"**, **"Medium"**, **"Low"** and **"Very Low"**.
   - **`Recommended Strategy`**: 
-    - **Exclusive offers, loyalty rewards**.
-    
+    - **Exclusive offers, loyalty rewards**.  
     - **Early access, product sneak peeks**.
     - **Nurture campaigns, discounts, product education**.
     - **Re-engagement offers, feedback surveys**.
     - **Win-back with bold offers, remove after attempts**.
   - **`Marketing Channel`**: 
-    - **Email, VIP newsletters, App push.**.
-    
+    - **Email, VIP newsletters, App push.**. 
     - **SMS, Email drip campaigns, Loyalty app.**.
     - **Retargeting Ads, Email, Social media**.
     - **Email reactivation, Discount codes, SMS**.
@@ -239,15 +239,50 @@ End-of-Year Sale|$ 26,798.0|$ 22,311.0|$ 13,361.0|🔻-16.74 %|🔼66.99 %|
 
 - A technique used to forecast the total revenue a business expects to generate from a single customer relationship over their entire lifespan.
 
+##### Why is it important?
 - It helps businesses understand the long-term value of their customers, enabling them to make more informed decisions about customer acquisition, retention, and marketing strategies.
 
-#### Results
-- **`Cluster`**: **3**, **2**, **1** and **0**.
-- **`count`**:
-- **`cltv_segment`**:	
-- **`cltv_strategy`**:	
-- **`cltv_marketing_channel`**:
+### Key Metrics Evaluated
 
+#### 6-Month CLTV
+ - The CLTV for 6 months was estimated using `lifetimes` library.
+
+#### RFM Analysis
+ - Please refer to notes above.
+
+#### K-Means Clustering
+ - Please refer to notes above.
+
+#### Results
+- **`customer_reference_id`**: **Self explanatory**.
+- **`Recency`**: **Days since last purchase**.
+- **`Frequency`**: **Number of purchases**.
+- **`Monetary`**: **Total spending**.
+- **`R_Score`**: **Recency score**.
+- **`F_Score`**: **Frequency score**.
+- **`M_Score`**: **Monetary score**.
+- **`RFM_Segment`**: **Recency + Frequency + Monetary score**.
+- **`Cluster`**: **3**, **2**, **1** and **0**.
+- **`predicted_cltv_6m`**: **The estimated CLTV for 6 months**.
+- **`cltv_segment`**:	**: **"Very High"**, **"High"**, **"Medium"**, **"Low"** and **"Very Low"**.
+- **`cltv_strategy`**:
+    - **Retain + Reward**.
+    - **Upsell + Personalise**.
+    - **Educate + Re-target**.
+    - **Incentivise + Survey**.
+    - **Re-engage + Exit**.
+- **`cltv_marketing_channel`**:
+    - **Email, SMS, App Push, 1:1 service**.   
+    - **Email, Paid Ads, Mobile App**.
+    - **Email Series, Blog, Social Media**.
+    - **Email, Push Notification**.
+    - **Email, Re-targeting Ads**.
+
+### 🖼️ Results Snapshot
+#
+**Dataframe - Predicted 6-Month CLTV - Customer Segmentation Using RFM Analysis With Targeting Strategy And Marketing Channels**
+![Dataframe - Predicted 6-Month CLTV - Customer Segmentation Using RFM Analysis With Targeting Strategy And Marketing Channels](../5_Prescriptive_Sales_Analysis/Assets/Py_26_Predicted_6_Month_CLTV_Customer_Segmentation_Using_RFM_Analysis_With_T_S_And_M_C.png)  
+*Generated using pandas library*
 
 ### 🎯 Campaign Optimisation
 - Targeting rules built using RFM + CLTV outputs
