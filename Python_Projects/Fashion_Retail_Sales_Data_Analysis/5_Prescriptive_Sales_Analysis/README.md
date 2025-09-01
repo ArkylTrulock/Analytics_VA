@@ -380,3 +380,9 @@ End-of-Year Sale|$ 26,798.0|$ 22,311.0|$ 13,361.0|🔻-16.74 %|🔼66.99 %|
 - Targeting rules built using RFM + CLTV outputs
 - Simulated campaign strategies for uplift impact
 - Laid foundation for **A/B testing** and **Uplift Modeling**
+
+#
+
+## 📬 Contact
+*Built by [Arkyl Trulock](https://github.com/ArkylTrulock)*  
+For collaborations or feedback: X@gmail.com 
