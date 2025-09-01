@@ -337,7 +337,7 @@ End-of-Year Sale|$ 26,798.0|$ 22,311.0|$ 13,361.0|🔻-16.74 %|🔼66.99 %|
 2) Distribution Of Predicted 6-Month CLTV By **`Cluster`**.
 3) Distribution Of Predicted 6-Month CLTV By **`Segment`**.
 4) Distribution Of Predicted 6-Month CLTV By **`Strategy`**.
-5) Distribution Of Predicted 6-Month CLTV By **`Segment (Startegy & Marketing Channel Included)`**.
+5) Distribution Of Predicted 6-Month CLTV By **`Segment (Strategy & Marketing Channel Included)`**.
 
 ### **🩺 Diagnostics**
   - Hisplots.
@@ -360,6 +360,18 @@ End-of-Year Sale|$ 26,798.0|$ 22,311.0|$ 13,361.0|🔻-16.74 %|🔼66.99 %|
 #
 **Hisplot - Distribution Of Predicted 6-Month CLTV By Strategy**
 ![Hisplot - Distribution Of Predicted 6-Month CLTV By Strategy](../5_Prescriptive_Sales_Analysis/Assets/Py_33_Distribution_Of_Predicted_6_Month_CLTV_By_Strategy_Histplot.png)  
+*Generated using seaborn library*
+#
+**Boxplot - Distribution Of Predicted 6-Month CLTV By Cluster**
+![Boxplot - Distribution Of Predicted 6-Month CLTV By Cluster](../5_Prescriptive_Sales_Analysis/Assets/Py_34_Distribution_Of_Predicted_6_Month_CLTV_By_Cluster_Boxplot.png)  
+*Generated using seaborn library*
+#
+**Boxplot - Distribution Of Predicted 6-Month CLTV By Segment (Srtategy & Marketing Channel Included)**
+![Boxplot - Distribution Of Predicted 6-Month CLTV By Cluster (Strategy & Marketing Channel Included)](../5_Prescriptive_Sales_Analysis/Assets/Py_35_Distribution_Of_Predicted_6_Month_CLTV_By_Segment_Boxplot.png)  
+*Generated using seaborn library*
+#
+**Boxplot - Distribution Of Predicted 6-Month CLTV By Strategy**
+![Boxplot - Distribution Of Predicted 6-Month CLTV By Strategy](../5_Prescriptive_Sales_Analysis/Assets/Py_36_Distribution_Of_Predicted_6_Month_CLTV_By_Strategy_Boxplot.png)  
 *Generated using seaborn library*
 #
 
