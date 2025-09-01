@@ -2,8 +2,9 @@
 
 ![Prescriptive Sales Analysis](https://img.shields.io/badge/Analysis-Type%3A%20Prescriptive-blueviolet?labelColor=darkblue)
 ![Status](https://img.shields.io/badge/Status-Complete-brightgreen?labelColor=crimson)
-![Toolset](https://img.shields.io/badge/Toolset-Python%2C%20Apriori%2C%20Statsmodels%2C%20Seaborn-turquoise?labelColor=gold)
+![Toolset](https://img.shields.io/badge/Toolset-Pandas%2C%20Apriori%2C%20Statsmodels%2C%20Seaborn%2C%20Scikitlearn%2C%20Statsmodels%2C%20Mlxtend%2C%20Lifetimes-turquoise?labelColor=gold)
 #
+
 ## 📌 Project Overview
 
 This project focuses on **Prescriptive Analytics** techniques to identify **what actions to take** to optimise sales and customer retention in a fashion retail setting. Building on previous descriptive and predictive analyses, we dive into:

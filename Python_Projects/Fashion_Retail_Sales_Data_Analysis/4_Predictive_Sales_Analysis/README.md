@@ -1,5 +1,10 @@
 # 🔮👗🛍️ Predictive Sales Analysis for Fashion Retail
 
+![Predictive Sales Analysis](https://img.shields.io/badge/Analysis-Type%3A%20Predictive-blueviolet?labelColor=darkblue)
+![Status](https://img.shields.io/badge/Status-Complete-brightgreen?labelColor=crimson)
+![Toolset](https://img.shields.io/badge/Toolset-Pandas%2C%20Numpy%2C%20Seaborn%2C%20Statsmodels%2C%20Pdarima-turquoise?labelColor=gold)
+#
+
 ## 📌 Business Problem
 Fashion retailers often struggle with **stock imbalances** due to fluctuating customer demand. 
 This results in:
