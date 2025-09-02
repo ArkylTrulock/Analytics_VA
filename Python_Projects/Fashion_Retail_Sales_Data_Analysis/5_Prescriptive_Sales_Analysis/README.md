@@ -90,10 +90,9 @@ This project focuses on **Prescriptive Analytics** techniques to identify **what
   - Line Plots.
 
 ### **🔍 Insights:**
-
-- Shaded areas indicate active promotional campaigns.
-- You can observe spikes or trends in sales and ratings during these periods.
-- Helps evaluate campaign success visually.
+ - Shaded areas indicate active promotional campaigns.
+ - You can observe spikes or trends in sales and ratings during these periods.
+ - Helps evaluate campaign success visually.
 
 ### 📷 Visualisations
 
@@ -108,7 +107,7 @@ This project focuses on **Prescriptive Analytics** techniques to identify **what
 #
 
 ### 📉 Sales Lift Analysis (Pre vs During vs Post Promotion)
-- Quantified the **true effectiveness** of promotions
+- Quantified the **true effectiveness** of promotions.
 - Metrics included:  
   - Absolute sales change.
   - Relative % improvement.
@@ -170,7 +169,7 @@ End-of-Year Sale|$ 26,798.0|$ 22,311.0|$ 13,361.0|🔻-16.74 %|🔼66.99 %|
   - Mean RFM metric scores.
   - Customer counts.
 
-#### Results
+### Dataframe Columns
   - **`Cluster`**: **3**, **2**, **1** and **0**.
   - **`Customer_Count`**: **The total number of customers**.
   - **`Recency`**: **Mean days since last purchase**.
@@ -232,6 +231,11 @@ End-of-Year Sale|$ 26,798.0|$ 22,311.0|$ 13,361.0|🔻-16.74 %|🔼66.99 %|
 *Generated using seaborn library*
 #
 
+### **🔍 Insights**
+ - **TBC**.
+
+#
+
 ### 📦 Predicted 6-Month CLTV - Customer Segmentation Using RFM Analysis And K-Means Clustering With Targeting Strategy And Marketing Channels
 
 #### What is CLTV (Customer Lifetime Value)?
@@ -239,7 +243,7 @@ End-of-Year Sale|$ 26,798.0|$ 22,311.0|$ 13,361.0|🔻-16.74 %|🔼66.99 %|
 
 - A technique used to forecast the total revenue a business expects to generate from a single customer relationship over their entire lifespan.
 
-##### Why is it important?
+#### Why is it important?
 - It helps businesses understand the long-term value of their customers, enabling them to make more informed decisions about customer acquisition, retention, and marketing strategies.
 
 ### Key Metrics Evaluated
@@ -253,7 +257,7 @@ End-of-Year Sale|$ 26,798.0|$ 22,311.0|$ 13,361.0|🔻-16.74 %|🔼66.99 %|
 #### K-Means Clustering
  - Please refer to notes above.
 
-#### Results
+### Dataframe Columns
 - **`customer_reference_id`**: **Self explanatory**.
 - **`Recency`**: **Days since last purchase**.
 - **`Frequency`**: **Number of purchases**.
@@ -296,7 +300,7 @@ End-of-Year Sale|$ 26,798.0|$ 22,311.0|$ 13,361.0|🔻-16.74 %|🔼66.99 %|
 2) Descriptive Statistics Of Predicted 6-Month CLTV By **`Segment`**.
 3) Descriptive Statistics Of Predicted 6-Month CLTV By **`Strategy`**.
 
-#### Results
+### Dataframe Columns
 - **`Cluster`**: **3**, **2**, **1** and **0**.
 - **`Count`**: **The total number of customers**.
 - **`avg_predicted_cltv_6m`**: **The mean predicted CLTV for 6 months**.
@@ -328,6 +332,11 @@ End-of-Year Sale|$ 26,798.0|$ 22,311.0|$ 13,361.0|🔻-16.74 %|🔼66.99 %|
 **Dataframe - Descriptive Statistics Of Predicted 6-Month CLTV By Strategy**
 ![Dataframe - Descriptive Statistics Of Predicted 6-Month CLTV By Strategy](../5_Prescriptive_Sales_Analysis/Assets/Py_29_Descriptive_Statistics_Of_Predicted_6_Month_CLTV_By_Strategy.png)  
 *Generated using pandas library*
+#
+
+### **🔍 Insights**
+ - **TBC**.
+
 #
 
 ### Distribution Overview Of The Predicted 6-Month CLTV
@@ -367,13 +376,73 @@ End-of-Year Sale|$ 26,798.0|$ 22,311.0|$ 13,361.0|🔻-16.74 %|🔼66.99 %|
 ![Boxplot - Distribution Of Predicted 6-Month CLTV By Cluster](../5_Prescriptive_Sales_Analysis/Assets/Py_34_Distribution_Of_Predicted_6_Month_CLTV_By_Cluster_Boxplot.png)  
 *Generated using seaborn library*
 #
-**Boxplot - Distribution Of Predicted 6-Month CLTV By Segment (Srtategy & Marketing Channel Included)**
+**Boxplot - Distribution Of Predicted 6-Month CLTV By Segment (Strategy & Marketing Channel Included)**
 ![Boxplot - Distribution Of Predicted 6-Month CLTV By Cluster (Strategy & Marketing Channel Included)](../5_Prescriptive_Sales_Analysis/Assets/Py_35_Distribution_Of_Predicted_6_Month_CLTV_By_Segment_Boxplot.png)  
 *Generated using seaborn library*
 #
 **Boxplot - Distribution Of Predicted 6-Month CLTV By Strategy**
 ![Boxplot - Distribution Of Predicted 6-Month CLTV By Strategy](../5_Prescriptive_Sales_Analysis/Assets/Py_36_Distribution_Of_Predicted_6_Month_CLTV_By_Strategy_Boxplot.png)  
 *Generated using seaborn library*
+#
+
+### **🔍 Insights**
+ - **TBC**.
+#
+
+### Campaign Simulation And ROI Estimation Using Predicted CLTV Segments
+
+#### What Is ROI (Return on Investment)?
+ - A **`performance metric`** that measures the **`profitability of an investment`**.
+
+ - It indicates how much return is generated relative to the cost of the investment.
+
+#### Why is it important?
+ - By understanding the CLTV, businesses can make more **`informed decisions`** about **`how much to spend`** on **`acquiring`** and **`retaining customers`** to **`maximise`** their overall **`ROI`**.
+
+ - By comparing the cost of acquiring a customer (CAC) and their CLTV, you can assess your ROI.
+
+### Key Metrics Evaluated
+ - **`Response Rate`**
+ - **`Cost Per Customer`**
+ - **`Expected Response`**
+ - **`Expected Revenue`**
+ - **`Total Cost`**
+ - **`Profit`**
+ - **`ROI %`**
+
+### 🧮 Financial Math
+ - Response Rate = Customer response value to simulated campaign
+ - Cost Per Customer = Customer aquisition cost
+ - Expected Response = Customers * Response Rate
+ - Expected Revenue = Expected_responses * Mean 6-month CLTV * Response Rate
+ - Total Cost = Customers * Cost Per Customer
+ - Profit = Expected Revenue - Total Cost
+ - ROI % = (Expected Revenue - Total Cost) / (Total Cost * 100)
+
+### Dataframe Columns
+- **`cltv_segment`**:	**: **"Very High"**, **"High"**, **"Medium"**, **"Low"** and **"Very Low"**.
+- **`avg_cltv`**: **The mean predicted CLTV for 6 months**.
+- **`Customers`**: **The total number of customers**.
+- **`cost_per_customer`**: **The aquisition cost per customer**.
+- **`total_cost`**: **The total cost of aquiring customers**.
+- **`expected_revenue`**: **Estimate of how much money the business expects to earn over a specific period—whether that's a month, a quarter, or a full year.**.
+- **`profit`**: **The money you have left after paying for business expenses. There are three main types of profit: gross profit, operating and net profit.**.
+- **`roi_percent`**: **The return on investment expressed as a percentage**.
+
+### **🩺 Diagnostics**
+  - Dataframe.
+
+### 📷 Visualisation
+
+#
+**Dataframe - Campaign Simulation And ROI Estimation Using Predicted CLTV Segments**
+![Dataframe - Campaign Simulation And ROI Estimation Using Predicted CLTV Segments](../5_Prescriptive_Sales_Analysis/Assets/Py_37_Campaign_Simulation_And_ROI_Estimation_Using_Predicted_CLTV_Segments.png)  
+*Generated using pandas library*
+#
+
+### **🔍 Insights**
+ - **TBC**.
+
 #
 
 ### 🎯 Campaign Optimisation
