@@ -29,9 +29,9 @@ Before beginning a data analysis project, a good starting point is to have a bus
 #
 **The questions i wanted to answer through my python code were:**
 
-1. **🔬 Descriptive Analytics - What is happening❓** This involves the manipulating of raw data from multiple sources to give a data analyst valuable insights into the past and a view of key metrics within a business.
-2. **🩺 Diagnostic Analytics - Why are trends and patterns happening❓** This takes the insights found from descriptive analytics and drills down to find the causes of specific problems.
-3. **🔮 Predictive Analytics - What is likely to happen in the future❓** It is about forecasting. This type of analytics uses historical data to make predictions about the future.
+1. **🔬 Descriptive Analysis - What is happening❓** This involves the manipulating of raw data from multiple sources to give a data analyst valuable insights into the past and a view of key metrics within a business.
+2. **🩺 Diagnostic Analysis - Why are trends and patterns happening❓** This takes the insights found from descriptive analytics and drills down to find the causes of specific problems.
+3. **🔮 Predictive Analysis - What is likely to happen in the future❓** It is about forecasting. This type of analytics uses historical data to make predictions about the future.
 4. **💊 Prescriptive Analysis - What should happen❓** Combines the insight from all previous data analysis to determine a course of action to take to address a problem or make a decision. It uses advanced tools and technologies, like machine learning, business rules, and algorithms. This makes prescriptive analytics sophisticated to implement and manage.
 #
 # 🧰 Tech Stack
