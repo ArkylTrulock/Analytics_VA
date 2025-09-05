@@ -7,7 +7,7 @@
 
 ## 📌 Project Overview
 
-X
+**🔬 Descriptive Analysis - What is happening❓** This involves the manipulating of raw data from multiple sources to give a data analyst valuable insights into the past and a view of key metrics within a business.
 
 #
 

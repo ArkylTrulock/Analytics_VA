@@ -7,7 +7,7 @@
 
 ## 📌 Project Overview
 
-X
+**🩺 Diagnostic Analysis - Why are trends and patterns happening❓** This takes the insights found from descriptive analytics and drills down to find the causes of specific problems.
 
 #
 
