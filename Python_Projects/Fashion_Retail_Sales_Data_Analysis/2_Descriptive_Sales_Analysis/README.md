@@ -40,8 +40,13 @@ X
 - **X**: **`TBC`**.
 
 ### **🩺 Diagnostics**:
-  - X
-  - X
+  - Dataframes
+  - Pie Chart
+  - Barplolts
+  - Stripplots
+  - Kdeplots
+  - Line Plot
+  - Heatmaps
 
 ### **🔍 Insights**:
   - **`TBC`**.
@@ -57,7 +62,8 @@ X
 
 **Filter**: **`total_sales` in `descending order`.**
 #
-![The Counts, Total Sales And Percentange Share By Payment Methods - Table](../2_Descriptive_Sales_Analysis/Assets/Py_01_The_Counts_Total_Sales_And_Percentage_Share_By_Payment_Methods.png)
+**Dataframe**
+![The Counts, Total Sales And Percentange Share By Payment Methods - Dataframe](../2_Descriptive_Sales_Analysis/Assets/Py_01_The_Counts_Total_Sales_And_Percentage_Share_By_Payment_Methods.png)
 *Generated using pandas library*
 #
 ![The Counts, Total Sales And Percentange Share By Payment Methods - Pie Chart](../2_Descriptive_Sales_Analysis/Assets/Py_02_The_Counts_Total_Sales_And_Percentage_Share_By_Payment_Method_Pie_Chart.png)
@@ -255,6 +261,97 @@ X
 #
 **Heatmap**
 ![Top Days And Years By Counts, Total Sales And Percentage Share - Heatmap](../2_Descriptive_Sales_Analysis/Assets/Py_20_Top_Days_And_Years_By_Counts_Total_Sales_And_Percentage_Share_Heatmap.png)
+*Generated using seaborn library*
+#
+### 11. 💰 Top Months And Years By Counts, Total Sales And Percentage Share.
+**Columns**: **`month`, `year`, `count`, `count_rank`, `pct_count`, `count_diff`, `count_pct_diff`, `avg_total_sales`, `total_sales`, `sales_rank`, `pct_total_sales`, `total_sales_diff` and `total_sales_pct_diff`.**
+
+**Filter**: **`total_sales` in `descending order`.**
+#
+**Dataframe**
+![Top Months And Years By Counts, Total Sales And Percentage Share - Dataframe](../2_Descriptive_Sales_Analysis/Assets/Py_21_Top_Months_And_Years_By_Counts_Total_Sales_And_Percentage_Share.png)
+*Generated using pandas library*
+#
+**Heatmap**
+![Top Months And Years By Counts, Total Sales And Percentage Share - Heatmap](../2_Descriptive_Sales_Analysis/Assets/Py_22_Top_Months_And_Years_By_Counts_Total_Sales_And_Percentage_Share_Heatmap.png)
+*Generated using seaborn library*
+#
+### 12. 💰 Top Quarters And Years By Counts, Total Sales And Percentage Share.
+**Columns**: **`quarter`, `year`, `count`, `count_rank`, `pct_count`, `count_diff`, `count_pct_diff`, `avg_total_sales`, `total_sales`, `sales_rank`, `pct_total_sales`, `total_sales_diff` and `total_sales_pct_diff`.**
+
+**Filter**: **`total_sales` in `descending order`.**
+#
+**Dataframe**
+![Top Quarters And Years By Counts, Total Sales And Percentage Share - Dataframe](../2_Descriptive_Sales_Analysis/Assets/Py_23_Top_Quarters_And_Years_By_Counts_Total_Sales_And_Percentage_Share.png)
+*Generated using pandas library*
+#
+**Heatmap**
+![Top Quarters And Years By Counts, Total Sales And Percentage Share - Heatmap](../2_Descriptive_Sales_Analysis/Assets/Py_24_Top_Quarters_And_Years_By_Counts_Total_Sales_And_Percentage_Share_Heatmap.png)
+*Generated using seaborn library*
+#
+### 13. 💰 Top Quarter Labels And Years By Counts, Total Sales And Percentage Share.
+**Columns**: **`quarter_label`, `year`, `count`, `count_rank`, `pct_count`, `count_diff`, `count_pct_diff`, `avg_total_sales`, `total_sales`, `sales_rank`, `pct_total_sales`, `total_sales_diff` and `total_sales_pct_diff`.**
+
+**Filter**: **`year` in `ascending order`.**
+#
+**Dataframe**
+![Top Quarter Labels And Years By Counts, Total Sales And Percentage Share - Dataframe](../2_Descriptive_Sales_Analysis/Assets/Py_25_Top_Quarter_Labels_And_Years_By_Counts_Total_Sales_And_Percentage_Share.png)
+*Generated using pandas library*
+#
+**Heatmap**
+![Top Quarter Labels And Years By Counts, Total Sales And Percentage Share - Heatmap](../2_Descriptive_Sales_Analysis/Assets/Py_26_Top_Quarter_Labels_And_Years_By_Counts_Total_Sales_And_Percentage_Share_Heatmap.png)
+*Generated using seaborn library*
+#
+### 14. 💰 Top Months And Items Purchased By Counts, Total Sales And Percentage Share.
+**Columns**: **`month`, `item_purchased`, `count`, `count_rank`, `pct_count`, `count_diff`, `count_pct_diff`, `avg_total_sales`, `total_sales`, `sales_rank`, `pct_total_sales`, `total_sales_diff` and `total_sales_pct_diff`.**
+
+**Filter**: **`total_sales` in `descending order`.**
+#
+**Dataframe**
+![Top Months And Items Purchased By Counts, Total Sales And Percentage Share - Dataframe](../2_Descriptive_Sales_Analysis/Assets/Py_27_Top_Months_And_Items_Purchased_By_Counts_Total_Sales_And_Percentage_Share.png)
+*Generated using pandas library*
+#
+**Heatmap**
+![Top Months And Items Purchased By Counts, Total Sales And Percentage Share - Heatmap](../2_Descriptive_Sales_Analysis/Assets/Py_28_Top_Months_And_Items_Purchased_By_Counts_Total_Sales_And_Percentage_Share_Heatmap.png)
+*Generated using seaborn library*
+#
+### 15. 💰 Top Quarters And Items Purchased By Counts, Total Sales And Percentage Share.
+**Columns**: **`quarter`, `item_purchased`, `count`, `count_rank`, `pct_count`, `count_diff`, `count_pct_diff`, `avg_total_sales`, `total_sales`, `sales_rank`, `pct_total_sales`, `total_sales_diff` and `total_sales_pct_diff`.**
+
+**Filter**: **`total_sales` in `descending order`.**
+#
+**Dataframe**
+![Top Quarters And Items Purchased By Counts, Total Sales And Percentage Share - Dataframe](../2_Descriptive_Sales_Analysis/Assets/Py_29_Top_Quarters_And_Items_Purchased_By_Counts_Total_Sales_And_Percentage_Share.png)
+*Generated using pandas library*
+#
+**Heatmap**
+![Top Quarters And Items Purchased By Counts, Total Sales And Percentage Share - Heatmap](../2_Descriptive_Sales_Analysis/Assets/Py_30_Top_Quarters_And_Items_Purchased_By_Counts_Total_Sales_And_Percentage_Share_Heatmap.png)
+*Generated using seaborn library*
+#
+### 16. 💰 Top Quarter Labels And Items Purchased By Counts, Total Sales And Percentage Share.
+**Columns**: **`quarter_label`, `item_purchased`, `count`, `count_rank`, `pct_count`, `count_diff`, `count_pct_diff`, `avg_total_sales`, `total_sales`, `sales_rank`, `pct_total_sales`, `total_sales_diff` and `total_sales_pct_diff`.**
+
+**Filter**: **`total_sales` in `descending order`.**
+#
+**Dataframe**
+![Top Quarter Labels And Items Purchased By Counts, Total Sales And Percentage Share - Dataframe](../2_Descriptive_Sales_Analysis/Assets/Py_31_Top_Quarter_Labels_And_Items_Purchased_By_Counts_Total_Sales_And_Percentage_Share.png)
+*Generated using pandas library*
+#
+**Heatmap**
+![Top Quarter Labels And Items Purchased By Counts, Total Sales And Percentage Share - Heatmap](../2_Descriptive_Sales_Analysis/Assets/Py_32_Top_Quarter_Labels_And_Items_Purchased_By_Counts_Total_Sales_And_Percentage_Share_Heatmap.png)
+*Generated using seaborn library*
+#
+### 17. 💰 Top Years And Items Purchased By Counts, Total Sales And Percentage Share.
+**Columns**: **`year`, `item_purchased`, `count`, `count_rank`, `pct_count`, `count_diff`, `count_pct_diff`, `avg_total_sales`, `total_sales`, `sales_rank`, `pct_total_sales`, `total_sales_diff` and `total_sales_pct_diff`.**
+
+**Filter**: **`total_sales` in `descending order`.**
+#
+**Dataframe**
+![Top Years And Items Purchased By Counts, Total Sales And Percentage Share - Dataframe](../2_Descriptive_Sales_Analysis/Assets/Py_33_Top_Years_And_Items_Purchased_By_Counts_Total_Sales_And_Percentage_Share.png)
+*Generated using pandas library*
+#
+**Heatmap**
+![Top Years And Items Purchased By Counts, Total Sales And Percentage Share - Heatmap](../2_Descriptive_Sales_Analysis/Assets/Py_34_Top_Years_And_Items_Purchased_By_Counts_Total_Sales_And_Percentage_Share_Heatmap.png)
 *Generated using seaborn library*
 #
 **Descriptive Sales Analysis Excel Overview[.xlsx](../2_Descriptive_Sales_Analysis/Assets/Descriptive_Sales_Analysis_Excel.xlsx)**
