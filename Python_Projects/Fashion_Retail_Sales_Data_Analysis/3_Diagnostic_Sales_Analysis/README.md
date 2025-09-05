@@ -6,3 +6,46 @@
 #
 
 ## 📌 Project Overview
+
+X
+
+#
+
+## 🧰 Tech Stack
+- Python (`pandas`, `numpy`, `seaborn`)  
+- Jupyter Notebook 
+
+#
+
+## 🧠 Methods & Tools
+
+### **Python Libraries**:
+
+- **Pandas**: Data analysis and manipulation. 
+- **Numpy**: Scientific computing.  
+
+#
+
+## 🧠 Key Techniques & Methodologies
+
+### 🧺 - **`TBC`**.
+- **`TBC`**.
+- **`TBC`**.
+- **`TBC`**.
+ 
+### Key Metrics Evaluated
+- **X**: **`TBC`**. 
+- **X**: **`TBC`**. 
+- **X**: **`TBC`**.
+
+### **🩺 Diagnostics**:
+  - Dataframes
+  
+### **🔍 Insights**:
+  - **`TBC`**.
+  - **`TBC`**.
+  - **`TBC`**.
+
+### 📷 Visualisations
+
+#
