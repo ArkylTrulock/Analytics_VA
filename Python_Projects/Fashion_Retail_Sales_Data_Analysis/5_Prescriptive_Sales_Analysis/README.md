@@ -172,9 +172,9 @@ End-of-Year Sale|$ 26,798.0|$ 22,311.0|$ 13,361.0|🔻-16.74 %|🔼66.99 %|
 ### Dataframe Columns
   - **`Cluster`**: **3**, **2**, **1** and **0**.
   - **`Customer_Count`**: **The total number of customers**.
-  - **`Recency`**: **Mean days since last purchase**.
-  - **`Frequency`**: **Mean number of purchases**.
-  - **`Monetary`**: **Mean total spending**.
+  - **`Recency`**: **The number of days since last purchase**.
+  - **`Frequency`**: **The number of purchases**.
+  - **`Monetary`**: **The total revenue/profit generated**.
   - **`RFM_Score`**: **Mean metric score**.
   - **`Profile summary`**: **"Champions"**, **"Loyal"**, **"Potential"**, **"At Risk"** and **"Lost"**.
   - **`Customer Value`**: **"Very High"**, **"High"**, **"Medium"**, **"Low"** and **"Very Low"**.
@@ -195,6 +195,9 @@ End-of-Year Sale|$ 26,798.0|$ 22,311.0|$ 13,361.0|🔻-16.74 %|🔼66.99 %|
   - Line Plots.
   - Barplot.
   - Scatterplots.
+  - Heatmap.
+  - Countplot.
+  - Scatterplot.
 
 ### 🖼️ Results Snapshot
 |Cluster|Recency|Frequency|Customer_Count|Monetary|RFM_Score|Profile Summary|Customer Value|Recommended Strategy|Marketing Channel|
@@ -230,6 +233,18 @@ End-of-Year Sale|$ 26,798.0|$ 22,311.0|$ 13,361.0|🔻-16.74 %|🔼66.99 %|
 ![Scatterplot - Customer Segments - Frequency Vs Monetary](../5_Prescriptive_Sales_Analysis/Assets/Py_18_Customer_Segments_Frequency_Vs_Monetary_Scatterplot.png)  
 *Generated using seaborn library*
 #
+**Heatmap - Customer Segmentation Count Using RFM Analysis**
+![Heatmap - Customer Segmentation Count Using RFM Analysis](../5_Prescriptive_Sales_Analysis/Assets/Py_20_Customer_Segmentation_Count_Using_RFM%20Analysis_Heatmap.png)  
+*Generated using seaborn library*
+#
+**Countplot - Customer Segmentation Count Using RFM Analysis**
+![Countplot - Customer Segmentation Count Using RFM Analysis](../5_Prescriptive_Sales_Analysis/Assets/Py_21_Customer_Segmentation_Count_Using_RFM_Analysis_Countplot.png)  
+*Generated using seaborn library*
+#
+**Scatterplot - Customer Segmentation Using RFM Analysis - Monetary Vs Segment**
+![Scatterplot - Customer Segmentation Using RFM Analysis - Monetary Vs Segment](../5_Prescriptive_Sales_Analysis/Assets/Py_22_Customer_Segmentation_Using_RFM_Analysis_Monetary_Vs_Segment_Scatterplot.png)  
+*Generated using seaborn library*
+#
 
 ### **🔍 Insights**
  - **TBC**.
@@ -259,16 +274,16 @@ End-of-Year Sale|$ 26,798.0|$ 22,311.0|$ 13,361.0|🔻-16.74 %|🔼66.99 %|
 
 ### Dataframe Columns
 - **`customer_reference_id`**: **Self explanatory**.
-- **`Recency`**: **Days since last purchase**.
-- **`Frequency`**: **Number of purchases**.
-- **`Monetary`**: **Total spending**.
+- **`Recency`**: **The number of days since last purchase**.
+- **`Frequency`**: **The number of purchases**.
+- **`Monetary`**: **The total revenue/profit generated**.
 - **`R_Score`**: **Recency score**.
 - **`F_Score`**: **Frequency score**.
 - **`M_Score`**: **Monetary score**.
 - **`RFM_Segment`**: **Recency + Frequency + Monetary score**.
 - **`Cluster`**: **3**, **2**, **1** and **0**.
 - **`predicted_cltv_6m`**: **The predicted CLTV for 6 months**.
-- **`cltv_segment`**:	**: **"Very High"**, **"High"**, **"Medium"**, **"Low"** and **"Very Low"**.
+- **`cltv_segment`**:	**"Very High"**, **"High"**, **"Medium"**, **"Low"** and **"Very Low"**.
 - **`cltv_strategy`**:
     - **Retain + Reward**.
     - **Upsell + Personalise**.
@@ -307,7 +322,7 @@ End-of-Year Sale|$ 26,798.0|$ 22,311.0|$ 13,361.0|🔻-16.74 %|🔼66.99 %|
 - **`median_predicted_cltv_6m`**: **The median predicted CLTV for 6 months**.
 - **`min_predicted_cltv_6m`**: **The minimum predicted CLTV for 6 months**.
 - **`max_predicted_cltv_6m`**: **The maximum predicted CLTV for 6 months**.
-- **`cltv_segment`**:	**: **"Very High"**, **"High"**, **"Medium"**, **"Low"** and **"Very Low"**.
+- **`cltv_segment`**:	**"Very High"**, **"High"**, **"Medium"**, **"Low"** and **"Very Low"**.
 - **`cltv_strategy`**:
     - **Retain + Reward**.
     - **Upsell + Personalise**.
@@ -402,13 +417,13 @@ End-of-Year Sale|$ 26,798.0|$ 22,311.0|$ 13,361.0|🔻-16.74 %|🔼66.99 %|
  - By comparing the cost of acquiring a customer (CAC) and their CLTV, you can assess your ROI.
 
 ### Key Metrics Evaluated
- - **`Response Rate`**
- - **`Cost Per Customer`**
- - **`Expected Response`**
- - **`Expected Revenue`**
- - **`Total Cost`**
- - **`Profit`**
- - **`ROI %`**
+ - **`Response Rate`**.
+ - **`Cost Per Customer`**.
+ - **`Expected Response`**.
+ - **`Expected Revenue`**.
+ - **`Total Cost`**.
+ - **`Profit`**.
+ - **`ROI %`**.
 
 ### 🧮 Financial Math
  - Response Rate = Customer response value to simulated campaign
@@ -437,6 +452,139 @@ End-of-Year Sale|$ 26,798.0|$ 22,311.0|$ 13,361.0|🔻-16.74 %|🔼66.99 %|
 #
 **Dataframe - Campaign Simulation And ROI Estimation Using Predicted CLTV Segments**
 ![Dataframe - Campaign Simulation And ROI Estimation Using Predicted CLTV Segments](../5_Prescriptive_Sales_Analysis/Assets/Py_37_Campaign_Simulation_And_ROI_Estimation_Using_Predicted_CLTV_Segments.png)  
+*Generated using pandas library*
+#
+
+### **🔍 Insights**
+ - **TBC**.
+
+#
+
+### Churn Prediction And Logistic Regression Model
+
+#### What Is The Purpose Of Churn Prediction?
+
+- Finds the **`75th`** or **`95th percentile`** of **`recency`**.
+
+- Flags customers in the **`top 25%`** or **`top 5%`** of **`inactivity`** as **`churned`**.
+
+- Offers flexibility — you can change to **`.quantile(0.80)`** for a more **`aggressive threshold`**.
+
+#### Auto-calculated churn threshold (95th percentile)
+- **`63 days`**.
+
+### Key Metrics Evaluated
+1) Top 10 Customers By CLTV-Days.
+2) Top 10 Customers By CLTV-Months.
+3) Strategic Insights: Correlation Analysis Of Key Metrics.
+4) Recency Distribution.
+5) Churn Threshold.
+6) Top 5 Active Customers.
+7) Top 5 Churned Customers.
+
+### Dataframe Columns
+- **`customer_reference_id`**: **The customer ID**.
+- **`cltv_days`**: **The pedicted total revenue/profit generated over the period of the relationship in days (Short-term campaigns, daily churn modelling..)**.
+- **`cltv_months`**: **The pedicted total revenue/profit generated over the period of the relationship in months (Business forecasting and marketing budgets)**.
+- **`monetary`**: **The total revenue/profit generated**.
+- **`avg_order_value`**: **The mean amount spent on an order**.
+- **`first_purchase`**: **The first purchase**.
+- **`last_purchase`**: **The last purchase**.
+- **`recency`**: **The number of days since last purchase**.
+- **`frequency`**: **The number of purchases**.
+- **`customer_lifespan_days`**: **The period of time in days the customer has been continuously ordering**.
+- **`purchase_freq_daily`**: **The average number of orders placed per day**.
+- **`cltv_tier_days`**: **"Very High"**, **"High"**, **"Medium"**, **"Low"** and **"Very Low"**.
+- **`cltv_tier_months`**: **"Very High"**, **"High"**, **"Medium"**, **"Low"** and **"Very Low"**.
+- **`customer_value`**: 
+  - **"VIP Revenue Drivers"**.
+  - **"High Value Customers"**.
+  - **"Growth Opportunity Customers"**.
+  - **"Low Value Customers"**.
+  - **"Dormant or At-Risk"**.
+- **`recommended_strategy`**: 
+  - **"Prioritise with exclusive perks, early access to launches, loyalty programs, and 1:1 service"**.
+  - **"Upsell premium products, cross-sell related items, reward referrals"**.
+  - **"Educate on product benefits, send tailored content and offers to increase engagement"**.
+  - **"Encourage repeat purchases with discounts or bundle deals, explore churn reasons"**.
+  - **"Re-engagement campaigns, win-back emails, limited-time incentives, or exit surveys"**.
+- **`suggested_channels`**:
+  - **"Email, SMS, Personalised landing"**.
+  - **"Email, Paid Ads, Mobile App"**.
+  - **"Email Series, Blog, Social Media"**.
+  - **"Email, Push Notification"**.
+  - **"Email, Re-targeting Ads"**.
+- **`frequency`**:
+  - **"Weekly"**.
+  - **"Bi-weekly"**.
+  - **"Weekly"**.
+  - **"Monthly"**.
+  - **"Immediate"**.
+- **`churn_status`**: **Active** and **Churned** .
+
+### **🩺 Diagnostics**
+  - Dataframes.
+  - Heatmap.
+  - Histplot.
+  - X.
+
+### 🖼️ Results Snapshot
+
+#
+**Top 10 Customers By CLTV-Days**
+|customer_id|cltv_days|avg_order_value|total_orders|customer_lifespan_days|purchase_freq_daily|cltv_tier_days|customer_value|recommended_strategy|suggested_channels|frequency|
+|-------|-------|---------|--------------|--------|---------|---------------|--------------|--------------------|------|----|
+|4040|$ 10,363.0|416.0|25 |346|0.072|Very High|VIP Revenue Drivers|Prioritise with exclusive perks, early access to launches, loyalty programs, and 1:1 service|Email, SMS, Personalised landing|Weekly|
+|4109|$ 10,021.0|626.0|16|348|0.046|Very High|VIP Revenue Drivers|Prioritise with exclusive perks, early access to launches, loyalty programs, and 1:1 service|Email, SMS, Personalised landing|Weekly|
+|4044|$ 9,321.0|388.0|24|312|0.077|Very High|VIP Revenue Drivers|Prioritise with exclusive perks, early access to launches, loyalty programs, and 1:1 service|Email, SMS, Personalised landing|Weekly|        
+|4108|$ 7,671.0|296.0|26|365|0.071|Very High|VIP Revenue Drivers|Prioritise with exclusive perks, early access to launches, loyalty programs, and 1:1 service|Email, SMS, Personalised landing|Weekly|        
+|4075|$ 7,651.0|274.0|28|358|0.078|Very High|VIP Revenue Drivers|Prioritise with exclusive perks, early access to launches, loyalty programs, and 1:1 service|Email, SMS, Personalised landing|Weekly|        
+|4010|$ 7028.0|292.0|24|339|0.071|Very High|VIP Revenue Drivers|Prioritise with exclusive perks, early access to launches, loyalty programs, and 1:1 service|Email, SMS, Personalised landing|Weekly|      
+|3984|$ 6,912.0|362.0|19|285|0.067|Very High|VIP Revenue Drivers|Prioritise with exclusive perks, early access to launches, loyalty programs, and 1:1 service|Email, SMS, Personalised landing|Weekly|      
+|4103|$ 6,733.0|293.0|23|343|0.067|Very High|VIP Revenue Drivers|Prioritise with exclusive perks, early access to launches, loyalty programs, and 1:1 service|Email, SMS, Personalised landing|Weekly|    
+|4002|$ 6,708.0|258.0|26|321|0.081|Very High|VIP Revenue Drivers|Prioritise with exclusive perks, early access to launches, loyalty programs, and 1:1 service|Email, SMS, Personalised landing|Weekly|       
+|4067|$ 6,703.0|318.0|21|310|0.068|Very High|VIP Revenue Drivers|Prioritise with exclusive perks, early access to launches, loyalty programs, and 1:1 service|Email, SMS, Personalised landing|Weekly|   
+#
+**Top 10 Customers By CLTV-Months**
+|customer_id|cltv_months|avg_order_value|total_orders|customer_lifespan_months|purchase_freq_monthly|cltv_tier_months|customer_value|recommended_strategy|suggested_channels|frequency|
+|-------|-------|---------|--------------|--------|---------|---------------|--------------|--------------------|------|----|
+|4040|$ 10,833.0|416.0|25 |12.0|2.17|Very High|VIP Revenue Drivers|Prioritise with exclusive perks, early access to launches, loyalty programs, and 1:1 service|Email, SMS, Personalised landing|Weekly|
+|4109|$ 10,367.0|626.0|16|12.0|1.38|Very High|VIP Revenue Drivers|Prioritise with exclusive perks, early access to launches, loyalty programs, and 1:1 service|Email, SMS, Personalised landing|Weekly|
+|4044|$ 8,963.0|388.0|24|10.0|2.31|Very High|VIP Revenue Drivers|Prioritise with exclusive perks, early access to launches, loyalty programs, and 1:1 service|Email, SMS, Personalised landing|Weekly|        
+|4075|$ 7,727.0|274.0|28|12.0|2.35|Very High|VIP Revenue Drivers|Prioritise with exclusive perks, early access to launches, loyalty programs, and 1:1 service|Email, SMS, Personalised landing|Weekly|        
+|4108|$ 7,601.0|296.0|26|12.0|2.14|Very High|VIP Revenue Drivers|Prioritise with exclusive perks, early access to launches, loyalty programs, and 1:1 service|Email, SMS, Personalised landing|Weekly|        
+|3984|$ 7240.0|362.0|19|10.0|2.00|Very High|VIP Revenue Drivers|Prioritise with exclusive perks, early access to launches, loyalty programs, and 1:1 service|Email, SMS, Personalised landing|Weekly|      
+|4002|$ 6,896.0|258.0|26|11.0|2.43|Very High|VIP Revenue Drivers|Prioritise with exclusive perks, early access to launches, loyalty programs, and 1:1 service|Email, SMS, Personalised landing|Weekly|      
+|4010|$ 6,809.0|292.0|24|11.0|2.12|Very High|VIP Revenue Drivers|Prioritise with exclusive perks, early access to launches, loyalty programs, and 1:1 service|Email, SMS, Personalised landing|Weekly|    
+|3986|$ 6,677.0|281.0|23|12.0|1.98|Very High|VIP Revenue Drivers|Prioritise with exclusive perks, early access to launches, loyalty programs, and 1:1 service|Email, SMS, Personalised landing|Weekly|       
+|4103|$ 6,478.0|293.0|23|11.0|2.01|Very High|VIP Revenue Drivers|Prioritise with exclusive perks, early access to launches, loyalty programs, and 1:1 service|Email, SMS, Personalised landing|Weekly|                                                                                                             
+#
+
+### 📷 Visualisation
+
+#
+**Barplot - Top 10 Customers By CLTV-Days**
+![Barplot - Top 10 Customers By CLTV-Days](../5_Prescriptive_Sales_Analysis/Assets/Py_23_Top_10_Customers_By_CLTV_Days_Barplot.png)  
+*Generated using seaborn library*
+#
+**Barplot - Top 10 Customers By CLTV-Months**
+![Barplot - Top 10 Customers By CLTV-Months](../5_Prescriptive_Sales_Analysis/Assets/Py_24_Top_10_Customers_By_CLTV_Months_Barplot.png)   
+*Generated using seaborn library*
+#
+**Heatmap - Strategic Insights: Correlation Analysis Of Key Metrics**
+![Heatmap - Strategic Insights: Correlation Analysis Of Key Metrics](../5_Prescriptive_Sales_Analysis/Assets/Py_38_Strategic_Insights_Correlation_Analysis_Of_Key_Metrics_Heatmap.png)   
+*Generated using seaborn library*
+#
+**Histplot - Recency Distribution**
+![Histplot - Recency Distribution](../5_Prescriptive_Sales_Analysis/Assets/Py_39_Recency_Distribution_Histplot.png)   
+*Generated using seaborn library*
+#
+**Dataframe - Top 5 Active Customers**
+![ataframe - Top 5 Active Customers](../5_Prescriptive_Sales_Analysis/Assets/Py_40_Top_5_Active_Customers.png)   
+*Generated using pandas library*
+#
+**Dataframe - Top 5 Churned Customers**
+![ataframe - Top 5 Churned Customers](../5_Prescriptive_Sales_Analysis/Assets/Py_41_Top_5_Inactive_Customers.png)   
 *Generated using pandas library*
 #
 
