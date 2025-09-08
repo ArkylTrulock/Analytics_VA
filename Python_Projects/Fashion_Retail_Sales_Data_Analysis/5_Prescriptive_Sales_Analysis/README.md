@@ -121,11 +121,14 @@ This project focuses on **Prescriptive Analytics** techniques to identify **what
   - Barplot.
 
 ### 🖼️ Results Snapshot
+
+#
 |Promotion|Pre_Sales|During_Sales|Post_Sales|Lift_vs_Pre(%)|Lift_vs_Post(%)|
 |---------|---------|------------|----------|--------------|---------------|
 Summer Sale|0.0|0.0|0.0|N/A|N/A|
 Black Friday|$ 20,474.0|$ 4,263.0|$ 20,689.0|🔻-79.18 %|🔻-79.39 %|
 End-of-Year Sale|$ 26,798.0|$ 22,311.0|$ 13,361.0|🔻-16.74 %|🔼66.99 %|
+#
 
 ### **🔍 Insights:**
 
@@ -200,12 +203,15 @@ End-of-Year Sale|$ 26,798.0|$ 22,311.0|$ 13,361.0|🔻-16.74 %|🔼66.99 %|
   - Scatterplot.
 
 ### 🖼️ Results Snapshot
+
+#
 |Cluster|Recency|Frequency|Customer_Count|Monetary|RFM_Score|Profile Summary|Customer Value|Recommended Strategy|Marketing Channel|
 |-------|-------|---------|--------------|--------|---------|---------------|--------------|--------------------|------|
 |0|13.83|16.69|54|$ 2,039.30|7.04|🔃 New / Promising|🥉 Medium|Nurture campaigns, discounts, product education.|Retargeting Ads, Email, Social media.|
 |1|58.32|17.32|22|$ 2,087.50|4.77|❗At-Risk / Churned|🎁 Low|Re-engagement offers, feedback surveys.|Email reactivation, Discount codes, SMS.|
 |2|12.89|23.71|63|$ 2,679.35|11.11|✅ Loyal Customers|🥈 Medium-High|Early access, product sneak peeks.|SMS, Email drip campaigns, Loyalty app.|
 |3|16.04|23.11|27|$ 6,495.81|11.89|💎 Champions / VIP|🥇 Very High|Exclusive offers, loyalty rewards.|Email, VIP newsletters, App push.|
+#
 
 ### **🔍 Insights**
  - **TBC**.
@@ -301,6 +307,7 @@ End-of-Year Sale|$ 26,798.0|$ 22,311.0|$ 13,361.0|🔻-16.74 %|🔼66.99 %|
   - Dataframes.
  
 ### 🖼️ Results Snapshot
+
 #
 **Dataframe - Predicted 6-Month CLTV - Customer Segmentation Using RFM Analysis With Targeting Strategy And Marketing Channels**
 ![Dataframe - Predicted 6-Month CLTV - Customer Segmentation Using RFM Analysis With Targeting Strategy And Marketing Channels](../5_Prescriptive_Sales_Analysis/Assets/Py_26_Predicted_6_Month_CLTV_Customer_Segmentation_Using_RFM_Analysis_With_T_S_And_M_C.png)  
@@ -526,7 +533,7 @@ End-of-Year Sale|$ 26,798.0|$ 22,311.0|$ 13,361.0|🔻-16.74 %|🔼66.99 %|
   - Dataframes.
   - Heatmap.
   - Histplot.
-  - X.
+
 
 ### 🖼️ Results Snapshot
 
