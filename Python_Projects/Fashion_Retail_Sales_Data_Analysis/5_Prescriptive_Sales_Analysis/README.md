@@ -111,6 +111,10 @@ This project focuses on **Prescriptive Analytics** techniques to identify **what
   - **During Promotion**
   - **Post-Promotion**
 
+### Key Metrics Evaluated
+1) Time-Based Promotional Effectiveness.
+2) Time-Based Promotional Effectiveness With Promotion Overlays.
+
 ### **🩺 Diagnostics**:
   - Line Plots.
  
@@ -518,7 +522,7 @@ End-of-Year Sale|$ 26,798.0|$ 22,311.0|$ 13,361.0|🔻-16.74 %|🔼66.99 %|
 6) Top 5 Active Customers.
 7) Top 5 Churned Customers.
 
-### 🖼️ Auto-calculated churn threshold (95th percentile)
+### 🏗️ Auto-calculated churn threshold (95th percentile)
 
 #
 ```python
@@ -830,7 +834,7 @@ ROC-AUC Score: 100.00%
 #### What Is A/B Testing?
 - A/B testing—also called **`split testing`** or **`bucket testing`**—compares the **`performance`** of **`two versions of content`** to see which one **`appeals more`** to visitors/viewers.
 
-- It **`tests`** a **`control (A) version`** against a **`variant (B) version`** to *8`measure`** which one is **`most successful`*8 based on your **`key metrics`**.
+- It **`tests`** a **`control (A) version`** against a **`variant (B) version`** to **`measure`** which one is **`most successful`** based on your **`key metrics`**.
 
 #### Why is it important?
 - A/B testing helps you **`determine how to provide the best customer experience (CX)`**.
