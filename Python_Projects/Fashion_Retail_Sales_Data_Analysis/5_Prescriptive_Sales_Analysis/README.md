@@ -49,16 +49,34 @@ This project focuses on **Prescriptive Analytics** techniques to identify **what
 - **Support**: The frequency with which an item appears in the dataset. **(`How often the rule occurs in data`)** 
 - **Confidence**: The likelihood that item B is purchased when item A is purchased. **(`Probability of B given A`)**
 - **Lift**: The strength of a rule. **(`measuring how much more likely item B is bought when item A is bought compared to when bought independently`)**
+- Top 10 Product Pairing Recommendations Based On Customer Purchase Behaviour.
+- Top 10 Items Purchased - Association Rules By Lift.
+- Top 10 Items Purchased - Association Rules By Confidence And Lift.
+- Top 10 Items Purchased - Association Rules By Confidence
 
 ### **🩺 Diagnostics**:
-  - Network Plots
-  - Barplots
+  - Dataframe.
+  - Network Plots.
+  - Barplots.
 
-### **🔍 Insights**:
-  - Lift score **`> 1`** indicates a **`strong positive association between items and not likely due to random chance`**.
-  - Confidence score **`> 0.6`** indicates a **`stronger relationship between the antecedent (if purchased) and consequent (will likely be purchased) item, suggesting the rule is more reliable`**.
-  - Support score **`> 0.2`** indicates a **`more frequently occurring itemset in the dataset`**. A lower score indicates a **`less frequently occuring itemset in the dataset`**.
+### 🖼️ Results Snapshot
 
+**Top 10 Product Pairing Recommendations Based On Customer Purchase Behaviour**.
+#
+|customer_reference_id|antecedents|                      consequents|                       support|   confidence|  lift|
+|--|--|--|--|--|--|
+1002120|        (Loafers, Vest, Leggings, Blouse)|            (Dress, Trousers, Camisole)|  0.024096|         1.0|  41.5|
+1002169|              (Dress, Trousers, Camisole)|      (Loafers, Vest, Leggings, Blouse)|  0.024096|         1.0|  41.5|
+1004403|     (Gloves, Onesie, Trousers, Camisole)|             (Jumpsuit, Vest, Tank Top)|  0.024096|         1.0|  41.5|
+1004422|               (Jumpsuit, Vest, Tank Top)|   (Gloves, Onesie, Trousers, Camisole)|  0.024096|         1.0|  41.5|
+1011377|         (Wallet, Blouse, Blazer, Poncho)|     (Handbag, Jeans, Kimono, Cardigan)|  0.024096|         1.0|  41.5|
+1011379|         (Wallet, Kimono, Blazer, Poncho)|     (Blouse, Handbag, Jeans, Cardigan)|  0.024096|         1.0|  41.5|
+1011434|       (Blouse, Handbag, Jeans, Cardigan)|       (Wallet, Kimono, Blazer, Poncho)|  0.024096|         1.0|  41.5|
+1011436|       (Handbag, Jeans, Kimono, Cardigan)|       (Wallet, Blouse, Blazer, Poncho)|  0.024096|         1.0|  41.5|
+1011643|      (Jacket, Blazer, Cardigan, Sandals)|  (Wallet, Handbag, Poncho, Flip-Flops)|  0.024096|         1.0|  41.5|
+1011649|  (Jacket, Handbag, Flip-Flops, Cardigan)|      (Wallet, Blazer, Poncho, Sandals)|  0.024096|         1.0|  41.5|
+#
+ 
 ### 📷 Visualisations
 
 #
@@ -79,6 +97,13 @@ This project focuses on **Prescriptive Analytics** techniques to identify **what
 *Generated using seaborn library*
 #
 
+### **🔍 Insights**:
+  - Lift score **`> 1`** indicates a **`strong positive association between items and not likely due to random chance`**.
+  - Confidence score **`> 0.6`** indicates a **`stronger relationship between the antecedent (if purchased) and consequent (will likely be purchased) item, suggesting the rule is more reliable`**.
+  - Support score **`> 0.2`** indicates a **`more frequently occurring itemset in the dataset`**. A lower score indicates a **`less frequently occuring itemset in the dataset`**.
+
+#
+
 ### 🛒 Time-Based Promotion Effectiveness
 - Analysed impact of promotional events on sales volume
 - Categorised sales into:
@@ -88,12 +113,7 @@ This project focuses on **Prescriptive Analytics** techniques to identify **what
 
 ### **🩺 Diagnostics**:
   - Line Plots.
-
-### **🔍 Insights:**
- - Shaded areas indicate active promotional campaigns.
- - You can observe spikes or trends in sales and ratings during these periods.
- - Helps evaluate campaign success visually.
-
+ 
 ### 📷 Visualisations
 
 #
@@ -104,6 +124,13 @@ This project focuses on **Prescriptive Analytics** techniques to identify **what
 **Lineplot - Time-Based Promotional Effectiveness With Promotion Overlays**
 ![Lineplot - Time-Based Promotional Effectiveness With Promotion Overlays](../5_Prescriptive_Sales_Analysis/Assets/Py_09_Time_Based_Promotional_Effectiveness_Sales_&_Review_Ratings_Linelot.png)  
 *Generated using seaborn library*
+#
+
+### **🔍 Insights:**
+ - Shaded areas indicate active promotional campaigns.
+ - You can observe spikes or trends in sales and ratings during these periods.
+ - Helps evaluate campaign success visually.
+
 #
 
 ### 📉 Sales Lift Analysis (Pre vs During vs Post Promotion)
@@ -122,12 +149,21 @@ This project focuses on **Prescriptive Analytics** techniques to identify **what
 
 ### 🖼️ Results Snapshot
 
+**Sales Lift Analysis: Pre Vs During Vs Post Promotion**.
 #
 |Promotion|Pre_Sales|During_Sales|Post_Sales|Lift_vs_Pre(%)|Lift_vs_Post(%)|
 |---------|---------|------------|----------|--------------|---------------|
 Summer Sale|0.0|0.0|0.0|N/A|N/A|
 Black Friday|$ 20,474.0|$ 4,263.0|$ 20,689.0|🔻-79.18 %|🔻-79.39 %|
 End-of-Year Sale|$ 26,798.0|$ 22,311.0|$ 13,361.0|🔻-16.74 %|🔼66.99 %|
+#
+ 
+### 📷 Visualisation
+
+#
+**Barplot - Sales Lift Analysis: Pre Vs During Vs Post Promotion**
+![Barplot - Sales Lift Analysis: Pre Vs During Vs Post Promotion](../5_Prescriptive_Sales_Analysis/Assets/Py_10_Sales_Lift_Analysis_Pre_Vs_During_Vs_Post_Promotion_Barplot.png)  
+*Generated using seaborn library*
 #
 
 ### **🔍 Insights:**
@@ -136,12 +172,6 @@ End-of-Year Sale|$ 26,798.0|$ 22,311.0|$ 13,361.0|🔻-16.74 %|🔼66.99 %|
 - **Black Friday**: Sales significantly dropped during the promotion compared to both pre and post periods.
 - **End-of-Year Sale**: Slight drop during the promotion vs pre-period, but significantly higher than post-period → demand likely pulled forward.
 
-### 📷 Visualisation
-
-#
-**Barplot - Sales Lift Analysis: Pre Vs During Vs Post Promotion**
-![Barplot - Sales Lift Analysis: Pre Vs During Vs Post Promotion](../5_Prescriptive_Sales_Analysis/Assets/Py_10_Sales_Lift_Analysis_Pre_Vs_During_Vs_Post_Promotion_Barplot.png)  
-*Generated using seaborn library*
 #
 
 ### Customer Segmentation Using RFM Analysis And K-Means Clustering With Targeting Strategy And Marketing Channels
@@ -204,6 +234,7 @@ End-of-Year Sale|$ 26,798.0|$ 22,311.0|$ 13,361.0|🔻-16.74 %|🔼66.99 %|
 
 ### 🖼️ Results Snapshot
 
+**RFM Metric Scores, Customer Count, Customer Value, Profile Summary, Recommended Strategy And Marketing Channel Of KMeans Clusters**.
 #
 |Cluster|Recency|Frequency|Customer_Count|Monetary|RFM_Score|Profile Summary|Customer Value|Recommended Strategy|Marketing Channel|
 |-------|-------|---------|--------------|--------|---------|---------------|--------------|--------------------|------|
@@ -477,9 +508,7 @@ End-of-Year Sale|$ 26,798.0|$ 22,311.0|$ 13,361.0|🔻-16.74 %|🔼66.99 %|
 
 - Offers flexibility — you can change to **`.quantile(0.80)`** for a more **`aggressive threshold`**.
 
-#### Auto-calculated churn threshold (95th percentile)
-- **`63 days`**.
-
+ 
 ### Key Metrics Evaluated
 1) Top 10 Customers By CLTV-Days.
 2) Top 10 Customers By CLTV-Months.
@@ -488,6 +517,55 @@ End-of-Year Sale|$ 26,798.0|$ 22,311.0|$ 13,361.0|🔻-16.74 %|🔼66.99 %|
 5) Churn Threshold.
 6) Top 5 Active Customers.
 7) Top 5 Churned Customers.
+
+### 🖼️ Auto-calculated churn threshold (95th percentile)
+
+#
+```python
+
+# Auto-calculate churn threshold (e.g., 95th percentile)
+auto_churn_threshold = customer_features['recency'].quantile(0.95)
+
+#==#
+
+# Step 9: Apply churn rule
+customer_features['churn_status'] = np.where(customer_features['recency'] > auto_churn_threshold, 1, 0) # 0 = Active, 1 = Churned
+
+#==#
+
+# Step 10: Summary
+print("Reference date:", reference_date.date())
+# print(f"Auto-calculated churn threshold (75th percentile): {int(auto_churn_threshold)} days")
+print(f"\nAuto-calculated churn threshold (95th percentile): {int(auto_churn_threshold)} days")
+print(f'\n{customer_features['churn_status'].value_counts().round(2)}')
+print(f'\n{customer_features['churn_status'].value_counts(normalize=True).rename({0:'Active', 1:'Churned'}).round(2)}')
+
+```
+#
+
+### 🖼️ Results Snapshot
+
+#
+```python
+Reference date: 2023-10-02
+
+Auto-calculated churn threshold (95th percentile): 63 days
+
+churn_status
+0    157
+1      9
+Name: count, dtype: int64
+
+churn_status
+Active     0.95
+Churned    0.05
+
+```
+
+### **🔍 Insights**
+- The churn threshold (95th percentile) is **`63 days`**.
+
+#
 
 ### Dataframe Columns
 - **`customer_reference_id`**: **The customer ID**.
@@ -533,8 +611,7 @@ End-of-Year Sale|$ 26,798.0|$ 22,311.0|$ 13,361.0|🔻-16.74 %|🔼66.99 %|
   - Dataframes.
   - Heatmap.
   - Histplot.
-
-
+  
 ### 🖼️ Results Snapshot
 
 #
@@ -550,7 +627,12 @@ End-of-Year Sale|$ 26,798.0|$ 22,311.0|$ 13,361.0|🔻-16.74 %|🔼66.99 %|
 |3984|$ 6,912.0|362.0|19|285|0.067|Very High|VIP Revenue Drivers|Prioritise with exclusive perks, early access to launches, loyalty programs, and 1:1 service|Email, SMS, Personalised landing|Weekly|      
 |4103|$ 6,733.0|293.0|23|343|0.067|Very High|VIP Revenue Drivers|Prioritise with exclusive perks, early access to launches, loyalty programs, and 1:1 service|Email, SMS, Personalised landing|Weekly|    
 |4002|$ 6,708.0|258.0|26|321|0.081|Very High|VIP Revenue Drivers|Prioritise with exclusive perks, early access to launches, loyalty programs, and 1:1 service|Email, SMS, Personalised landing|Weekly|       
-|4067|$ 6,703.0|318.0|21|310|0.068|Very High|VIP Revenue Drivers|Prioritise with exclusive perks, early access to launches, loyalty programs, and 1:1 service|Email, SMS, Personalised landing|Weekly|   
+|4067|$ 6,703.0|318.0|21|310|0.068|Very High|VIP Revenue Drivers|Prioritise with exclusive perks, early access to launches, loyalty programs, and 1:1 service|Email, SMS, Personalised landing|Weekly|
+#
+
+### **🔍 Insights**
+ - **TBC**.
+  
 #
 **Top 10 Customers By CLTV-Months**
 |customer_id|cltv_months|avg_order_value|total_orders|customer_lifespan_months|purchase_freq_monthly|cltv_tier_months|customer_value|recommended_strategy|suggested_channels|frequency|
@@ -565,6 +647,11 @@ End-of-Year Sale|$ 26,798.0|$ 22,311.0|$ 13,361.0|🔻-16.74 %|🔼66.99 %|
 |4010|$ 6,809.0|292.0|24|11.0|2.12|Very High|VIP Revenue Drivers|Prioritise with exclusive perks, early access to launches, loyalty programs, and 1:1 service|Email, SMS, Personalised landing|Weekly|    
 |3986|$ 6,677.0|281.0|23|12.0|1.98|Very High|VIP Revenue Drivers|Prioritise with exclusive perks, early access to launches, loyalty programs, and 1:1 service|Email, SMS, Personalised landing|Weekly|       
 |4103|$ 6,478.0|293.0|23|11.0|2.01|Very High|VIP Revenue Drivers|Prioritise with exclusive perks, early access to launches, loyalty programs, and 1:1 service|Email, SMS, Personalised landing|Weekly|                                                                                                             
+#
+
+### **🔍 Insights**
+ - **TBC**.
+
 #
 
 ### 📷 Visualisation
@@ -587,11 +674,11 @@ End-of-Year Sale|$ 26,798.0|$ 22,311.0|$ 13,361.0|🔻-16.74 %|🔼66.99 %|
 *Generated using seaborn library*
 #
 **Dataframe - Top 5 Active Customers**
-![ataframe - Top 5 Active Customers](../5_Prescriptive_Sales_Analysis/Assets/Py_40_Top_5_Active_Customers.png)   
+![Dataframe - Top 5 Active Customers](../5_Prescriptive_Sales_Analysis/Assets/Py_40_Top_5_Active_Customers.png)   
 *Generated using pandas library*
 #
 **Dataframe - Top 5 Churned Customers**
-![ataframe - Top 5 Churned Customers](../5_Prescriptive_Sales_Analysis/Assets/Py_41_Top_5_Inactive_Customers.png)   
+![Dataframe - Top 5 Churned Customers](../5_Prescriptive_Sales_Analysis/Assets/Py_41_Top_5_Inactive_Customers.png)   
 *Generated using pandas library*
 #
 
@@ -600,13 +687,342 @@ End-of-Year Sale|$ 26,798.0|$ 22,311.0|$ 13,361.0|🔻-16.74 %|🔼66.99 %|
 
 #
 
-### 🎯 Campaign Optimisation
-- Targeting rules built using RFM + CLTV outputs
-- Simulated campaign strategies for uplift impact
-- Laid foundation for **A/B testing** and **Uplift Modeling**
+### 🏗️ Logistic Regression Model
+
+#
+```python
+
+# Prepare Features for Modeling - Logistic Regression Model
+
+# Drop any non-numeric or ID columns that shouldn't be part of training
+X = customer_features[['customer_reference_id', 'cltv_days', 'avg_order_value', 
+                       'monetary', 'recency', 'frequency',  
+                       'customer_lifespan_days', 'purchase_freq_daily']] # You can expand to include RFM, CLTV, etc.
+y = customer_features['churn_status']
+
+#==#
+
+# Train-Test Split
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42, stratify=y)
+print (f'Training data (70%)|(# Obs, # Cols): \t{X_train.shape, y_train.shape}') # Seen data. Observations, Number of columns.
+print (f'Test data (30%)|(# Obs, # Cols):  \t{X_test.shape, y_test.shape}') # Unseen data. Observations, Number of columns.
+
+#==#
+
+# Build and Train Logistic Regression Model
+
+# Instantiate the model
+logreg_model = LogisticRegression(max_iter=1000)
+# Reasons for using this model:
+# Increases the maximum number of iterations (default is 100). 
+# Good for large or complex datasets where the model needs more iterations to find the best solution.
+
+# Fit the model with data
+logreg_model.fit(X_train, y_train)
+
+#==#
+
+# Build and Train Logistic Regression Model (Random Seed)
+
+# # Instantiate the model
+# logreg_model = LogisticRegression(random_state=16) 
+# # Reasons for using this model:
+# # Sets the random seed for reproducibility. 
+# # Good for ensuring your results are reproducible (e.g., in experiments or production code).
+
+# # # Fit the model with data
+# logreg_model.fit(X_train, y_train)
+
+#==#
+
+# Evaluate Model
+# Predictions
+y_pred = logreg_model.predict(X_test)
+y_proba = logreg_model.predict_proba(X_test)[:, 1]
+
+#==#
+
+# Confusion matrix
+print(f'Confusion Matrix:\n{confusion_matrix(y_test, y_pred)}')
+
+# Classification Report
+print(f'Classification Report:{classification_report(y_test, y_pred)}')
+
+# ROC-AUC Score
+print(f'ROC-AUC Score: {roc_auc_score(y_test, y_proba):.2%}')
+
+```
+#
+
+### 🖼️ Results Snapshot
+
+#
+```python
+
+Training data (70%)|(# Obs, # Cols): 	((116, 8), (116,))
+Test data (30%)|(# Obs, # Cols):  	((50, 8), (50,))
+Confusion Matrix:
+[[46  1]
+ [ 0  3]]
+Classification Report:              precision    recall  f1-score   support
+
+           0       1.00      0.98      0.99        47
+           1       0.75      1.00      0.86         3
+
+    accuracy                           0.98        50
+   macro avg       0.88      0.99      0.92        50
+weighted avg       0.98      0.98      0.98        50
+
+ROC-AUC Score: 100.00%
+
+```
+#
+
+### **🔍 Insights**
+
+**`Confusion Matrix:`**
+- **You have two classes `0` and `1`.** 
+
+- **`Diagonal values` represent `accurate predictions`, while `non-diagonal elements` are `inaccurate predictions`.** 
+
+- **In the output, `46` and `3` are `actual predictions`, and `0` and `1` are `incorrect predictions`.**
+
+**`Classification Report:`**
+
+- **`Accuracy`: We have a classification report accuracy of `100%`. The model has excellent prediction accuracy.**
+
+- **`Precision`: We have a classification report precision score of `100%`. The model has excellent prediction precision.**
+
+- **`Recall`: We have a classification report recall score of `100%`. The model is able to identify `0:Active` & `1:churned` in our test set `100%` of the time .**
+
+#
+
+### 📷 Visualisation
+
+#
+**Lineplot - ROC Curve - Logistic Regressions**
+![Lineplot - ROC Curve - Logistic Regression](../5_Prescriptive_Sales_Analysis/Assets/Py_43_ROC_Curve_Logistic_Regression_Linelot.png)  
+*Generated using seaborn library*
+#
+
+### **🔍 Insights**
+
+**`Area Under the Receiver Operating Characteristic Curve (AUC-ROC)`**:
+
+- The model scored an AUC-ROC score of **`100%`**!.
+
+- **`AUC-ROC`** **`measures how well`** the **`predicted probabilities distinguish between two classes`** e.g `(positive/negative, disease/no disease)`. In our case **`0:Active`** & **`1:churned`**.
+
+- A **`higher AUC means a better model at distinguishing between classes`**.
+
+- **`The area under the ROC curve (AUC) is a single value that summarises the overall performance of the model`**.
+
+- An AUC of **`1`** represents a **`perfect classifier`**, while an AUC of **`0.5`** indicates **`random guessing`**.
+
+**`AUC-ROC Scoring Overview`**:
+
+![alt text](<Screenshot 2025-09-09 105557.png>)
+
+#
+
+### (A/B), (A/B/C) And (A/B/C/D) Testing
+
+#### What Is A/B Testing?
+- A/B testing—also called **`split testing`** or **`bucket testing`**—compares the **`performance`** of **`two versions of content`** to see which one **`appeals more`** to visitors/viewers.
+
+- It **`tests`** a **`control (A) version`** against a **`variant (B) version`** to *8`measure`** which one is **`most successful`*8 based on your **`key metrics`**.
+
+#### Why is it important?
+- A/B testing helps you **`determine how to provide the best customer experience (CX)`**.
+
+- It plays an **`important`** role in **`campaign management`** since it helps **`determine`** what **`is`** and **`isn’t working`**.
+
+- It shows what your **`audience`** is **`interested`** in and **`responds`** to.
+
+- It can help you see which element of your **`marketing strategy`** has the **`biggest impact`**, which one **`needs improvement`**, and which one **`needs to be dropped`** altogether.
+
+### Key Metrics Evaluated
+1) A/B Test Simulation: Based On Existing Features.
+2) A/B Test Simulation: Response Rate (%) Comparison.
+3) A/B Test: Measuring Incremental Impact Of Marketing Treatment On Customer Response.
+4) A/B Test - Uplift (%)  By CLTV Tier And Churn Status.
+
+### **🩺 Diagnostics**
+  - Dataframes.
+  - Barplots.
+  - Heatmap.
+
+### 📷 Visualisation
+
+#
+**Dataframe - A/B Test Simulation: Based On Existing Features**
+![Dataframe - A/B Test Simulation (Based On Existing Features)](../5_Prescriptive_Sales_Analysis/Assets/Py_44_A_B_Test_Simulation_Based_On_Existing_Features.png)  
+*Generated using pandas library*
+#
+**Dataframe - A/B Test Simulation: Response Rate (%) Comparison**
+![Dataframe - A/B Test Simulation: Response Rate (%) Comparison](../5_Prescriptive_Sales_Analysis/Assets/Py_45_Simulated_AB_Test_Response_Rate_(%25)_Comparison.png)   
+*Generated using pandas library*
+#
+**Barplot - A/B Test Simulation: Response Rate (%) Comparison**
+![Barplot - A/B Test Simulation: Response Rate (%) Comparison](../5_Prescriptive_Sales_Analysis/Assets/Py_46_AB_Test_Simulation_Response_Rate_Comparison_Barplot.png)   
+*Generated using seaborn library*
+#
+**Dataframe - A/B Test: Measuring Incremental Impact Of Marketing Treatment On Customer Response**
+![Dataframe - A/B Test: Measuring Incremental Impact Of Marketing Treatment On Customer Response](../5_Prescriptive_Sales_Analysis/Assets/Py_47_AB_Test_Measuring_Incremental_Impact_Of_Marketing_Treatment_On_Customer_Response.png)  
+*Generated using pandas library*
+#
+**Barplot - A/B Test: Measuring Incremental Impact Of Marketing Treatment On Customer Response**
+![Barplot - A/B Test: Measuring Incremental Impact Of Marketing Treatment On Customer Response](../5_Prescriptive_Sales_Analysis/Assets/Py_48_AB_Test_Measuring_Incremental_Impact_Of_Marketing_Treatment_On_Customer_Response_Barplot.png)  
+*Generated using seaborn library*
+#
+**Dataframe - A/B Test - Uplift (%)  By CLTV Tier And Churn Status**
+![Dataframe - A/B Test - Uplift (%)  By CLTV Tier And Churn Status](../5_Prescriptive_Sales_Analysis/Assets/Py_49_AB_Test_Uplift_(%25)_By_CLTV_Tier_And_Churn_Status.png)  
+*Generated using pandas library*
+#
+**Barplot - A/B Test - Uplift (%)  By CLTV Tier And Churn Status**
+![Barplot - A/B Test - Uplift (%)  By CLTV Tier And Churn Status](../5_Prescriptive_Sales_Analysis/Assets/Py_50_A_B_Test_Uplift_Percentage_By_CLTV_Tier_Days_And_Churn_Status_Barplot.png)  
+*Generated using seaborn library*
+#
+**Heatmap - A/B Test - Uplift (%)  By CLTV Tier And Churn Status**
+![Heatmap - A/B Test - Uplift (%)  By CLTV Tier And Churn Status](../5_Prescriptive_Sales_Analysis/Assets/Py_51_AB_Test_Uplift_Percentage_By_CLTV_Tier_Days_And_Churn_Status_Heatmap.png)  
+*Generated using seaborn library*
+#
+
+### **🔍 Insights**
+ - **TBC**.
+
+#
+
+### A/B Test - Qini Curve
+
+#### What Is The Qini Curve?
+- A Qini curve is a **`visualisation tool`** used in **`uplift modeling`** to **`assess the effectiveness of treatment targeting strategies`**.
+
+- It plots the **`cumulative gain (or uplift)`** achieved by **`targeting a certain percentage of the population`**, compared to **`random targeting`**.
+
+#### Why is it important?
+- This helps in **`understanding how well a model can identify individuals`** who will **`respond positively`** to a treatment, allowing for **`more efficient resource allocation`**.
+
+  - Imagine you have a marketing campaign and want to know which customers are most likely to respond to it.
+  - A Qini curve helps you **`visualise how well your targeting strategy (e.g., using a machine learning model) performs`** compared to **`simply picking customers at random`**.
+
+- **`Example Of A Qini Curve`**:
+
+![alt text](<Screenshot 2025-06-30 113838.png>)
+
+#### How It Works?
+**1. `Uplift Modeling`**:
+- Uplift modeling aims to identify the **`"persuadables"`** – individuals whose **`behavior`** is **`most likely to be influenced`** by a **`treatment`** (`like a marketing campaign`).
+
+**2. `Ranking Customers`**:
+- A model predicts the **`"uplift score"`** for each customer, which represents the **`likelihood of a positive response due to the treatment`**.
+
+**3. `Creating the Curve`**:
+- The Qini curve plots the **`cumulative gain (e.g., extra conversions)`** achieved by **`targeting the top N% of customers based on their uplift scores`**, against the **`percentage of the population targeted`**.
+
+**4. `Interpreting the Curve`**:
+- A **`steeper curve at the beginning`** indicates a **`better targeting strategy`**, meaning the **`model is effectively identifying`** individuals who **`will respond well`** to the treatment early on.
+
+**5. `Comparing Models`**:
+- The Qini curve can be used to **`compare the performance of different uplift models`** *or* **`targeting strategies`**.
+
+**`Key Concepts`**:
+- **`Uplift`**: **The incremental impact of a treatment on an individual**.
+- **`Targeting`**: **Selecting specific individuals for treatment based on their uplift scores**.
+- **`Gain`**: **The benefit or positive outcome achieved by the treatment**.
+
+### **🩺 Diagnostics**
+  - Lineplot.
+
+### 📷 Visualisation
+
+#
+**Lineplot - A/B Test - Qini Curve: Incremental Impact Vs Random**
+![Lineplot - A/B Test - Qini Curve: Incremental Impact Vs Random](../5_Prescriptive_Sales_Analysis/Assets/Py_52_AB_Test_Qini%20Curve_Incremental_Impact_Vs_Random_Line_Plot.png)  
+*Generated using seaborn library*
+#
+
+### **🔍 Insights**
+- The **`more the blue curve rises above the dashed line`**, the **`better your (future) uplift model at picking customers who truly benefit`**.
+
+- If you see **`strong early lift`**, you can **`reduce campaign size`** and **`still capture most of the incremental responses`**.
+
+#
+
+### (A/B/C/D) Testing
+
+#### What Is A/B/C/D Testing?
+- A/B/C/D testing, also known as **`multivariate testing`**, is a method used to compare **`multiple versions`** of a webpage, email, or other content to **`see which performs best`**.
+
+- It is an **`extension of A/B testing`**, which **`compares only two versions (A and B)`**.
+
+#### Why is it important?
+- In A/B/C/D testing, **`several variations`** **`(A, B, C, and potentially D)`** are **`tested simultaneously`** to **`identify the most effective one`**.
+
+### Key Metrics Evaluated
+1) A/B/C/D Test - Calculating Response Rates (%) By Campaigns And Uplift (%) Vs Control.
+
+### **🩺 Diagnostics**
+  - Dataframe.
+  - Barplot.
+
+### 📷 Visualisation
+
+#
+**Dataframe - A/B/C/D Test - Calculating Response Rates (%) By Campaigns And Uplift (%) Vs Control**
+![Dataframe - A/B/C/D Test - Calculating Response Rates (%) By Campaigns And Uplift (%) Vs Control](../5_Prescriptive_Sales_Analysis/Assets/Py_53_ABCD_Test_Calculating_Response_Rates_(%25)_By_Campaigns_And_Uplift_(%25)_Vs_Control.png)  
+*Generated using pandas library*
+#
+**Barplot - A/B/C/D Test - Uplift (%) Vs Control By Campaign**
+![Barplot - A/B/C/D Test - Uplift (%) Vs Control By Campaign](../5_Prescriptive_Sales_Analysis/Assets/Py_54_ABCD_Test_Uplift_Percentage_Vs_Control_By_Campaign_Barplot.png)   
+*Generated using seaborn library*
+#
+
+### **🔍 Insights**
+ - **TBC**.
+
+#
+
+### (A/B/C) Testing
+
+#### What Is A/B/C Testing?
+- A/B/C testing is an experiment where you **`compare three or more versions`** of something to **`determine which performs best`**. 
+
+- It is an **`extension of A/B testing`**, which **`compares only two versions`**.
+
+#### Why is it important?
+- A/B/C testing is useful for **`comparing a control group against multiple variations`** to see which **`drives the best results`**.
+
+### Key Metrics Evaluated
+1) A/B/C Test - Qini Curve Per Campaign With ROI Benchmarks (Randon Assignment Version).
+2) A/B/C Test - Qini Curve Per Campaign — Simulated Response By Personalised Score With ROI Benchmarks (CLTV-Tiered Assignment Version).
+
+### **🩺 Diagnostics**
+  - Lineplots.
+ 
+### 📷 Visualisation
+
+#
+**Lineplot - A/B/C Test - Qini Curve Per Campaign With ROI Benchmarks (Randon Assignment Version)**
+![Lineplot - A/B/C Test - Qini Curve Per Campaign With ROI Benchmarks (Randon Assignment Version)](../5_Prescriptive_Sales_Analysis/Assets/Py_55_ABC_Test_Qini_Curve_Per_Campaign_With_ROI_Benchmarks_Random_Assignment_Version_Line_Plot.png)  
+*Generated using seaborn library*
+#
+**Lineplot - A/B/C Test - Qini Curve Per Campaign — Simulated Response By Personalised Score With ROI Benchmarks (CLTV-Tiered Assignment Version)**
+![Lineplot - A/B/C Test - Qini Curve Per Campaign — Simulated Response By Personalised Score With ROI Benchmarks (CLTV-Tiered Assignment Version)](../5_Prescriptive_Sales_Analysis/Assets/Py_56_ABC_Test_Qini_Curve_Per_Campaign_SR_By_PS_With_ROI_Benchmarks_Random_CLTV_Tiered_Asmt_Version_Line_Plot.png)   
+*Generated using seaborn library*
+#
+
+### **🔍 Insights**
+ - **TBC**.
+
+#
+
+### 🎯 Final Thoughts
+- **TBC**.
 
 #
 
 ## 📬 Contact
 *Built by [Arkyl Trulock](https://github.com/ArkylTrulock)*  
-For collaborations or feedback: X@gmail.com 
+For collaborations or feedback: X@gmail.com
+
