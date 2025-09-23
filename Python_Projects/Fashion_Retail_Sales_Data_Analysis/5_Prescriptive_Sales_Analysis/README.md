@@ -665,21 +665,110 @@ Churned    0.05
 ![Barplot - Top 10 Customers By CLTV-Days](../5_Prescriptive_Sales_Analysis/Assets/Py_23_Top_10_Customers_By_CLTV_Days_Barplot.png)  
 *Generated using seaborn library*
 #
+
+### **🔍 Insights**
+ 
+- **Key Insights & Interpretations:**.
+
+
+- **Trends And Implications:**.
+
+
+- **Actionable Takeaways:**.
+
+
+#
 **Barplot - Top 10 Customers By CLTV-Months**
 ![Barplot - Top 10 Customers By CLTV-Months](../5_Prescriptive_Sales_Analysis/Assets/Py_24_Top_10_Customers_By_CLTV_Months_Barplot.png)   
 *Generated using seaborn library*
+#
+
+### **🔍 Insights**
+ 
+- **Key Insights & Interpretations:**.
+  - Customers 4040 and 4109 have the highest CLTV, each contributing over $10,000, highlighting their significant value.
+  - The top 10 customers have CLTV values ranging from approximately $6,478 to $10,833, indicating diverse levels of engagement.
+  - There is a noticeable drop in CLTV after the top two customers, suggesting a concentration of high value at the top.
+
+- **Trends And Implications:**.
+  - The high CLTV of the top customers underscores the importance of retention strategies to maintain this revenue stream.
+  - The drop in CLTV between the top two and other customers suggests opportunities to uplift the lower cohort to similar levels.
+  - Recognising spending behavior differences can assist in creating tailored engagement and upselling strategies.
+
+- **Actionable Takeaways:**.
+  - Focus on personalised retention campaigns for the top two customers to ensure continued loyalty.
+  - Develop strategies to enhance engagement for customers below the top two to elevate their CLTV further.
+  - Consider segmenting customers to offer targeted promotions that resonate with individual spending habits.
+
 #
 **Heatmap - Strategic Insights: Correlation Analysis Of Key Metrics**
 ![Heatmap - Strategic Insights: Correlation Analysis Of Key Metrics](../5_Prescriptive_Sales_Analysis/Assets/Py_38_Strategic_Insights_Correlation_Analysis_Of_Key_Metrics_Heatmap.png)   
 *Generated using seaborn library*
 #
+
+### **🔍 Insights**
+ 
+- **Key Insights & Interpretations:**.
+  - There is a strong positive correlation between monetary value and average order value (0.91), indicating that higher spending customers also tend to make larger purchases.
+  - Frequency and purchase frequency daily show a high correlation (0.95), suggesting frequent buyers maintain consistent purchasing patterns.
+  - Recency has a negative correlation with customer lifespan days (-0.79), meaning recent purchases are less common among long-term customers.
+
+- **Trends And Implications:**.
+  - The strong link between monetary and order value emphasizes the importance of focusing on high spenders for revenue growth.
+  - High correlation in purchase frequency highlights the need to sustain engagement with frequent buyers to maintain sales volume.
+  - The negative correlation of recency and lifespan suggests segments with former long engagement might require different re-engagement strategies.
+
+- **Actionable Takeaways:**.
+  - Prioritise marketing efforts toward customers with high average order values to maximize revenue potential.
+  - Maintain and enhance communication with frequent buyers to reinforce engagement and loyalty.
+  - Develop targeted reactivation campaigns for long-term customers to increase recency and foster continued loyalty.
+
+#
 **Histplot - Recency Distribution**
 ![Histplot - Recency Distribution](../5_Prescriptive_Sales_Analysis/Assets/Py_39_Recency_Distribution_Histplot.png)   
 *Generated using seaborn library*
 #
+
+### **🔍 Insights**
+ 
+- **Key Insights & Interpretations:**.
+  - The majority of customers have made a purchase within the last 5 days, with 36.75% in this recency category.
+  - The median falls at 12 days, indicating half of the customer base has purchased within this timeframe.
+  - There is a sharp decline in customer numbers as recency increases beyond 26 days.
+
+- **Trends And Implications:**.
+  - Most customers are engaging frequently, showing strong short-term retention and recent activity.
+  - The quick drop-off in numbers after the median suggests a need for strategies to keep customers engaged beyond two weeks.
+  - Understanding the behavior of less frequent customers could improve long-term retention efforts.
+
+- **Actionable Takeaways:**.
+  - Capitalise on strong short-term engagement by reinforcing loyalty programs or exclusive offers within the first few weeks.
+  - Develop re-engagement campaigns targeting customers in the 20-40 day range to prevent falling engagement.
+  - Analyse customer segments with recency beyond 26 days to identify barriers to more frequent purchases.
+
+#
 **Dataframe - Top 5 Active Customers**
 ![Dataframe - Top 5 Active Customers](../5_Prescriptive_Sales_Analysis/Assets/Py_40_Top_5_Active_Customers.png)   
 *Generated using pandas library*
+#
+
+### **🔍 Insights**
+ 
+- **Key Insights & Interpretations:**.
+  - The top active customers all fall into the "Very High" CLTV tier, indicating significant engagement and value.
+  - Their average order values range from 274 to 626, showing diverse purchasing behaviors within high-value segments.
+  - Recency is strong across most customers, with recent purchases indicating ongoing engagement.
+
+- **Trends And Implications:**.
+  - Consistent high CLTV suggests these customers are important for sustaining business revenue and growth.
+  - The variation in average order value might imply different needs or preferences that can be catered to individually.
+  - The overall high purchase frequency demonstrates effective retention strategies encouraging repeat purchases.
+
+- **Actionable Takeaways:**.
+  - Continue to nurture these high-value customers with personalized offers to maintain engagement and loyalty.
+  - Analyse individual purchasing patterns to tailor marketing and product recommendations effectively.
+  - Ensure communication remains consistent and relevant to sustain their high levels of activity and prevent churn.
+
 #
 **Dataframe - Top 5 Churned Customers**
 ![Dataframe - Top 5 Churned Customers](../5_Prescriptive_Sales_Analysis/Assets/Py_41_Top_5_Inactive_Customers.png)   
@@ -687,7 +776,21 @@ Churned    0.05
 #
 
 ### **🔍 Insights**
- - **TBC**.
+ 
+- **Key Insights & Interpretations:**.
+  - The top inactive customers have varying CLTV tiers, with the highest monetary value customer at $5,666 who has recently churned.
+  - Recency and frequency metrics show all five customers have not engaged recently, contributing to their churn status.
+  - Average order values vary significantly, suggesting different spending behaviors among inactive customers.
+
+- **Trends And Implications:**.
+  - High monetary value customers are still churning, indicating potential gaps in retention strategies for valuable segments.
+  - The recency of their last purchases suggests a need for more frequent engagement to prevent future churn.
+  - Differing average order values imply that personalized strategies might be needed based on spending habits.
+
+- **Actionable Takeaways:**.
+  - Implement targeted re-engagement campaigns for high CLTV customers to recover lost value.
+  - Increase communication frequency to ensure all tiers of customers remain engaged and active.
+  - Develop personalized offers or incentives based on past spending behavior to encourage repeat purchases.
 
 #
 
@@ -871,6 +974,25 @@ ROC-AUC Score: 100.00%
 ![Barplot - A/B Test Simulation: Response Rate (%) Comparison](../5_Prescriptive_Sales_Analysis/Assets/Py_46_AB_Test_Simulation_Response_Rate_Comparison_Barplot.png)   
 *Generated using seaborn library*
 #
+
+### **🔍 Insights**
+ 
+- **Key Insights & Interpretations:**.
+  - The treatment group has a high response rate of 82%, compared to the control group, which shows no response.
+  - This significant difference indicates that the treatment was highly effective in driving engagement.
+  - The data suggests that the treatment approach resonated well with the target audience.
+
+- **Trends And Implications:**.
+  - The strong response from the treatment group implies that the strategy is effective and should be explored further.
+  - The lack of response in the control suggests that the treatment differs significantly in approach or value proposition.
+  - Understanding the key elements of the treatment can help replicate success in future campaigns.
+
+- **Actionable Takeaways:**.
+  - Expand the treatment strategy to other customer segments to increase overall response rates.
+  - Analyse what specific factors in the treatment contributed to the high engagement to enhance future interventions.
+  - Consider using insights from the treatment's success to improve or redesign strategies for the control group.
+
+#
 **Dataframe - A/B Test: Measuring Incremental Impact Of Marketing Treatment On Customer Response**
 ![Dataframe - A/B Test: Measuring Incremental Impact Of Marketing Treatment On Customer Response](../5_Prescriptive_Sales_Analysis/Assets/Py_47_AB_Test_Measuring_Incremental_Impact_Of_Marketing_Treatment_On_Customer_Response.png)  
 *Generated using pandas library*
@@ -878,6 +1000,25 @@ ROC-AUC Score: 100.00%
 **Barplot - A/B Test: Measuring Incremental Impact Of Marketing Treatment On Customer Response**
 ![Barplot - A/B Test: Measuring Incremental Impact Of Marketing Treatment On Customer Response](../5_Prescriptive_Sales_Analysis/Assets/Py_48_AB_Test_Measuring_Incremental_Impact_Of_Marketing_Treatment_On_Customer_Response_Barplot.png)  
 *Generated using seaborn library*
+#
+
+### **🔍 Insights**
+ 
+- **Key Insights & Interpretations:**.
+  - The control group has a higher response rate of 15.38% compared to the treatment group's 14.77%.
+  - There is a slight negative uplift of -0.6% from the treatment, suggesting the intervention was not effective.
+  - This indicates that the treatment may not have been well-received or properly aligned with customer expectations.
+
+- **Trends And Implications:**.
+  - The control group outperforming the treatment highlights the importance of evaluating current strategies versus new interventions.
+  - The negative uplift suggests potential issues with the treatment's design, message, or delivery.
+  - Understanding why the control group performed better can inform future adjustments and strategies.
+
+- **Actionable Takeaways:**.
+  - Review and analyse the treatment strategy to identify elements that could be causing the negative response.
+  - Consider conducting qualitative research to gather insights on how to improve the intervention.
+  - Test modified versions of the treatment to identify improvements that can enhance response rates.
+
 #
 **Dataframe - A/B Test - Uplift (%)  By CLTV Tier And Churn Status**
 ![Dataframe - A/B Test - Uplift (%)  By CLTV Tier And Churn Status](../5_Prescriptive_Sales_Analysis/Assets/Py_49_AB_Test_Uplift_(%25)_By_CLTV_Tier_And_Churn_Status.png)  
@@ -893,7 +1034,21 @@ ROC-AUC Score: 100.00%
 #
 
 ### **🔍 Insights**
- - **TBC**.
+ 
+- **Key Insights & Interpretations:**.
+  - The "Very Low" CLTV tier with churned status shows a strong uplift of 50%, indicating successful re-engagement efforts.
+  - Active customers in the "Medium" tier exhibit some positive uplift at 8.10%, suggesting moderate effectiveness in engagement.
+  - Negative uplift is seen in several active tiers, especially "Low" (-17.32%) and "Very High" (-10.53%), highlighting areas of concern.
+
+- **Trends And Implications:**.
+  - Churned customers with low CLTV respond well to strategic interventions, indicating potential for recovery.
+  - Active customers are not consistently benefiting, particularly in "Low" and "Very High" tiers, pointing to a mismatch in offerings or communication.
+  - The mixed results suggest varying effectiveness of strategies across different customer segments, necessitating tailored approaches.
+
+- **Actionable Takeaways:**.
+  - Focus on maintaining and enhancing strategies for re-engaging churned customers in the "Very Low" tier.
+  - Reevaluate and refine approaches for active "Low" and "Very High" segments to improve engagement and avoid negative uplift.
+  - Conduct deeper analysis into medium-tier strategies to further enhance their positive, yet modest, effectiveness.
 
 #
 
@@ -983,7 +1138,21 @@ ROC-AUC Score: 100.00%
 #
 
 ### **🔍 Insights**
- - **TBC**.
+ 
+- **Key Insights & Interpretations:**.
+  - Campaign C has the highest response rate of 15.00%, with an uplift of 2.18% compared to the control group.
+  - Campaign A shows a negative uplift of -3.06%, indicating underperformance against the control.
+  - Campaign B performs similarly to the control, with a minor uplift of 0.22%.
+
+- **Trends And Implications:**.
+  - Campaign C appears most effective, suggesting its approach resonates well with the audience.
+  - Campaign A's negative performance indicates potential issues with targeting or message alignment.
+  - The minimal difference between Campaign B and the control suggests it may not significantly impact outcomes.
+
+- **Actionable Takeaways:**.
+  - Emulate successful strategies from Campaign C in other campaigns to improve overall response rates.
+  - Analyse and rectify Campaign A's strategy to address its underperformance.
+  - Reassess Campaign B for opportunities to enhance its effectiveness beyond control group results.
 
 #
 
@@ -1011,13 +1180,46 @@ ROC-AUC Score: 100.00%
 ![Lineplot - A/B/C Test - Qini Curve Per Campaign With ROI Benchmarks (Randon Assignment Version)](../5_Prescriptive_Sales_Analysis/Assets/Py_55_ABC_Test_Qini_Curve_Per_Campaign_With_ROI_Benchmarks_Random_Assignment_Version_Line_Plot.png)  
 *Generated using seaborn library*
 #
+
+### **🔍 Insights**
+ 
+- **Key Insights & Interpretations:**.
+  - Campaign C shows the highest performance, with a cumulative uplift of 23.12%, exceeding the 10% benchmark.
+  - Campaign A achieves moderate success, crossing the 10% benchmark with an uplift of 11.58%.
+  - Campaign B underperforms, showing a negative uplift of -7.26%, indicating ineffective targeting or execution.
+
+- **Trends And Implications:**.
+  - The data suggests Campaign C is highly effective, potentially due to targeted strategies or appealing content.
+  - Campaigns that exceed the 10% benchmark can be considered successful, guiding future campaign strategies.
+  - The negative performance of Campaign B indicates a need to reassess and adjust its approach for better results.
+
+- **Actionable Takeaways:**.
+  - Focus on expanding or replicating strategies from Campaign C to improve overall performance.
+  - Analyse Campaign A for elements that could be optimised to achieve even higher uplift.
+  - Conduct a thorough review of Campaign B to identify weaknesses and implement corrective measures.
+
+#
 **Lineplot - A/B/C Test - Qini Curve Per Campaign — Simulated Response By Personalised Score With ROI Benchmarks (CLTV-Tiered Assignment Version)**
 ![Lineplot - A/B/C Test - Qini Curve Per Campaign — Simulated Response By Personalised Score With ROI Benchmarks (CLTV-Tiered Assignment Version)](../5_Prescriptive_Sales_Analysis/Assets/Py_56_ABC_Test_Qini_Curve_Per_Campaign_SR_By_PS_With_ROI_Benchmarks_Random_CLTV_Tiered_Asmt_Version_Line_Plot.png)   
 *Generated using seaborn library*
 #
 
 ### **🔍 Insights**
- - **TBC**.
+ 
+- **Key Insights & Interpretations:**.
+  - Campaign C performs best with a maximum cumulative uplift of 19.23%, surpassing the 10% benchmark.
+  - Campaign B also exceeds the benchmark with a 12.78% uplift, indicating effective strategies.
+  - Campaign A struggles, showing no total uplift and peaking negatively at -5.56%.
+
+- **Trends And Implications:**.
+  - The success of Campaign C suggests tailored strategies aligned well with target customer needs.
+  - Campaign B’s positive performance indicates potential for further optimization to reach Campaign C’s success.
+  - Campaign A's negative results highlight the need for a strategic overhaul or better customer targeting.
+
+- **Actionable Takeaways:**.
+  - Focus on replicating and enhancing Campaign C's strategies across other campaigns to maximize uplift.
+  - Analyse Campaign B's methods to identify areas for fine-tuning to increase effectiveness.
+  - Redesign Campaign A's approach, focusing on improved targeting and engagement tactics to boost performance
 
 #
 
