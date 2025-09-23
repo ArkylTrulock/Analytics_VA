@@ -669,13 +669,19 @@ Churned    0.05
 ### **🔍 Insights**
  
 - **Key Insights & Interpretations:**.
-
+  - The highest customer lifetime value (CLTV) is $10,363, indicating significant revenue potential from this customer.
+  - The top three customers contribute over $9,000 each, highlighting their importance in revenue generation.
+  - There's a noticeable gap between the top three and the rest, suggesting differentiated service or products could leverage these insights.
 
 - **Trends And Implications:**.
-
+  - The trend indicates that a small number of customers are driving a large portion of revenue.
+  - Maintaining and enhancing relationships with these top customers could yield higher returns.
+  - Analysing factors contributing to the high CLTV in top customers could optimize strategies for others.
 
 - **Actionable Takeaways:**.
-
+  - Prioritise engagement and tailored marketing strategies for the top three customers to maximize retention.
+  - Explore upselling and cross-selling opportunities for customers with values above $7,000.
+  - Investigate the potential of replicating high-value customer profiles to attract similar new customers.
 
 #
 **Barplot - Top 10 Customers By CLTV-Months**
