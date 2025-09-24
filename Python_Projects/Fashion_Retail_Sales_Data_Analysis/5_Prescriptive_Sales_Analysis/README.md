@@ -42,7 +42,7 @@ This project focuses on **Prescriptive Analytics** techniques to identify **what
 
 ### 🧺 Apriori Algorithm & Association Rule Mining
 - Association rule mining has become essential for businesses aiming to understand customer behaviours and purchasing patterns. 
-- This technique identifies items frequently bought together, helping companies optimize product placement, promotions, and recommendations.
+- This technique identifies items frequently bought together, helping companies optimise product placement, promotions, and recommendations.
 - Such analysis improves business strategies by clearly revealing trends hidden within transaction data.
  
 ### Key Metrics Evaluated
@@ -249,7 +249,23 @@ End-of-Year Sale|$ 26,798.0|$ 22,311.0|$ 13,361.0|🔻-16.74 %|🔼66.99 %|
 #
 
 ### **🔍 Insights**
- - **TBC**.
+ 
+- **Key Insights & Interpretations:**.
+  - Cluster 3, with the highest monetary value, consists of VIP customers who drive substantial revenue, indicating their critical importance.
+  - Cluster 2 shows high frequency and loyalty, suggesting they provide consistent revenue over time.
+  - Cluster 1 indicates risk with high recency but lower monetary value, highlighting the need for re-engagement efforts.
+
+- **Trends And Implications:**.
+  - The data signifies focused strategies are needed for different clusters to maximise their potential and mitigate risks.
+  - There is potential growth in nurturing Cluster 0, as they are new and show promise.
+  - Effective engagement with loyal and VIP customers (Clusters 2 and 3) is crucial to sustain long-term revenue.
+
+- **Actionable Takeaways:**.
+  - Implement re-engagement and incentive-based strategies for Cluster 1 to minimise churn risk.
+  - Utilise personalised and exclusive offers for Clusters 2 and 3 to maintain and enhance their loyalty.
+  - Focus on nurturing campaigns for Cluster 0 to convert promising customers into loyal customers.
+
+#
 
 ### 📷 Visualisation
 
@@ -258,29 +274,162 @@ End-of-Year Sale|$ 26,798.0|$ 22,311.0|$ 13,361.0|🔻-16.74 %|🔼66.99 %|
 ![Lineplot - K-Means Clustering - Identifying The Optimal Number Of Clusters (k) Using The Elbow Method](../5_Prescriptive_Sales_Analysis/Assets/Py_12_Identifying_The_Optimal_Number_Of_Clusters_k_Using_The_Elbow%20Method_Line_Plot.png)  
 *Generated using seaborn library*
 #
+
+### **🔍 Insights**
+ 
+- **Key Insights & Interpretations:**.
+  - The elbow point at k=4 suggests this is the optimal number of clusters for segmenting the data.
+  - Post k=4, there is a diminishing return in reducing within-cluster sum of squares, indicating minimal gain from additional clusters.
+  - The clear elbow shape validates the cluster segmentation's effectiveness up to this point.
+
+- **Trends And Implications:**.
+  - Utilising four clusters allows for a balanced segmentation that captures significant data variance without overcomplicating the model.
+  - Further granularity beyond k=4 might lead to overfitting or added complexity without substantial analytical benefits.
+  - This approach aids in strategic decision-making by clearly categorizing distinct customer or data segments. 
+
+- **Actionable Takeaways:**.
+  - Implement cluster-based strategies focusing on the identified four segments to enhance targeted marketing and personalised offers.
+  - Regularly review and reassess with updated data to ensure cluster relevance and adjust strategies accordingly.
+  - Leverage these insights to optimise resource allocation across identified segments, enhancing efficiency and effectiveness.
+
+#
 **Barplot - RFM Metric Scores, Customer Count, Customer Value, Profile Summary, Recommended Strategy And Marketing Channel Of KMeans Clusters**
 ![Barplot - RFM Metric Scores, Customer Count, Customer Value, Profile Summary, Recommended Strategy And Marketing Channel Of KMeans Clusters](../5_Prescriptive_Sales_Analysis/Assets/Py_15_RFM_Metric_Scores_Cust_Count_Cust_Value_Prof_Summary_Recommended_Strategy_Marketing_Channel_Of_KMeans_Clusters_Barplot.png)  
 *Generated using seaborn library*
+#
+
+### **🔍 Insights**
+ 
+- **Key Insights & Interpretations:**.
+  - Champions/VIP (Cluster 3) have the highest `mean` monetary value at $6,496, indicating their significant contribution.
+  - Loyal Customers (Cluster 2) provide consistent revenue, with a `mean` monetary value of $2,679 and a medium-high score.
+  - New/Promising and At-Risk clusters offer potential for growth and recovery with tailored strategies.
+
+- **Trends And Implications:**.
+  - Focused nurturing and retention efforts for top clusters could amplify revenue and loyalty.
+  - The At-Risk cluster requires immediate re-engagement to prevent churn and recapture value.
+  - Educating and engaging New/Promising customers can convert them into Loyal Customers over time. 
+
+- **Actionable Takeaways:**.
+  - Implement exclusive offers and rewards for VIPs to maintain high engagement and loyalty.
+  - Utilise early access and sneak peeks for Loyal Customers to strengthen relationships.
+  - Engage the At-Risk cluster with re-engagement offers and feedback surveys to assess and address their needs.
+
 #
 **Scatterplot - Customer Segments - Recency Vs Frequency**
 ![Scatterplot - Customer Segments - Recency Vs Frequency](../5_Prescriptive_Sales_Analysis/Assets/Py_16_Customer_Segments_Recency_Vs_Frequency_Scatterplot.png)  
 *Generated using seaborn library*
 #
+
+### **🔍 Insights**
+ 
+- **Key Insights & Interpretations:**.
+  - Loyal Customers and Champions/VIP groups have high frequency and low recency, indicating frequent and recent purchases.
+  - New/Promising customers show moderate frequency but low recency, suggesting recent engagement.
+  - At-Risk/Churned customers have high recency, indicating they haven't purchased recently and may churn.
+
+- **Trends And Implications:**.
+  - High-frequency segments contribute significantly to revenue and require continued engagement to maintain loyalty.
+  - New/Promising customers offer growth potential if nurtured correctly to increase their purchase frequency.
+  - At-Risk/Churned customers need strategic attention to re-engage and convert back into active customers. 
+
+- **Actionable Takeaways:**.
+  - Develop loyalty programs for high-frequency customers to reward and encourage continued engagement.
+  - Implement onboarding and education campaigns for New/Promising customers to increase their purchase frequency.
+  - Use targeted re-engagement strategies for At-Risk customers, such as personalised offers and feedback solicitations.
+
+#
 **Scatterplot - Customer Segments - Recency Vs Monetary**
 ![Scatterplot - Customer Segments - Recency Vs Monetary](../5_Prescriptive_Sales_Analysis/Assets/Py_17_Customer_Segments_Recency_Vs_Monetary_Scatterplot.png)  
 *Generated using seaborn library*
+#
+
+### **🔍 Insights**
+ 
+- **Key Insights & Interpretations:**.
+  - Champions/VIP customers exhibit high monetary value with relatively low recency, indicating frequent and substantial purchases.
+  - Loyal customers have moderate monetary value but low recency, showing frequent and stable purchasing behavior.
+  - At-Risk customers have higher recency and low monetary value, highlighting potential churn.
+
+- **Trends And Implications:**.
+  - High-value clusters like Champions/VIP are pivotal to revenue, requiring retention strategies to maximise value.
+  - Loyal customers provide consistent revenue streams, suggesting the need for engagement to ensure ongoing loyalty.
+  - At-Risk customers pose a risk to revenue stability, necessitating efforts to re-engage them effectively 
+
+- **Actionable Takeaways:**.
+  - Design tailored loyalty and reward programs for Champions/VIP to sustain engagement and value.
+  - Strengthen relationships with Loyal customers through personalised communications and exclusive offers.
+  - Implement targeted campaigns for At-Risk customers to reactivate their purchasing through special incentives or feedback sessions.
+
 #
 **Scatterplot - Customer Segments - Frequency Vs Monetary**
 ![Scatterplot - Customer Segments - Frequency Vs Monetary](../5_Prescriptive_Sales_Analysis/Assets/Py_18_Customer_Segments_Frequency_Vs_Monetary_Scatterplot.png)  
 *Generated using seaborn library*
 #
+
+### **🔍 Insights**
+ 
+- **Key Insights & Interpretations:**.
+  - Champions/VIP customers have the highest monetary value and variable purchase frequency, indicating significant transactions.
+  - Loyal Customers show consistent purchases and moderate monetary value, suggesting steady revenue streams.
+  - At-Risk customers, with lower purchase frequency, require strategies to increase their engagement and spending.
+
+- **Trends And Implications:**.
+  - High-frequency, high-value segments (Champions/VIP) drive substantial revenue, highlighting the importance of tailored retention strategies.
+  - Enhancing engagement for Loyal Customers can further solidify their contribution to regular income.
+  - Immediate intervention is needed for At-Risk customers to prevent revenue loss due to reduced purchasing activity. 
+
+- **Actionable Takeaways:**.
+  - Focus on personalised rewards and exclusive deals for Champions/VIP to maintain their high value.
+  - Regular communication and loyalty incentives can strengthen ties with Loyal Customers.
+  - Implement reactivation campaigns for At-Risk customers, with compelling offers to encourage more frequent purchases.
+
+#
 **Heatmap - Customer Segmentation Count Using RFM Analysis**
 ![Heatmap - Customer Segmentation Count Using RFM Analysis](../5_Prescriptive_Sales_Analysis/Assets/Py_20_Customer_Segmentation_Count_Using_RFM%20Analysis_Heatmap.png)  
 *Generated using seaborn library*
 #
+
+### **🔍 Insights**
+ 
+- **Key Insights & Interpretations:**.
+  - The largest segment is Loyal customers with 78, indicating a strong base of repeat buyers.
+  - Potential customers form a significant segment (40), suggesting opportunities for conversion to more valuable customers.
+  - At Risk and Champion segments are smaller, at 18 and 22 respectively, indicating areas for improvement and nurturing.
+
+- **Trends And Implications:**.
+  - The large Loyal segment underscores the importance of maintaining strong relationships to ensure sustained revenue.
+  - Potential customers offer growth opportunities if strategies are implemented to increase their engagement and spending.
+  - Champions need continued value and recognition to prevent them from becoming At Risk. 
+
+- **Actionable Takeaways:**.
+  - Implement loyalty programs and personalised communication to retain Loyal customers.
+  - Develop targeted marketing strategies for Potential customers to move them up the loyalty ladder.
+  - Engage Champions with exclusive offers and recognition to maintain their spending and prevent attrition.
+
+#
 **Countplot - Customer Segmentation Count Using RFM Analysis**
 ![Countplot - Customer Segmentation Count Using RFM Analysis](../5_Prescriptive_Sales_Analysis/Assets/Py_21_Customer_Segmentation_Count_Using_RFM_Analysis_Countplot.png)  
 *Generated using seaborn library*
+#
+
+### **🔍 Insights**
+ 
+- **Key Insights & Interpretations:**.
+  - Loyal customers make up 47% of the total, indicating a strong foundation of repeat buyers.
+  - Potential customers account for 28.9%, representing a significant segment for growth.
+  - Champions constitute 13.3%, highlighting a group with high engagement and value.
+
+- **Trends And Implications:**.
+  - The large proportion of Loyal customers suggests successful retention strategies.
+  - Potential customers offer an opportunity to drive more revenue if nurtured effectively.
+  - Champions need ongoing attention to maintain their high value and prevent transitioning to At Risk. 
+
+- **Actionable Takeaways:**.
+  - Strengthen loyalty programs and personalised outreach to retain Loyal customers.
+  - Develop targeted campaigns to convert Potential customers into more valuable segments.
+  - Engage Champions with exclusive rewards and recognition to sustain their loyalty and spending.
+
 #
 **Scatterplot - Customer Segmentation Using RFM Analysis - Monetary Vs Segment**
 ![Scatterplot - Customer Segmentation Using RFM Analysis - Monetary Vs Segment](../5_Prescriptive_Sales_Analysis/Assets/Py_22_Customer_Segmentation_Using_RFM_Analysis_Monetary_Vs_Segment_Scatterplot.png)  
@@ -288,7 +437,21 @@ End-of-Year Sale|$ 26,798.0|$ 22,311.0|$ 13,361.0|🔻-16.74 %|🔼66.99 %|
 #
 
 ### **🔍 Insights**
- - **TBC**.
+ 
+- **Key Insights & Interpretations:**.
+  - Champions have the highest RFM scores and monetary value, maximising potential revenue.
+  - Loyal customers display moderate monetary value with consistent RFM scores, indicating stable purchasing patterns.
+  - At Risk and Lost segments have lower monetary values, implying the need for re-engagement or letting go.
+
+- **Trends And Implications:**.
+  - Champions are crucial to sustaining high revenue and require focused retention strategies.
+  - The steady performance of Loyal customers suggests effective loyalty measures but with room for enhanced engagement to increase spending.
+  - Addressing At Risk customers with targeted offers could prevent them from fully transitioning to the Lost segment. 
+
+- **Actionable Takeaways:**.
+  - Prioritise Champions for exclusive rewards and premium service offerings to maintain their high value.
+  - Encourage Loyal customers to increase their purchase frequency through personalised incentives and campaigns.
+  - Develop reactivation strategies for At Risk customers, including personalised communications or special offers.
 
 #
 
@@ -382,9 +545,47 @@ End-of-Year Sale|$ 26,798.0|$ 22,311.0|$ 13,361.0|🔻-16.74 %|🔼66.99 %|
 ![Dataframe - Descriptive Statistics Of Predicted 6-Month CLTV By Cluster](../5_Prescriptive_Sales_Analysis/Assets/Py_27_Descriptive_Statistics_Of_Predicted_6_Month_CLTV_By_Cluster.png)  
 *Generated using pandas library*
 #
+
+### **🔍 Insights**
+ 
+- **Key Insights & Interpretations:**.
+  - Cluster 0 has the highest average predicted CLTV at $3,042, suggesting substantial revenue potential.
+  - Cluster 1, with 63 customers, shows a moderate average CLTV of $1,223, providing room for growth.
+  - Cluster 3 has the lowest average CLTV at $1,060, indicating a need for targeted improvement strategies.
+
+- **Trends And Implications:**.
+  - A focus on maximising returns from Cluster 0 could significantly boost overall revenue.
+  - Cluster 1's size and moderate CLTV offer opportunities to increase customer value through strategic initiatives.
+  - Enhancing engagement strategies in Cluster 3 could lead to improvements in their CLTV. 
+
+- **Actionable Takeaways:**.
+  - Concentrate on retention and personalised marketing strategies for Cluster 0 to maintain high CLTV.
+  - Implement upselling and cross-selling strategies for Cluster 1 to elevate their contribution.
+  - Develop initiatives focused on increasing engagement and satisfaction levels in Cluster 3.
+
+#
 **Dataframe - Descriptive Statistics Of Predicted 6-Month CLTV By Segment**
 ![Dataframe - Descriptive Statistics Of Predicted 6-Month CLTV By Segment](../5_Prescriptive_Sales_Analysis/Assets/Py_28_Descriptive_Statistics_Of_Predicted_6_Month_CLTV_By_Segment.png)  
 *Generated using pandas library*
+#
+
+### **🔍 Insights**
+ 
+- **Key Insights & Interpretations:**.
+  - The "Very High" segment shows the highest predicted 6-month CLTV with an average of $2,962, suggesting these customers are the most valuable.
+  - The "Very Low" segment's maximum predicted CLTV of $880.40 is significantly lower, indicating limited potential from these customers.
+  - Each segment has exactly 33 or 34 entries, highlighting consistent sample sizes across segments.
+
+- **Trends And Implications:**.
+  - There is a clear gradient from "Very High" to "Very Low" segments in terms of predicted value, which may guide targeted marketing strategies.
+  - The relatively high minimum value in the "Very High" segment suggests a consistent high-value customer base.
+  - Lower segments may require strategic initiatives to enhance customer value and retention. 
+
+- **Actionable Takeaways:**.
+  - Focus retention and upselling efforts on the "Very High" segment to capitalize on their high CLTV.
+  - Develop strategies to move "Low" and "Very Low" customers up the value chain through personalised engagements or promotional offers.
+  - Regularly monitor these segments for shifts in customer value that could impact overall business strategy
+
 #
 **Dataframe - Descriptive Statistics Of Predicted 6-Month CLTV By Strategy**
 ![Dataframe - Descriptive Statistics Of Predicted 6-Month CLTV By Strategy](../5_Prescriptive_Sales_Analysis/Assets/Py_29_Descriptive_Statistics_Of_Predicted_6_Month_CLTV_By_Strategy.png)  
@@ -392,7 +593,21 @@ End-of-Year Sale|$ 26,798.0|$ 22,311.0|$ 13,361.0|🔻-16.74 %|🔼66.99 %|
 #
 
 ### **🔍 Insights**
- - **TBC**.
+ 
+- **Key Insights & Interpretations:**.
+  - The "Retain + Reward" strategy has the highest average predicted 6-month CLTV at $2,962, indicating its effectiveness in generating value.
+  - All strategies have a consistent count of around 33, ensuring balanced comparison.
+  - The "Re-engage + Exit" strategy yields the lowest average CLTV at $807, suggesting limited success.
+
+- **Trends And Implications:**.
+  - Retention-focused strategies clearly outperform others in predicted customer value, highlighting their importance.
+  - "Upsell + Personalise" also shows potential with a significant average CLTV of $1,483.
+  - Strategies focused on re-engagement seem to require re-evaluation to improve predicted customer value. 
+
+- **Actionable Takeaways:**.
+  - Prioritise "Retain + Reward" strategies to leverage high predicted CLTV outcomes.
+  - Enhance personaliation and upsell efforts to close the value gap with retention strategies.
+  - Investigate and refine the "Re-engage + Exit" strategy to boost its effectiveness and contribution to CLTV.
 
 #
 
@@ -417,25 +632,139 @@ End-of-Year Sale|$ 26,798.0|$ 22,311.0|$ 13,361.0|🔻-16.74 %|🔼66.99 %|
 ![Hisplot - Distribution Of Predicted 6-Month CLTV By Cluster](../5_Prescriptive_Sales_Analysis/Assets/Py_30_Distribution_Of_Predicted_6_Month_CLTV_Histplot.png)  
 *Generated using seaborn library*
 #
+
+### **🔍 Insights**
+ 
+- **Key Insights & Interpretations:**.
+  - The majority of customers have a predicted 6-month CLTV below $1,500 with (%25.90).
+  - A small percentage (<4%) have significantly higher CLTV, exceeding $3,000, indicating highly valuable customers.
+  - The distribution shows a right-skew, suggesting many customers have low CLTV with a few high-value outliers.
+
+- **Trends And Implications:**.
+  - The bulk of revenue comes from a few high-CLTV customers, important for targeting with retention strategies.
+  - High potential exists in increasing the CLTV of mid-range customers through strategic marketing and engagement.
+  - Differentiated approaches may be required to maximise the potential of both low and high CLTV groups. 
+
+- **Actionable Takeaways:**.
+  - Focus on personalised engagement and exclusive offers for high-CLTV customers to retain their business.
+  - Implement upselling and cross-selling strategies for mid-range customers to boost their CLTV.
+  - Develop broad engagement campaigns to gradually increase the CLTV of the larger low-value segment.
+
+#
 **Hisplot - Distribution Of Predicted 6-Month CLTV By Cluster**
 ![Hisplot - Distribution Of Predicted 6-Month CLTV By Cluster](../5_Prescriptive_Sales_Analysis/Assets/Py_31_Distribution_Of_Predicted_6_Month_CLTV_By_Cluster_Histplot.png)  
 *Generated using seaborn library*
+#
+
+### **🔍 Insights**
+ 
+- **Key Insights & Interpretations:**.
+  - Cluster 2 has the highest number of customers, comprising 37.95% of the total, indicating a significant proportion with promising CLTV.
+  - Clusters 0 and 1 represent substantial portions (32.53% and 13.25% respectively), with room for targeted growth.
+  - Cluster 3 contains fewer customers (16.27%), focusing on niche, potentially high-value interactions.
+
+- **Trends And Implications:**.
+  - The distribution suggests potential for increasing revenue by focusing on the largest clusters, particularly Cluster 2.
+  - Opportunities exist to enhance the value of Clusters 0 and 1 through targeted strategies.
+  - Retention and upsell strategies in Cluster 3 could maximise their specialised value. 
+
+- **Actionable Takeaways:**.
+  - Prioritise engagement and value maximisation for customers in Cluster 2 to leverage its sise advantage.
+  - Implement personalised marketing efforts to grow CLTV in Clusters 0 and 1.
+  - Develop specialised retention programs for Cluster 3 to maintain and increase their contribution.
+
 #
 **Hisplot - Distribution Of Predicted 6-Month CLTV By Segement**
 ![Hisplot - Distribution Of Predicted 6-Month CLTV By Segment](../5_Prescriptive_Sales_Analysis/Assets/Py_32_Distribution_Of_Predicted_6_Month_CLTV_By_Segment_Histplot.png)  
 *Generated using seaborn library*
 #
+
+### **🔍 Insights**
+ 
+- **Key Insights & Interpretations:**.
+  - The distribution across CLTV segments is relatively balanced, with each segment holding around 19-20% of the customers.
+  - The "Very Low" segment slightly leads with 20.48% of customers, indicating a larger group with minimal predicted revenue.
+  - High and Very High segments together represent a smaller portion, highlighting areas for strategic growth.
+
+- **Trends And Implications:**.
+  - Balanced distribution suggests opportunities exist across all segments to improve customer value.
+  - The concentration in the lower CLTV segments implies a need to enhance strategies for increasing customer spending.
+  - Elevating mid-tier customers to higher segments could significantly impact overall CLTV. 
+
+- **Actionable Takeaways:**.
+  - Implement engagement and loyalty programs tailored for the "Very Low" and "Low" segments to boost their spending.
+  - Develop focused campaigns to nurture potential in "Medium" segment customers to move them into higher tiers.
+  - Maintain and reward the "High" and "Very High" segments to sustain and enhance their value.
+
+#
 **Hisplot - Distribution Of Predicted 6-Month CLTV By Strategy**
 ![Hisplot - Distribution Of Predicted 6-Month CLTV By Strategy](../5_Prescriptive_Sales_Analysis/Assets/Py_33_Distribution_Of_Predicted_6_Month_CLTV_By_Strategy_Histplot.png)  
 *Generated using seaborn library*
+#
+
+### **🔍 Insights**
+ 
+- **Key Insights & Interpretations:**.
+  - The distribution of customers is relatively even across different CLTV strategies, with slight variation, indicating diverse needs.
+  - The "Re-engage + Exit" strategy group is the largest at 20.48%, suggesting many customers require effort to remain active or be phased out.
+  - Other strategies like "Educate + Re-target" and "Retain + Reward" are each nearly 20%, highlighting the need for targeted engagement and retention efforts.
+
+- **Trends And Implications:**.
+  - There is a balanced need for different strategies to address the variety of customer engagement levels.
+  - Significant portions of the customer base require re-engagement, indicating potential optimization in initial retention efforts.
+  - Personalised approaches could yield better results across segments by addressing specific customer needs and behaviors. 
+
+- **Actionable Takeaways:**.
+  - Prioritise re-engagement efforts for the largest group with tailored messages to either retain or gracefully exit inactive customers.
+  - Develop education and retargeting campaigns to increase customer understanding and foster deeper connections.
+  - Implement personalised rewards and retention initiatives to sustain engagement for high-value customers.
+
 #
 **Boxplot - Distribution Of Predicted 6-Month CLTV By Cluster**
 ![Boxplot - Distribution Of Predicted 6-Month CLTV By Cluster](../5_Prescriptive_Sales_Analysis/Assets/Py_34_Distribution_Of_Predicted_6_Month_CLTV_By_Cluster_Boxplot.png)  
 *Generated using seaborn library*
 #
+
+### **🔍 Insights**
+ 
+- **Key Insights & Interpretations:**.
+  - Cluster 3 has the highest predicted CLTV, with a mean of $3,842, highlighting its value.
+  - Cluster 2 shows a moderate CLTV with a mean of $1,223, indicating steady potential.
+  - Clusters 0 and 1 have lower CLTVs, suggesting room for targeted growth initiatives.
+
+- **Trends And Implications:**.
+  - High CLTV in Cluster 3 suggests that investing in retention could yield significant returns.
+  - Moderate performance in Cluster 2 indicates opportunities to boost these customers into higher CLTV brackets.
+  - Clusters 0 and 1 require enhanced engagement strategies to maximise their value potential. 
+
+- **Actionable Takeaways:**.
+  - Focus on personalised experiences and rewards for Cluster 3 to sustain their high CLTV.
+  - Implement upselling and cross-selling strategies in Cluster 2 to increase their customer value.
+  - Develop targeted marketing campaigns for Clusters 0 and 1 to improve their engagement and CLTV.
+
+#
 **Boxplot - Distribution Of Predicted 6-Month CLTV By Segment (Strategy & Marketing Channel Included)**
 ![Boxplot - Distribution Of Predicted 6-Month CLTV By Cluster (Strategy & Marketing Channel Included)](../5_Prescriptive_Sales_Analysis/Assets/Py_35_Distribution_Of_Predicted_6_Month_CLTV_By_Segment_Boxplot.png)  
 *Generated using seaborn library*
+#
+
+### **🔍 Insights**
+ 
+- **Key Insights & Interpretations:**.
+  - The "Very High" segment shows the highest predicted CLTV with a mean of $2,962, indicating their critical importance for revenue.
+  - "High" and "Medium" segments demonstrate potential for increased value through targeted upselling and personalization.
+  - "Very Low" and "Low" segments have lower CLTV, suggesting the need for re-engagement and incentivisation strategies.
+
+- **Trends And Implications:**.
+  - The distribution highlights the importance of maintaining and maximising the value of the "Very High" segment.
+  - Effective engagement in "High" and "Medium" segments can transition these customers to higher value brackets.
+  - Addressing challenges in "Very Low" and "Low" segments can improve overall CLTV and reduce churn. 
+
+- **Actionable Takeaways:**.
+  - Implement retention and reward programs for the "Very High" segment using personalised communication channels.
+  - Focus on upselling and personalised marketing for "High" and "Medium" segments to boost their purchasing behavior.
+  - Develop re-engagement campaigns and incentives for the "Very Low" and "Low" segments to enhance customer lifetime value.
+
 #
 **Boxplot - Distribution Of Predicted 6-Month CLTV By Strategy**
 ![Boxplot - Distribution Of Predicted 6-Month CLTV By Strategy](../5_Prescriptive_Sales_Analysis/Assets/Py_36_Distribution_Of_Predicted_6_Month_CLTV_By_Strategy_Boxplot.png)  
@@ -443,7 +772,22 @@ End-of-Year Sale|$ 26,798.0|$ 22,311.0|$ 13,361.0|🔻-16.74 %|🔼66.99 %|
 #
 
 ### **🔍 Insights**
- - **TBC**.
+ 
+- **Key Insights & Interpretations:**.
+  - "Retain + Reward" strategy shows the highest predicted CLTV, with a mean of $2,962, emphasizing its effectiveness.
+  - "Upsell + Personalise" and "Retain + Reward" strategies have higher median values, indicating strong potential for value retention and growth.
+  - The "Re-engage + Exit" strategy has the lowest CLTV, suggesting it needs reevaluation for better impact.
+
+- **Trends And Implications:**.
+  - Effective retention and personalisation strategies drive higher customer value, underscoring their importance in long-term engagement.
+  - There is significant room to improve CLTV for strategies like "Educate + Re-target" and "Incentivise + Survey."
+  - Moving customers from low-CLTV strategies to higher ones could enhance overall revenue. 
+
+- **Actionable Takeaways:**.
+  - Focus on expanding retention and reward initiatives to maximise high CLTV segments.
+  - Enhance the effectiveness of education and incentivisation strategies to uplift customer value.
+  - Prioritise moving customers from re-engagement strategies to those with proven higher returns, such as upselling and personalisation.
+
 #
 
 ### Campaign Simulation And ROI Estimation Using Predicted CLTV Segments
@@ -498,7 +842,21 @@ End-of-Year Sale|$ 26,798.0|$ 22,311.0|$ 13,361.0|🔻-16.74 %|🔼66.99 %|
 #
 
 ### **🔍 Insights**
- - **TBC**.
+ 
+- **Key Insights & Interpretations:**.
+  - The "Very High" segment, despite the highest CLTV, shows a lower ROI at 18% due to high costs per customer.
+  - The "High" segment offers the best ROI at 26%, indicating efficient profit generation for the investment.
+  - The "Very Low" segment yields minimal profit and ROI, suggesting low effectiveness.
+
+- **Trends And Implications:**.
+  - High costs impact profits in the "Very High" segment, indicating the need for cost optimisation.
+  - The positive ROI in the "High" segment suggests focusing on scalable and efficient marketing strategies.
+  - Low ROI in the "Very Low" segment highlights the inefficiency of investments there.
+
+- **Actionable Takeaways:**.
+  - Explore ways to reduce costs in the "Very High" segment while maintaining value propositions.
+  - Scale successful strategies from the "High" segment to boost returns in other segments.
+  - Reevaluate investment in the "Very Low" segment or reallocate resources for better overall ROI.
 
 #
 
@@ -512,7 +870,6 @@ End-of-Year Sale|$ 26,798.0|$ 22,311.0|$ 13,361.0|🔻-16.74 %|🔼66.99 %|
 
 - Offers flexibility — you can change to **`.quantile(0.80)`** for a more **`aggressive threshold`**.
 
- 
 ### Key Metrics Evaluated
 1) Top 10 Customers By CLTV-Days.
 2) Top 10 Customers By CLTV-Months.
@@ -542,7 +899,7 @@ print("Reference date:", reference_date.date())
 # print(f"Auto-calculated churn threshold (75th percentile): {int(auto_churn_threshold)} days")
 print(f"\nAuto-calculated churn threshold (95th percentile): {int(auto_churn_threshold)} days")
 print(f'\n{customer_features['churn_status'].value_counts().round(2)}')
-print(f'\n{customer_features['churn_status'].value_counts(normalize=True).rename({0:'Active', 1:'Churned'}).round(2)}')
+print(f'\n{customer_features['churn_status'].value_counts(normalise=True).rename({0:'Active', 1:'Churned'}).round(2)}')
 
 ```
 #
@@ -676,10 +1033,10 @@ Churned    0.05
 - **Trends And Implications:**.
   - The trend indicates that a small number of customers are driving a large portion of revenue.
   - Maintaining and enhancing relationships with these top customers could yield higher returns.
-  - Analysing factors contributing to the high CLTV in top customers could optimize strategies for others.
+  - Analysing factors contributing to the high CLTV in top customers could optimise strategies for others.
 
 - **Actionable Takeaways:**.
-  - Prioritise engagement and tailored marketing strategies for the top three customers to maximize retention.
+  - Prioritise engagement and tailored marketing strategies for the top three customers to maximise retention.
   - Explore upselling and cross-selling opportunities for customers with values above $7,000.
   - Investigate the potential of replicating high-value customer profiles to attract similar new customers.
 
@@ -720,12 +1077,12 @@ Churned    0.05
   - Recency has a negative correlation with customer lifespan days (-0.79), meaning recent purchases are less common among long-term customers.
 
 - **Trends And Implications:**.
-  - The strong link between monetary and order value emphasizes the importance of focusing on high spenders for revenue growth.
+  - The strong link between monetary and order value emphasises the importance of focusing on high spenders for revenue growth.
   - High correlation in purchase frequency highlights the need to sustain engagement with frequent buyers to maintain sales volume.
   - The negative correlation of recency and lifespan suggests segments with former long engagement might require different re-engagement strategies.
 
 - **Actionable Takeaways:**.
-  - Prioritise marketing efforts toward customers with high average order values to maximize revenue potential.
+  - Prioritise marketing efforts toward customers with high average order values to maximise revenue potential.
   - Maintain and enhance communication with frequent buyers to reinforce engagement and loyalty.
   - Develop targeted reactivation campaigns for long-term customers to increase recency and foster continued loyalty.
 
@@ -771,7 +1128,7 @@ Churned    0.05
   - The overall high purchase frequency demonstrates effective retention strategies encouraging repeat purchases.
 
 - **Actionable Takeaways:**.
-  - Continue to nurture these high-value customers with personalized offers to maintain engagement and loyalty.
+  - Continue to nurture these high-value customers with personalised offers to maintain engagement and loyalty.
   - Analyse individual purchasing patterns to tailor marketing and product recommendations effectively.
   - Ensure communication remains consistent and relevant to sustain their high levels of activity and prevent churn.
 
@@ -791,12 +1148,12 @@ Churned    0.05
 - **Trends And Implications:**.
   - High monetary value customers are still churning, indicating potential gaps in retention strategies for valuable segments.
   - The recency of their last purchases suggests a need for more frequent engagement to prevent future churn.
-  - Differing average order values imply that personalized strategies might be needed based on spending habits.
+  - Differing average order values imply that personalised strategies might be needed based on spending habits.
 
 - **Actionable Takeaways:**.
   - Implement targeted re-engagement campaigns for high CLTV customers to recover lost value.
   - Increase communication frequency to ensure all tiers of customers remain engaged and active.
-  - Develop personalized offers or incentives based on past spending behavior to encourage repeat purchases.
+  - Develop personalised offers or incentives based on past spending behavior to encourage repeat purchases.
 
 #
 
@@ -816,7 +1173,7 @@ y = customer_features['churn_status']
 #==#
 
 # Train-Test Split
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42, stratify=y)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_sise=0.3, random_state=42, stratify=y)
 print (f'Training data (70%)|(# Obs, # Cols): \t{X_train.shape, y_train.shape}') # Seen data. Observations, Number of columns.
 print (f'Test data (30%)|(# Obs, # Cols):  \t{X_test.shape, y_test.shape}') # Unseen data. Observations, Number of columns.
 
@@ -1110,7 +1467,7 @@ ROC-AUC Score: 100.00%
 ### **🔍 Insights**
 - The **`more the blue curve rises above the dashed line`**, the **`better your (future) uplift model at picking customers who truly benefit`**.
 
-- If you see **`strong early lift`**, you can **`reduce campaign size`** and **`still capture most of the incremental responses`**.
+- If you see **`strong early lift`**, you can **`reduce campaign sise`** and **`still capture most of the incremental responses`**.
 
 #
 
@@ -1219,11 +1576,11 @@ ROC-AUC Score: 100.00%
 
 - **Trends And Implications:**.
   - The success of Campaign C suggests tailored strategies aligned well with target customer needs.
-  - Campaign B’s positive performance indicates potential for further optimization to reach Campaign C’s success.
+  - Campaign B’s positive performance indicates potential for further optimisation to reach Campaign C’s success.
   - Campaign A's negative results highlight the need for a strategic overhaul or better customer targeting.
 
 - **Actionable Takeaways:**.
-  - Focus on replicating and enhancing Campaign C's strategies across other campaigns to maximize uplift.
+  - Focus on replicating and enhancing Campaign C's strategies across other campaigns to maximise uplift.
   - Analyse Campaign B's methods to identify areas for fine-tuning to increase effectiveness.
   - Redesign Campaign A's approach, focusing on improved targeting and engagement tactics to boost performance
 
