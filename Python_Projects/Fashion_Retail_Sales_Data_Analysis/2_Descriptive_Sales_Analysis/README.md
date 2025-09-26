@@ -30,11 +30,11 @@
 ## 🧠 Key Techniques & Methodologies
 
 ### 🧺 - **`Exploratory Descriptive Analytics`**.
-1) Aggregation & Ranking of sales by multiple dimensions (items, payment methods, time periods).
-2) Comparative Analysis across years (e.g., 2022 vs 2023) for items, counts, and sales.
-3) Time-Series Breakdown across days, months, quarters, and years.
-4) Cross-Dimensional Analysis (e.g., items × months, items × years, items × quarters).
-5) Visual Analytics using barplots, stripplots, kdeplots, heatmaps, and pie charts to identify sales concentration and seasonality.
+1) **Aggregation & Ranking** of sales by multiple dimensions (items, payment methods, time periods).
+2) **Comparative Analysis** across years (e.g., 2022 vs 2023) for items, counts, and sales.
+3) **Time-Series Breakdown** across days, months, quarters, and years.
+4) **Cross-Dimensional Analysis** (e.g., items × months, items × years, items × quarters).
+5) **Visual Analytics** using barplots, stripplots, kdeplots, heatmaps, and pie charts to identify sales concentration and seasonality.
 
 #
 
