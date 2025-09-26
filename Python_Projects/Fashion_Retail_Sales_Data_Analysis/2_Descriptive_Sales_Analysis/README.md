@@ -29,15 +29,23 @@
 
 ## 🧠 Key Techniques & Methodologies
 
-### 🧺 - **`TBC`**.
-- **`TBC`**.
-- **`TBC`**.
-- **`TBC`**.
- 
+### 🧺 - **`Exploratory Descriptive Analytics`**.
+1) Aggregation & Ranking of sales by multiple dimensions (items, payment methods, time periods).
+2) Comparative Analysis across years (e.g., 2022 vs 2023) for items, counts, and sales.
+3) Time-Series Breakdown across days, months, quarters, and years.
+4) Cross-Dimensional Analysis (e.g., items × months, items × years, items × quarters).
+5) Visual Analytics using barplots, stripplots, kdeplots, heatmaps, and pie charts to identify sales concentration and seasonality.
+
+#
+
 ### Key Metrics Evaluated
-- **X**: **`TBC`**. 
-- **X**: **`TBC`**. 
-- **X**: **`TBC`**.
+1) **Transaction Counts**: frequency of purchases.
+2) **Total Sales ($)**: aggregate revenue by category.
+3) **Average Sales per Item**: mean spend per transaction type.
+4) **Percentage Share (%)**: contribution of each category (items, time periods, payment methods).
+5) **Ranking & Growth Indicators**: top vs bottom products, differences across years, and rank shifts.
+
+#
 
 ### **🩺 Diagnostics**:
   - Dataframes
@@ -48,10 +56,7 @@
   - Line Plot
   - Heatmaps
 
-### **🔍 Insights**:
-  - **`TBC`**.
-  - **`TBC`**.
-  - **`TBC`**.
+#
 
 ### 📷 Visualisations
 
@@ -354,8 +359,11 @@
 ![Top Years And Items Purchased By Counts, Total Sales And Percentage Share - Heatmap](../2_Descriptive_Sales_Analysis/Assets/Py_34_Top_Years_And_Items_Purchased_By_Counts_Total_Sales_And_Percentage_Share_Heatmap.png)
 *Generated using seaborn library*
 #
+
 **Descriptive Sales Analysis Excel Overview[.xlsx](../2_Descriptive_Sales_Analysis/Assets/Descriptive_Sales_Analysis_Excel.xlsx)**
+
 #
+
 ## 📬 Contact
 *Built by [Arkyl Trulock](https://github.com/ArkylTrulock)*  
 For collaborations or feedback: X@gmail.com 

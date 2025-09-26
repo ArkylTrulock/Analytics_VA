@@ -28,7 +28,7 @@
 
 ## 🧠 Key Techniques & Methodologies
 
-### 🧺 - **`Statistical Analysis`**.
+### 🧺 - **`Exploratory Diagnostic/Statistical Analysis`**.
 1) Uses descriptive statistics to summarize and understand data distributions.
 2) Employs correlation analysis to explore relationships between variables.
 3) Analyses time-series data to identify trends and seasonality.
