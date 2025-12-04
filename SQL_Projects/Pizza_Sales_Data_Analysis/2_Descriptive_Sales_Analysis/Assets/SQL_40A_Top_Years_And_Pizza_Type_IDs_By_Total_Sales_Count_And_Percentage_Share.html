@@ -1,0 +1,3128 @@
+
+    <html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+            body {
+                margin: 40px;
+                padding: 40px;
+                font-family: Arial, sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <div style="caption-side:top;text-align:justify;text-decoration:underline;background-color:none;color:red;font-family:Arial;font-style:normal;font-weight:900;font-size:18px;    ">Top Years And Pizza Type IDs By Total Sales, Count And Percentage Share</div>
+        <style type="text/css">
+#T_fe1cd th:hover {
+  background-color: grey;
+  color: cyan;
+  font-family: georgia;
+  font-style: italic;
+  font-weight: 900;
+  font-size: 18px;
+  text-align: center;
+}
+#T_fe1cd tr:hover {
+  background-color: white;
+  color: purple;
+  font-family: georgia;
+  font-style: italic;
+  font-weight: 900;
+  font-size: 18px;
+  text-align: center;
+}
+#T_fe1cd td:hover {
+  background-color: white;
+  color: green;
+  font-family: consolas;
+  font-style: italic;
+  font-weight: 900;
+  font-size: 18px;
+  text-align: center;
+}
+#T_fe1cd tr:hover td:hover {
+  background-color: white;
+  color: green;
+  font-family: consolas;
+  font-style: italic;
+  font-weight: 900;
+  font-size: 18px;
+  text-align: center;
+}
+#T_fe1cd caption {
+  caption-side: top;
+  background-color: white;
+  color: red;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  text-align: center;
+}
+#T_fe1cd_row0_col0, #T_fe1cd_row1_col0, #T_fe1cd_row2_col0, #T_fe1cd_row3_col0, #T_fe1cd_row4_col0, #T_fe1cd_row5_col0, #T_fe1cd_row6_col0, #T_fe1cd_row7_col0, #T_fe1cd_row8_col0, #T_fe1cd_row9_col0, #T_fe1cd_row10_col0, #T_fe1cd_row11_col0, #T_fe1cd_row12_col0, #T_fe1cd_row13_col0, #T_fe1cd_row14_col0, #T_fe1cd_row15_col0, #T_fe1cd_row16_col0, #T_fe1cd_row17_col0, #T_fe1cd_row18_col0, #T_fe1cd_row19_col0, #T_fe1cd_row20_col0, #T_fe1cd_row21_col0, #T_fe1cd_row22_col0, #T_fe1cd_row23_col0, #T_fe1cd_row24_col0, #T_fe1cd_row25_col0, #T_fe1cd_row26_col0, #T_fe1cd_row27_col0, #T_fe1cd_row28_col0, #T_fe1cd_row29_col0, #T_fe1cd_row30_col0, #T_fe1cd_row31_col0 {
+  color: white;
+  background-color: blue;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+}
+#T_fe1cd_row0_col1, #T_fe1cd_row1_col1, #T_fe1cd_row2_col1, #T_fe1cd_row3_col1, #T_fe1cd_row4_col1, #T_fe1cd_row5_col1, #T_fe1cd_row6_col1, #T_fe1cd_row7_col1, #T_fe1cd_row8_col1, #T_fe1cd_row9_col1, #T_fe1cd_row10_col1, #T_fe1cd_row11_col1, #T_fe1cd_row12_col1, #T_fe1cd_row13_col1, #T_fe1cd_row14_col1, #T_fe1cd_row15_col1, #T_fe1cd_row16_col1, #T_fe1cd_row17_col1, #T_fe1cd_row18_col1, #T_fe1cd_row19_col1, #T_fe1cd_row20_col1, #T_fe1cd_row21_col1, #T_fe1cd_row22_col1, #T_fe1cd_row23_col1, #T_fe1cd_row24_col1, #T_fe1cd_row25_col1, #T_fe1cd_row26_col1, #T_fe1cd_row27_col1, #T_fe1cd_row28_col1, #T_fe1cd_row29_col1, #T_fe1cd_row30_col1, #T_fe1cd_row31_col1 {
+  color: white;
+  background-color: peru;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+}
+#T_fe1cd_row0_col2, #T_fe1cd_row2_col2 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #452929;
+  color: #f1f1f1;
+  color: springgreen;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row0_col3 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #774c4c;
+  color: #f1f1f1;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row0_col4, #T_fe1cd_row2_col4 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #391f1f;
+  color: #f1f1f1;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row0_col5, #T_fe1cd_row0_col6, #T_fe1cd_row0_col11, #T_fe1cd_row0_col12 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #000000;
+  color: #f1f1f1;
+}
+#T_fe1cd_row0_col7, #T_fe1cd_row11_col8 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #6bc072;
+  color: #000000;
+  color: dodgerblue;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row0_col8, #T_fe1cd_row31_col7 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #004529;
+  color: #f1f1f1;
+  color: dodgerblue;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row0_col9, #T_fe1cd_row0_col10 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #004529;
+  color: #f1f1f1;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row1_col2 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #280d0d;
+  color: #f1f1f1;
+  color: springgreen;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row1_col3 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #402525;
+  color: #f1f1f1;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row1_col4, #T_fe1cd_row3_col3, #T_fe1cd_row3_col4, #T_fe1cd_row7_col4, #T_fe1cd_row10_col4 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #1e0000;
+  color: #f1f1f1;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row1_col5, #T_fe1cd_row3_col5, #T_fe1cd_row9_col5, #T_fe1cd_row12_col5, #T_fe1cd_row14_col5, #T_fe1cd_row16_col5, #T_fe1cd_row16_col6, #T_fe1cd_row27_col5, #T_fe1cd_row30_col5, #T_fe1cd_row30_col6 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #e5d8bd;
+  color: #000000;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row1_col6, #T_fe1cd_row3_col6, #T_fe1cd_row9_col6, #T_fe1cd_row12_col6, #T_fe1cd_row14_col6, #T_fe1cd_row18_col5, #T_fe1cd_row18_col6, #T_fe1cd_row25_col5, #T_fe1cd_row25_col6, #T_fe1cd_row27_col6, #T_fe1cd_row29_col5, #T_fe1cd_row29_col6 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #ffffcc;
+  color: #000000;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row1_col7 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #86cc7f;
+  color: #000000;
+  color: dodgerblue;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row1_col8 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #004a2b;
+  color: #f1f1f1;
+  color: dodgerblue;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row1_col9 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #004e2d;
+  color: #f1f1f1;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row1_col10 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #004c2c;
+  color: #f1f1f1;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row1_col11, #T_fe1cd_row2_col12, #T_fe1cd_row6_col12, #T_fe1cd_row7_col12, #T_fe1cd_row10_col11, #T_fe1cd_row10_col12, #T_fe1cd_row13_col11, #T_fe1cd_row13_col12, #T_fe1cd_row14_col11, #T_fe1cd_row14_col12, #T_fe1cd_row16_col11, #T_fe1cd_row16_col12, #T_fe1cd_row19_col11, #T_fe1cd_row19_col12, #T_fe1cd_row25_col12, #T_fe1cd_row27_col12 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #fddaec;
+  color: #000000;
+  color: red;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row1_col12, #T_fe1cd_row5_col11, #T_fe1cd_row5_col12, #T_fe1cd_row8_col11, #T_fe1cd_row8_col12, #T_fe1cd_row15_col11, #T_fe1cd_row15_col12, #T_fe1cd_row17_col11, #T_fe1cd_row17_col12, #T_fe1cd_row18_col11, #T_fe1cd_row18_col12, #T_fe1cd_row20_col11, #T_fe1cd_row20_col12, #T_fe1cd_row23_col11, #T_fe1cd_row23_col12, #T_fe1cd_row24_col11, #T_fe1cd_row24_col12, #T_fe1cd_row25_col11, #T_fe1cd_row26_col11, #T_fe1cd_row26_col12, #T_fe1cd_row27_col11, #T_fe1cd_row28_col11, #T_fe1cd_row28_col12, #T_fe1cd_row29_col11, #T_fe1cd_row29_col12 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #f2f2f2;
+  color: #000000;
+  color: red;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row2_col3 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #845454;
+  color: #f1f1f1;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row2_col5, #T_fe1cd_row2_col6, #T_fe1cd_row3_col12, #T_fe1cd_row5_col5, #T_fe1cd_row5_col6, #T_fe1cd_row6_col5, #T_fe1cd_row6_col6, #T_fe1cd_row11_col11, #T_fe1cd_row12_col11, #T_fe1cd_row13_col5, #T_fe1cd_row15_col5, #T_fe1cd_row15_col6, #T_fe1cd_row17_col5, #T_fe1cd_row17_col6, #T_fe1cd_row19_col5, #T_fe1cd_row19_col6, #T_fe1cd_row23_col5, #T_fe1cd_row23_col6, #T_fe1cd_row24_col5, #T_fe1cd_row24_col6, #T_fe1cd_row26_col5, #T_fe1cd_row26_col6, #T_fe1cd_row28_col5, #T_fe1cd_row28_col6 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #ffffcc;
+  color: #000000;
+  color: red;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row2_col7 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #88cd7f;
+  color: #000000;
+  color: dodgerblue;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row2_col8 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #005730;
+  color: #f1f1f1;
+  color: dodgerblue;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row2_col9 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #005730;
+  color: #f1f1f1;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row2_col10 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #00532f;
+  color: #f1f1f1;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row2_col11, #T_fe1cd_row6_col11, #T_fe1cd_row7_col11, #T_fe1cd_row9_col11, #T_fe1cd_row9_col12, #T_fe1cd_row11_col12, #T_fe1cd_row12_col12, #T_fe1cd_row30_col11 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #e5d8bd;
+  color: #000000;
+  color: red;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row3_col2 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #1e0000;
+  color: #f1f1f1;
+  color: springgreen;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row3_col7 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #d2eda0;
+  color: #000000;
+  color: dodgerblue;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row3_col8 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #0b713b;
+  color: #f1f1f1;
+  color: dodgerblue;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row3_col9 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #005f34;
+  color: #f1f1f1;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row3_col10 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #086e3a;
+  color: #f1f1f1;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row3_col11, #T_fe1cd_row4_col11, #T_fe1cd_row11_col6 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #b3cde3;
+  color: #000000;
+  color: red;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row4_col2 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #a66c6c;
+  color: #f1f1f1;
+  color: aqua;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row4_col3 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #9b6464;
+  color: #f1f1f1;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row4_col4, #T_fe1cd_row5_col4, #T_fe1cd_row9_col4, #T_fe1cd_row20_col4 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #a36969;
+  color: #f1f1f1;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row4_col5, #T_fe1cd_row8_col5, #T_fe1cd_row21_col5, #T_fe1cd_row21_col6, #T_fe1cd_row22_col6, #T_fe1cd_row31_col5 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #ccebc5;
+  color: #000000;
+  color: red;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row4_col6, #T_fe1cd_row8_col6, #T_fe1cd_row22_col5, #T_fe1cd_row22_col12, #T_fe1cd_row31_col11 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #decbe4;
+  color: #000000;
+  color: red;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row4_col7 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #75c578;
+  color: #000000;
+  color: dodgerblue;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row4_col8 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #288a47;
+  color: #f1f1f1;
+  color: dodgerblue;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row4_col9 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #016937;
+  color: #f1f1f1;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row4_col10 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #248644;
+  color: #f1f1f1;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row4_col12, #T_fe1cd_row13_col6, #T_fe1cd_row22_col11, #T_fe1cd_row30_col12 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #fed9a6;
+  color: #000000;
+  color: red;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row5_col2 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #a76c6c;
+  color: #f1f1f1;
+  color: aqua;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row5_col3 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #a66c6c;
+  color: #f1f1f1;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row5_col7, #T_fe1cd_row12_col7 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #79c679;
+  color: #000000;
+  color: dodgerblue;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row5_col8 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #298c48;
+  color: #f1f1f1;
+  color: dodgerblue;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row5_col9 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #0a703a;
+  color: #f1f1f1;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row5_col10 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #2b8e4a;
+  color: #f1f1f1;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row6_col2 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #ad7070;
+  color: #f1f1f1;
+  color: aqua;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row6_col3 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #c27e7e;
+  color: #f1f1f1;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row6_col4, #T_fe1cd_row8_col4 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #ab6f6f;
+  color: #f1f1f1;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row6_col7 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #83cb7d;
+  color: #000000;
+  color: dodgerblue;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row6_col8 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #329850;
+  color: #f1f1f1;
+  color: dodgerblue;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row6_col9 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #13773d;
+  color: #f1f1f1;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row6_col10 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #30954f;
+  color: #f1f1f1;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row7_col2, #T_fe1cd_row10_col2 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #321a1a;
+  color: #f1f1f1;
+  color: springgreen;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row7_col3 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #573636;
+  color: #f1f1f1;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row7_col5, #T_fe1cd_row7_col6, #T_fe1cd_row10_col5, #T_fe1cd_row10_col6, #T_fe1cd_row20_col5, #T_fe1cd_row20_col6 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #f2f2f2;
+  color: #000000;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row7_col7 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #fafdc9;
+  color: #000000;
+  color: dodgerblue;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row7_col8, #T_fe1cd_row8_col8 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #3ba358;
+  color: #f1f1f1;
+  color: dodgerblue;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row7_col9 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #1c7e40;
+  color: #f1f1f1;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row7_col10, #T_fe1cd_row8_col10 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #3da559;
+  color: #f1f1f1;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row8_col2 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #aa6e6e;
+  color: #f1f1f1;
+  color: aqua;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row8_col3 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #b97878;
+  color: #f1f1f1;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row8_col7 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #9cd687;
+  color: #000000;
+  color: dodgerblue;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row8_col9 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #258745;
+  color: #f1f1f1;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row9_col2 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #a56b6b;
+  color: #f1f1f1;
+  color: aqua;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row9_col3 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #915d5d;
+  color: #f1f1f1;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row9_col7 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #c0e597;
+  color: #000000;
+  color: dodgerblue;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row9_col8 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #49af61;
+  color: #f1f1f1;
+  color: dodgerblue;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row9_col9 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #2d914b;
+  color: #f1f1f1;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row9_col10 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #45ad5f;
+  color: #f1f1f1;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row10_col3 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #684141;
+  color: #f1f1f1;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row10_col7 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #ffffe4;
+  color: #000000;
+  color: dodgerblue;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row10_col8 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #53b466;
+  color: #f1f1f1;
+  color: dodgerblue;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row10_col9 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #349a52;
+  color: #f1f1f1;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row10_col10 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #51b365;
+  color: #f1f1f1;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row11_col2 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #d3b397;
+  color: #000000;
+  color: aqua;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row11_col3 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #dac6a1;
+  color: #000000;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row11_col4, #T_fe1cd_row14_col4, #T_fe1cd_row15_col4, #T_fe1cd_row17_col4, #T_fe1cd_row19_col4 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #d2af95;
+  color: #000000;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row11_col5, #T_fe1cd_row21_col11, #T_fe1cd_row21_col12, #T_fe1cd_row31_col6, #T_fe1cd_row31_col12 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #fbb4ae;
+  color: #000000;
+  color: red;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row11_col7 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #39a056;
+  color: #f1f1f1;
+  color: dodgerblue;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row11_col9 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #3ca458;
+  color: #f1f1f1;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row11_col10 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #68be71;
+  color: #000000;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row12_col2 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #d0aa92;
+  color: #000000;
+  color: aqua;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row12_col3 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #c99689;
+  color: #f1f1f1;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row12_col4, #T_fe1cd_row18_col4 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #cfa791;
+  color: #000000;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row12_col8 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #81ca7d;
+  color: #000000;
+  color: dodgerblue;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row12_col9 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #47ae60;
+  color: #f1f1f1;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row12_col10 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #7ec97b;
+  color: #000000;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row13_col2 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #d4b598;
+  color: #000000;
+  color: aqua;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row13_col3 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #decfa6;
+  color: #000000;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row13_col4 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #d4b699;
+  color: #000000;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row13_col7 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #5ab76a;
+  color: #f1f1f1;
+  color: dodgerblue;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row13_col8 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #8bce81;
+  color: #000000;
+  color: dodgerblue;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row13_col9 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #55b567;
+  color: #f1f1f1;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row13_col10 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #88cd7f;
+  color: #000000;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row14_col2, #T_fe1cd_row19_col2 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #d2af95;
+  color: #000000;
+  color: aqua;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row14_col3, #T_fe1cd_row19_col3 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #d4b598;
+  color: #000000;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row14_col7 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #89ce80;
+  color: #000000;
+  color: dodgerblue;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row14_col8 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #92d183;
+  color: #000000;
+  color: dodgerblue;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row14_col9 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #62bb6e;
+  color: #f1f1f1;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row14_col10, #T_fe1cd_row15_col10 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #93d284;
+  color: #000000;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row15_col2 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #d2b096;
+  color: #000000;
+  color: aqua;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row15_col3 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #d7be9d;
+  color: #000000;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row15_col7 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #90d083;
+  color: #000000;
+  color: dodgerblue;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row15_col8 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #98d486;
+  color: #000000;
+  color: dodgerblue;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row15_col9 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #70c275;
+  color: #000000;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row16_col2 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #cda28f;
+  color: #000000;
+  color: aqua;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row16_col3 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #c68b84;
+  color: #f1f1f1;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row16_col4 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #cca08e;
+  color: #f1f1f1;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row16_col7 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #c7e89a;
+  color: #000000;
+  color: dodgerblue;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row16_col8 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #a2d88a;
+  color: #000000;
+  color: dodgerblue;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row16_col9 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #7fc97c;
+  color: #000000;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row16_col10, #T_fe1cd_row17_col10 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #9dd688;
+  color: #000000;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row17_col2 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #d1ad94;
+  color: #000000;
+  color: aqua;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row17_col3 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #d0ac94;
+  color: #000000;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row17_col7 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #aedd8e;
+  color: #000000;
+  color: dodgerblue;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row17_col8, #T_fe1cd_row22_col7 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #a4d98a;
+  color: #000000;
+  color: dodgerblue;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row17_col9 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #8dcf81;
+  color: #000000;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row18_col2 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #d0ac94;
+  color: #000000;
+  color: aqua;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row18_col3 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #cda18e;
+  color: #f1f1f1;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row18_col7 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #b9e294;
+  color: #000000;
+  color: dodgerblue;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row18_col8, #T_fe1cd_row24_col7, #T_fe1cd_row26_col7 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #a6da8b;
+  color: #000000;
+  color: dodgerblue;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row18_col9 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #9ad587;
+  color: #000000;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row18_col10 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #a9db8c;
+  color: #000000;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row19_col7, #T_fe1cd_row29_col7 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #c4e799;
+  color: #000000;
+  color: dodgerblue;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row19_col8 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #b1df90;
+  color: #000000;
+  color: dodgerblue;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row19_col9 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #a7db8c;
+  color: #000000;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row19_col10, #T_fe1cd_row20_col10 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #b3e091;
+  color: #000000;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row20_col2 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #a96d6d;
+  color: #f1f1f1;
+  color: aqua;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row20_col3 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #af7272;
+  color: #f1f1f1;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row20_col7, #T_fe1cd_row31_col8 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #ffffe5;
+  color: #000000;
+  color: dodgerblue;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row20_col8 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #b3e091;
+  color: #000000;
+  color: dodgerblue;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row20_col9 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #b5e092;
+  color: #000000;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row21_col2 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #d6bb9b;
+  color: #000000;
+  color: aqua;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row21_col3 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #e1d7aa;
+  color: #000000;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row21_col4 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #d7bd9c;
+  color: #000000;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row21_col7, #T_fe1cd_row28_col8 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #f7fcbc;
+  color: #000000;
+  color: dodgerblue;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row21_col8 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #def2a7;
+  color: #000000;
+  color: dodgerblue;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row21_col9 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #c0e597;
+  color: #000000;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row21_col10 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #ddf2a6;
+  color: #000000;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row22_col2, #T_fe1cd_row25_col2 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #e9e9b5;
+  color: #000000;
+  color: aquamarine;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row22_col3 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #e7e6b2;
+  color: #000000;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row22_col4, #T_fe1cd_row23_col4, #T_fe1cd_row25_col4, #T_fe1cd_row27_col4, #T_fe1cd_row30_col4 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #e8e8b4;
+  color: #000000;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row22_col8 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #edf8b2;
+  color: #000000;
+  color: dodgerblue;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row22_col9 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #cbea9c;
+  color: #000000;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row22_col10 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #ebf7b0;
+  color: #000000;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row23_col2, #T_fe1cd_row27_col2 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #e9e9b8;
+  color: #000000;
+  color: aquamarine;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row23_col3 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #ededc6;
+  color: #000000;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row23_col7 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #9fd788;
+  color: #000000;
+  color: dodgerblue;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row23_col8 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #eef9b3;
+  color: #000000;
+  color: dodgerblue;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row23_col9 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #d6efa2;
+  color: #000000;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row23_col10, #T_fe1cd_row24_col10, #T_fe1cd_row25_col10 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #f0f9b4;
+  color: #000000;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row24_col2 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #eaeab9;
+  color: #000000;
+  color: aquamarine;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row24_col3 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #f3f3db;
+  color: #000000;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row24_col4, #T_fe1cd_row25_col3, #T_fe1cd_row26_col4, #T_fe1cd_row28_col4, #T_fe1cd_row29_col4 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #ebebbc;
+  color: #000000;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row24_col8 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #f1fab5;
+  color: #000000;
+  color: dodgerblue;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row24_col9 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #dff3a8;
+  color: #000000;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row25_col7 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #bee596;
+  color: #000000;
+  color: dodgerblue;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row25_col8 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #f4fbb7;
+  color: #000000;
+  color: dodgerblue;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row25_col9 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #e7f6ad;
+  color: #000000;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row26_col2 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #ebebbd;
+  color: #000000;
+  color: aquamarine;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row26_col3 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #f9f9ee;
+  color: #000000;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row26_col8 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #f5fbb8;
+  color: #000000;
+  color: dodgerblue;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row26_col9 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #eef9b3;
+  color: #000000;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row26_col10, #T_fe1cd_row27_col10, #T_fe1cd_row28_col10, #T_fe1cd_row29_col10 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #f7fcb9;
+  color: #000000;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row27_col3 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #f1f1d1;
+  color: #000000;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row27_col7 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #c3e698;
+  color: #000000;
+  color: dodgerblue;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row27_col8, #T_fe1cd_row30_col7 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #f7fcb9;
+  color: #000000;
+  color: dodgerblue;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row27_col9 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #f6fcb8;
+  color: #000000;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row28_col2 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #ebebbe;
+  color: #000000;
+  color: aquamarine;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row28_col3 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #fcfcf7;
+  color: #000000;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row28_col7 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #b8e293;
+  color: #000000;
+  color: dodgerblue;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row28_col9 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #f9fdc4;
+  color: #000000;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row29_col2 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #ebebbc;
+  color: #000000;
+  color: aquamarine;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row29_col3 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #f7f7e5;
+  color: #000000;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row29_col8 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #f8fcbd;
+  color: #000000;
+  color: dodgerblue;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row29_col9 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #fbfdcf;
+  color: #000000;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row30_col2 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #e8e7b3;
+  color: #000000;
+  color: aquamarine;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row30_col3 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #e4dfae;
+  color: #000000;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row30_col8 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #fafdcb;
+  color: #000000;
+  color: dodgerblue;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row30_col9 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #fdfeda;
+  color: #000000;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row30_col10 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #fafdcb;
+  color: #000000;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row31_col2 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #ffffff;
+  color: #000000;
+  color: darkblue;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row31_col3, #T_fe1cd_row31_col4 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #ffffff;
+  color: #000000;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+#T_fe1cd_row31_col9, #T_fe1cd_row31_col10 {
+  border: 4px solid white;
+  width: 120px;
+  text-align: justify;
+  height: 10px;
+  background-color: #ffffe5;
+  color: #000000;
+  opacity: 1;
+  font-family: consolas;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+}
+</style>
+<table id="T_fe1cd">
+  <thead>
+    <tr>
+      <th class="blank level0" >&nbsp;</th>
+      <th id="T_fe1cd_level0_col0" class="col_heading level0 col0" >year</th>
+      <th id="T_fe1cd_level0_col1" class="col_heading level0 col1" >pizza_type_id</th>
+      <th id="T_fe1cd_level0_col2" class="col_heading level0 col2" >count</th>
+      <th id="T_fe1cd_level0_col3" class="col_heading level0 col3" >count_rank</th>
+      <th id="T_fe1cd_level0_col4" class="col_heading level0 col4" >pct_count</th>
+      <th id="T_fe1cd_level0_col5" class="col_heading level0 col5" >count_diff</th>
+      <th id="T_fe1cd_level0_col6" class="col_heading level0 col6" >count_pct_diff</th>
+      <th id="T_fe1cd_level0_col7" class="col_heading level0 col7" >avg_total_sales</th>
+      <th id="T_fe1cd_level0_col8" class="col_heading level0 col8" >total_sales</th>
+      <th id="T_fe1cd_level0_col9" class="col_heading level0 col9" >sales_rank</th>
+      <th id="T_fe1cd_level0_col10" class="col_heading level0 col10" >pct_total_sales</th>
+      <th id="T_fe1cd_level0_col11" class="col_heading level0 col11" >total_sales_diff</th>
+      <th id="T_fe1cd_level0_col12" class="col_heading level0 col12" >total_sales_pct_diff</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th id="T_fe1cd_level0_row0" class="row_heading level0 row0" >0</th>
+      <td id="T_fe1cd_row0_col0" class="data row0 col0" >2015</td>
+      <td id="T_fe1cd_row0_col1" class="data row0 col1" >thai_ckn</td>
+      <td id="T_fe1cd_row0_col2" class="data row0 col2" >2,371</td>
+      <td id="T_fe1cd_row0_col3" class="data row0 col3" >5</td>
+      <td id="T_fe1cd_row0_col4" class="data row0 col4" >4.80%</td>
+      <td id="T_fe1cd_row0_col5" class="data row0 col5" ></td>
+      <td id="T_fe1cd_row0_col6" class="data row0 col6" ></td>
+      <td id="T_fe1cd_row0_col7" class="data row0 col7" >£19</td>
+      <td id="T_fe1cd_row0_col8" class="data row0 col8" >£43,434</td>
+      <td id="T_fe1cd_row0_col9" class="data row0 col9" >1</td>
+      <td id="T_fe1cd_row0_col10" class="data row0 col10" >5.30%</td>
+      <td id="T_fe1cd_row0_col11" class="data row0 col11" ></td>
+      <td id="T_fe1cd_row0_col12" class="data row0 col12" ></td>
+    </tr>
+    <tr>
+      <th id="T_fe1cd_level0_row1" class="row_heading level0 row1" >1</th>
+      <td id="T_fe1cd_row1_col0" class="data row1 col0" >2015</td>
+      <td id="T_fe1cd_row1_col1" class="data row1 col1" >bbq_ckn</td>
+      <td id="T_fe1cd_row1_col2" class="data row1 col2" >2,432</td>
+      <td id="T_fe1cd_row1_col3" class="data row1 col3" >2</td>
+      <td id="T_fe1cd_row1_col4" class="data row1 col4" >4.90%</td>
+      <td id="T_fe1cd_row1_col5" class="data row1 col5" >61</td>
+      <td id="T_fe1cd_row1_col6" class="data row1 col6" >2.57%</td>
+      <td id="T_fe1cd_row1_col7" class="data row1 col7" >£18</td>
+      <td id="T_fe1cd_row1_col8" class="data row1 col8" >£42,768</td>
+      <td id="T_fe1cd_row1_col9" class="data row1 col9" >2</td>
+      <td id="T_fe1cd_row1_col10" class="data row1 col10" >5.20%</td>
+      <td id="T_fe1cd_row1_col11" class="data row1 col11" >£-666</td>
+      <td id="T_fe1cd_row1_col12" class="data row1 col12" >-1.53%</td>
+    </tr>
+    <tr>
+      <th id="T_fe1cd_level0_row2" class="row_heading level0 row2" >2</th>
+      <td id="T_fe1cd_row2_col0" class="data row2 col0" >2015</td>
+      <td id="T_fe1cd_row2_col1" class="data row2 col1" >cali_ckn</td>
+      <td id="T_fe1cd_row2_col2" class="data row2 col2" >2,370</td>
+      <td id="T_fe1cd_row2_col3" class="data row2 col3" >6</td>
+      <td id="T_fe1cd_row2_col4" class="data row2 col4" >4.80%</td>
+      <td id="T_fe1cd_row2_col5" class="data row2 col5" >-62</td>
+      <td id="T_fe1cd_row2_col6" class="data row2 col6" >-2.55%</td>
+      <td id="T_fe1cd_row2_col7" class="data row2 col7" >£18</td>
+      <td id="T_fe1cd_row2_col8" class="data row2 col8" >£41,410</td>
+      <td id="T_fe1cd_row2_col9" class="data row2 col9" >3</td>
+      <td id="T_fe1cd_row2_col10" class="data row2 col10" >5.10%</td>
+      <td id="T_fe1cd_row2_col11" class="data row2 col11" >£-1,358</td>
+      <td id="T_fe1cd_row2_col12" class="data row2 col12" >-3.18%</td>
+    </tr>
+    <tr>
+      <th id="T_fe1cd_level0_row3" class="row_heading level0 row3" >3</th>
+      <td id="T_fe1cd_row3_col0" class="data row3 col0" >2015</td>
+      <td id="T_fe1cd_row3_col1" class="data row3 col1" >classic_dlx</td>
+      <td id="T_fe1cd_row3_col2" class="data row3 col2" >2,453</td>
+      <td id="T_fe1cd_row3_col3" class="data row3 col3" >1</td>
+      <td id="T_fe1cd_row3_col4" class="data row3 col4" >4.90%</td>
+      <td id="T_fe1cd_row3_col5" class="data row3 col5" >83</td>
+      <td id="T_fe1cd_row3_col6" class="data row3 col6" >3.50%</td>
+      <td id="T_fe1cd_row3_col7" class="data row3 col7" >£16</td>
+      <td id="T_fe1cd_row3_col8" class="data row3 col8" >£38,180</td>
+      <td id="T_fe1cd_row3_col9" class="data row3 col9" >4</td>
+      <td id="T_fe1cd_row3_col10" class="data row3 col10" >4.70%</td>
+      <td id="T_fe1cd_row3_col11" class="data row3 col11" >£-3,229</td>
+      <td id="T_fe1cd_row3_col12" class="data row3 col12" >-7.80%</td>
+    </tr>
+    <tr>
+      <th id="T_fe1cd_level0_row4" class="row_heading level0 row4" >4</th>
+      <td id="T_fe1cd_row4_col0" class="data row4 col0" >2015</td>
+      <td id="T_fe1cd_row4_col1" class="data row4 col1" >spicy_ital</td>
+      <td id="T_fe1cd_row4_col2" class="data row4 col2" >1,924</td>
+      <td id="T_fe1cd_row4_col3" class="data row4 col3" >8</td>
+      <td id="T_fe1cd_row4_col4" class="data row4 col4" >3.90%</td>
+      <td id="T_fe1cd_row4_col5" class="data row4 col5" >-529</td>
+      <td id="T_fe1cd_row4_col6" class="data row4 col6" >-21.57%</td>
+      <td id="T_fe1cd_row4_col7" class="data row4 col7" >£18</td>
+      <td id="T_fe1cd_row4_col8" class="data row4 col8" >£34,831</td>
+      <td id="T_fe1cd_row4_col9" class="data row4 col9" >5</td>
+      <td id="T_fe1cd_row4_col10" class="data row4 col10" >4.30%</td>
+      <td id="T_fe1cd_row4_col11" class="data row4 col11" >£-3,349</td>
+      <td id="T_fe1cd_row4_col12" class="data row4 col12" >-8.77%</td>
+    </tr>
+    <tr>
+      <th id="T_fe1cd_level0_row5" class="row_heading level0 row5" >5</th>
+      <td id="T_fe1cd_row5_col0" class="data row5 col0" >2015</td>
+      <td id="T_fe1cd_row5_col1" class="data row5 col1" >southw_ckn</td>
+      <td id="T_fe1cd_row5_col2" class="data row5 col2" >1,917</td>
+      <td id="T_fe1cd_row5_col3" class="data row5 col3" >9</td>
+      <td id="T_fe1cd_row5_col4" class="data row5 col4" >3.90%</td>
+      <td id="T_fe1cd_row5_col5" class="data row5 col5" >-7</td>
+      <td id="T_fe1cd_row5_col6" class="data row5 col6" >-0.36%</td>
+      <td id="T_fe1cd_row5_col7" class="data row5 col7" >£18</td>
+      <td id="T_fe1cd_row5_col8" class="data row5 col8" >£34,706</td>
+      <td id="T_fe1cd_row5_col9" class="data row5 col9" >6</td>
+      <td id="T_fe1cd_row5_col10" class="data row5 col10" >4.20%</td>
+      <td id="T_fe1cd_row5_col11" class="data row5 col11" >£-126</td>
+      <td id="T_fe1cd_row5_col12" class="data row5 col12" >-0.36%</td>
+    </tr>
+    <tr>
+      <th id="T_fe1cd_level0_row6" class="row_heading level0 row6" >6</th>
+      <td id="T_fe1cd_row6_col0" class="data row6 col0" >2015</td>
+      <td id="T_fe1cd_row6_col1" class="data row6 col1" >ital_supr</td>
+      <td id="T_fe1cd_row6_col2" class="data row6 col2" >1,884</td>
+      <td id="T_fe1cd_row6_col3" class="data row6 col3" >12</td>
+      <td id="T_fe1cd_row6_col4" class="data row6 col4" >3.80%</td>
+      <td id="T_fe1cd_row6_col5" class="data row6 col5" >-33</td>
+      <td id="T_fe1cd_row6_col6" class="data row6 col6" >-1.72%</td>
+      <td id="T_fe1cd_row6_col7" class="data row6 col7" >£18</td>
+      <td id="T_fe1cd_row6_col8" class="data row6 col8" >£33,477</td>
+      <td id="T_fe1cd_row6_col9" class="data row6 col9" >7</td>
+      <td id="T_fe1cd_row6_col10" class="data row6 col10" >4.10%</td>
+      <td id="T_fe1cd_row6_col11" class="data row6 col11" >£-1,229</td>
+      <td id="T_fe1cd_row6_col12" class="data row6 col12" >-3.54%</td>
+    </tr>
+    <tr>
+      <th id="T_fe1cd_level0_row7" class="row_heading level0 row7" >7</th>
+      <td id="T_fe1cd_row7_col0" class="data row7 col0" >2015</td>
+      <td id="T_fe1cd_row7_col1" class="data row7 col1" >hawaiian</td>
+      <td id="T_fe1cd_row7_col2" class="data row7 col2" >2,422</td>
+      <td id="T_fe1cd_row7_col3" class="data row7 col3" >3</td>
+      <td id="T_fe1cd_row7_col4" class="data row7 col4" >4.90%</td>
+      <td id="T_fe1cd_row7_col5" class="data row7 col5" >538</td>
+      <td id="T_fe1cd_row7_col6" class="data row7 col6" >28.56%</td>
+      <td id="T_fe1cd_row7_col7" class="data row7 col7" >£14</td>
+      <td id="T_fe1cd_row7_col8" class="data row7 col8" >£32,273</td>
+      <td id="T_fe1cd_row7_col9" class="data row7 col9" >8</td>
+      <td id="T_fe1cd_row7_col10" class="data row7 col10" >3.90%</td>
+      <td id="T_fe1cd_row7_col11" class="data row7 col11" >£-1,204</td>
+      <td id="T_fe1cd_row7_col12" class="data row7 col12" >-3.60%</td>
+    </tr>
+    <tr>
+      <th id="T_fe1cd_level0_row8" class="row_heading level0 row8" >8</th>
+      <td id="T_fe1cd_row8_col0" class="data row8 col0" >2015</td>
+      <td id="T_fe1cd_row8_col1" class="data row8 col1" >four_cheese</td>
+      <td id="T_fe1cd_row8_col2" class="data row8 col2" >1,902</td>
+      <td id="T_fe1cd_row8_col3" class="data row8 col3" >11</td>
+      <td id="T_fe1cd_row8_col4" class="data row8 col4" >3.80%</td>
+      <td id="T_fe1cd_row8_col5" class="data row8 col5" >-520</td>
+      <td id="T_fe1cd_row8_col6" class="data row8 col6" >-21.47%</td>
+      <td id="T_fe1cd_row8_col7" class="data row8 col7" >£17</td>
+      <td id="T_fe1cd_row8_col8" class="data row8 col8" >£32,266</td>
+      <td id="T_fe1cd_row8_col9" class="data row8 col9" >9</td>
+      <td id="T_fe1cd_row8_col10" class="data row8 col10" >3.90%</td>
+      <td id="T_fe1cd_row8_col11" class="data row8 col11" >£-8</td>
+      <td id="T_fe1cd_row8_col12" class="data row8 col12" >-0.02%</td>
+    </tr>
+    <tr>
+      <th id="T_fe1cd_level0_row9" class="row_heading level0 row9" >9</th>
+      <td id="T_fe1cd_row9_col0" class="data row9 col0" >2015</td>
+      <td id="T_fe1cd_row9_col1" class="data row9 col1" >sicilian</td>
+      <td id="T_fe1cd_row9_col2" class="data row9 col2" >1,938</td>
+      <td id="T_fe1cd_row9_col3" class="data row9 col3" >7</td>
+      <td id="T_fe1cd_row9_col4" class="data row9 col4" >3.90%</td>
+      <td id="T_fe1cd_row9_col5" class="data row9 col5" >36</td>
+      <td id="T_fe1cd_row9_col6" class="data row9 col6" >1.89%</td>
+      <td id="T_fe1cd_row9_col7" class="data row9 col7" >£16</td>
+      <td id="T_fe1cd_row9_col8" class="data row9 col8" >£30,940</td>
+      <td id="T_fe1cd_row9_col9" class="data row9 col9" >10</td>
+      <td id="T_fe1cd_row9_col10" class="data row9 col10" >3.80%</td>
+      <td id="T_fe1cd_row9_col11" class="data row9 col11" >£-1,325</td>
+      <td id="T_fe1cd_row9_col12" class="data row9 col12" >-4.11%</td>
+    </tr>
+    <tr>
+      <th id="T_fe1cd_level0_row10" class="row_heading level0 row10" >10</th>
+      <td id="T_fe1cd_row10_col0" class="data row10 col0" >2015</td>
+      <td id="T_fe1cd_row10_col1" class="data row10 col1" >pepperoni</td>
+      <td id="T_fe1cd_row10_col2" class="data row10 col2" >2,418</td>
+      <td id="T_fe1cd_row10_col3" class="data row10 col3" >4</td>
+      <td id="T_fe1cd_row10_col4" class="data row10 col4" >4.90%</td>
+      <td id="T_fe1cd_row10_col5" class="data row10 col5" >480</td>
+      <td id="T_fe1cd_row10_col6" class="data row10 col6" >24.77%</td>
+      <td id="T_fe1cd_row10_col7" class="data row10 col7" >£13</td>
+      <td id="T_fe1cd_row10_col8" class="data row10 col8" >£30,162</td>
+      <td id="T_fe1cd_row10_col9" class="data row10 col9" >11</td>
+      <td id="T_fe1cd_row10_col10" class="data row10 col10" >3.70%</td>
+      <td id="T_fe1cd_row10_col11" class="data row10 col11" >£-779</td>
+      <td id="T_fe1cd_row10_col12" class="data row10 col12" >-2.52%</td>
+    </tr>
+    <tr>
+      <th id="T_fe1cd_level0_row11" class="row_heading level0 row11" >11</th>
+      <td id="T_fe1cd_row11_col0" class="data row11 col0" >2015</td>
+      <td id="T_fe1cd_row11_col1" class="data row11 col1" >the_greek</td>
+      <td id="T_fe1cd_row11_col2" class="data row11 col2" >1,420</td>
+      <td id="T_fe1cd_row11_col3" class="data row11 col3" >19</td>
+      <td id="T_fe1cd_row11_col4" class="data row11 col4" >2.90%</td>
+      <td id="T_fe1cd_row11_col5" class="data row11 col5" >-998</td>
+      <td id="T_fe1cd_row11_col6" class="data row11 col6" >-41.27%</td>
+      <td id="T_fe1cd_row11_col7" class="data row11 col7" >£20</td>
+      <td id="T_fe1cd_row11_col8" class="data row11 col8" >£28,454</td>
+      <td id="T_fe1cd_row11_col9" class="data row11 col9" >12</td>
+      <td id="T_fe1cd_row11_col10" class="data row11 col10" >3.50%</td>
+      <td id="T_fe1cd_row11_col11" class="data row11 col11" >£-1,708</td>
+      <td id="T_fe1cd_row11_col12" class="data row11 col12" >-5.66%</td>
+    </tr>
+    <tr>
+      <th id="T_fe1cd_level0_row12" class="row_heading level0 row12" >12</th>
+      <td id="T_fe1cd_row12_col0" class="data row12 col0" >2015</td>
+      <td id="T_fe1cd_row12_col1" class="data row12 col1" >mexicana</td>
+      <td id="T_fe1cd_row12_col2" class="data row12 col2" >1,484</td>
+      <td id="T_fe1cd_row12_col3" class="data row12 col3" >14</td>
+      <td id="T_fe1cd_row12_col4" class="data row12 col4" >3.00%</td>
+      <td id="T_fe1cd_row12_col5" class="data row12 col5" >64</td>
+      <td id="T_fe1cd_row12_col6" class="data row12 col6" >4.51%</td>
+      <td id="T_fe1cd_row12_col7" class="data row12 col7" >£18</td>
+      <td id="T_fe1cd_row12_col8" class="data row12 col8" >£26,781</td>
+      <td id="T_fe1cd_row12_col9" class="data row12 col9" >13</td>
+      <td id="T_fe1cd_row12_col10" class="data row12 col10" >3.30%</td>
+      <td id="T_fe1cd_row12_col11" class="data row12 col11" >£-1,673</td>
+      <td id="T_fe1cd_row12_col12" class="data row12 col12" >-5.88%</td>
+    </tr>
+    <tr>
+      <th id="T_fe1cd_level0_row13" class="row_heading level0 row13" >13</th>
+      <td id="T_fe1cd_row13_col0" class="data row13 col0" >2015</td>
+      <td id="T_fe1cd_row13_col1" class="data row13 col1" >five_cheese</td>
+      <td id="T_fe1cd_row13_col2" class="data row13 col2" >1,409</td>
+      <td id="T_fe1cd_row13_col3" class="data row13 col3" >20</td>
+      <td id="T_fe1cd_row13_col4" class="data row13 col4" >2.80%</td>
+      <td id="T_fe1cd_row13_col5" class="data row13 col5" >-75</td>
+      <td id="T_fe1cd_row13_col6" class="data row13 col6" >-5.05%</td>
+      <td id="T_fe1cd_row13_col7" class="data row13 col7" >£19</td>
+      <td id="T_fe1cd_row13_col8" class="data row13 col8" >£26,066</td>
+      <td id="T_fe1cd_row13_col9" class="data row13 col9" >14</td>
+      <td id="T_fe1cd_row13_col10" class="data row13 col10" >3.20%</td>
+      <td id="T_fe1cd_row13_col11" class="data row13 col11" >£-714</td>
+      <td id="T_fe1cd_row13_col12" class="data row13 col12" >-2.67%</td>
+    </tr>
+    <tr>
+      <th id="T_fe1cd_level0_row14" class="row_heading level0 row14" >14</th>
+      <td id="T_fe1cd_row14_col0" class="data row14 col0" >2015</td>
+      <td id="T_fe1cd_row14_col1" class="data row14 col1" >peppr_salami</td>
+      <td id="T_fe1cd_row14_col2" class="data row14 col2" >1,446</td>
+      <td id="T_fe1cd_row14_col3" class="data row14 col3" >17</td>
+      <td id="T_fe1cd_row14_col4" class="data row14 col4" >2.90%</td>
+      <td id="T_fe1cd_row14_col5" class="data row14 col5" >37</td>
+      <td id="T_fe1cd_row14_col6" class="data row14 col6" >2.63%</td>
+      <td id="T_fe1cd_row14_col7" class="data row14 col7" >£18</td>
+      <td id="T_fe1cd_row14_col8" class="data row14 col8" >£25,529</td>
+      <td id="T_fe1cd_row14_col9" class="data row14 col9" >15</td>
+      <td id="T_fe1cd_row14_col10" class="data row14 col10" >3.10%</td>
+      <td id="T_fe1cd_row14_col11" class="data row14 col11" >£-538</td>
+      <td id="T_fe1cd_row14_col12" class="data row14 col12" >-2.06%</td>
+    </tr>
+    <tr>
+      <th id="T_fe1cd_level0_row15" class="row_heading level0 row15" >15</th>
+      <td id="T_fe1cd_row15_col0" class="data row15 col0" >2015</td>
+      <td id="T_fe1cd_row15_col1" class="data row15 col1" >ital_cpcllo</td>
+      <td id="T_fe1cd_row15_col2" class="data row15 col2" >1,438</td>
+      <td id="T_fe1cd_row15_col3" class="data row15 col3" >18</td>
+      <td id="T_fe1cd_row15_col4" class="data row15 col4" >2.90%</td>
+      <td id="T_fe1cd_row15_col5" class="data row15 col5" >-8</td>
+      <td id="T_fe1cd_row15_col6" class="data row15 col6" >-0.55%</td>
+      <td id="T_fe1cd_row15_col7" class="data row15 col7" >£18</td>
+      <td id="T_fe1cd_row15_col8" class="data row15 col8" >£25,094</td>
+      <td id="T_fe1cd_row15_col9" class="data row15 col9" >16</td>
+      <td id="T_fe1cd_row15_col10" class="data row15 col10" >3.10%</td>
+      <td id="T_fe1cd_row15_col11" class="data row15 col11" >£-435</td>
+      <td id="T_fe1cd_row15_col12" class="data row15 col12" >-1.70%</td>
+    </tr>
+    <tr>
+      <th id="T_fe1cd_level0_row16" class="row_heading level0 row16" >16</th>
+      <td id="T_fe1cd_row16_col0" class="data row16 col0" >2015</td>
+      <td id="T_fe1cd_row16_col1" class="data row16 col1" >veggie_veg</td>
+      <td id="T_fe1cd_row16_col2" class="data row16 col2" >1,526</td>
+      <td id="T_fe1cd_row16_col3" class="data row16 col3" >13</td>
+      <td id="T_fe1cd_row16_col4" class="data row16 col4" >3.10%</td>
+      <td id="T_fe1cd_row16_col5" class="data row16 col5" >88</td>
+      <td id="T_fe1cd_row16_col6" class="data row16 col6" >6.12%</td>
+      <td id="T_fe1cd_row16_col7" class="data row16 col7" >£16</td>
+      <td id="T_fe1cd_row16_col8" class="data row16 col8" >£24,375</td>
+      <td id="T_fe1cd_row16_col9" class="data row16 col9" >17</td>
+      <td id="T_fe1cd_row16_col10" class="data row16 col10" >3.00%</td>
+      <td id="T_fe1cd_row16_col11" class="data row16 col11" >£-719</td>
+      <td id="T_fe1cd_row16_col12" class="data row16 col12" >-2.87%</td>
+    </tr>
+    <tr>
+      <th id="T_fe1cd_level0_row17" class="row_heading level0 row17" >17</th>
+      <td id="T_fe1cd_row17_col0" class="data row17 col0" >2015</td>
+      <td id="T_fe1cd_row17_col1" class="data row17 col1" >prsc_argla</td>
+      <td id="T_fe1cd_row17_col2" class="data row17 col2" >1,457</td>
+      <td id="T_fe1cd_row17_col3" class="data row17 col3" >16</td>
+      <td id="T_fe1cd_row17_col4" class="data row17 col4" >2.90%</td>
+      <td id="T_fe1cd_row17_col5" class="data row17 col5" >-69</td>
+      <td id="T_fe1cd_row17_col6" class="data row17 col6" >-4.52%</td>
+      <td id="T_fe1cd_row17_col7" class="data row17 col7" >£17</td>
+      <td id="T_fe1cd_row17_col8" class="data row17 col8" >£24,193</td>
+      <td id="T_fe1cd_row17_col9" class="data row17 col9" >18</td>
+      <td id="T_fe1cd_row17_col10" class="data row17 col10" >3.00%</td>
+      <td id="T_fe1cd_row17_col11" class="data row17 col11" >£-182</td>
+      <td id="T_fe1cd_row17_col12" class="data row17 col12" >-0.74%</td>
+    </tr>
+    <tr>
+      <th id="T_fe1cd_level0_row18" class="row_heading level0 row18" >18</th>
+      <td id="T_fe1cd_row18_col0" class="data row18 col0" >2015</td>
+      <td id="T_fe1cd_row18_col1" class="data row18 col1" >napolitana</td>
+      <td id="T_fe1cd_row18_col2" class="data row18 col2" >1,464</td>
+      <td id="T_fe1cd_row18_col3" class="data row18 col3" >15</td>
+      <td id="T_fe1cd_row18_col4" class="data row18 col4" >3.00%</td>
+      <td id="T_fe1cd_row18_col5" class="data row18 col5" >7</td>
+      <td id="T_fe1cd_row18_col6" class="data row18 col6" >0.48%</td>
+      <td id="T_fe1cd_row18_col7" class="data row18 col7" >£17</td>
+      <td id="T_fe1cd_row18_col8" class="data row18 col8" >£24,087</td>
+      <td id="T_fe1cd_row18_col9" class="data row18 col9" >19</td>
+      <td id="T_fe1cd_row18_col10" class="data row18 col10" >2.90%</td>
+      <td id="T_fe1cd_row18_col11" class="data row18 col11" >£-106</td>
+      <td id="T_fe1cd_row18_col12" class="data row18 col12" >-0.44%</td>
+    </tr>
+    <tr>
+      <th id="T_fe1cd_level0_row19" class="row_heading level0 row19" >19</th>
+      <td id="T_fe1cd_row19_col0" class="data row19 col0" >2015</td>
+      <td id="T_fe1cd_row19_col1" class="data row19 col1" >spinach_fet</td>
+      <td id="T_fe1cd_row19_col2" class="data row19 col2" >1,446</td>
+      <td id="T_fe1cd_row19_col3" class="data row19 col3" >17</td>
+      <td id="T_fe1cd_row19_col4" class="data row19 col4" >2.90%</td>
+      <td id="T_fe1cd_row19_col5" class="data row19 col5" >-18</td>
+      <td id="T_fe1cd_row19_col6" class="data row19 col6" >-1.23%</td>
+      <td id="T_fe1cd_row19_col7" class="data row19 col7" >£16</td>
+      <td id="T_fe1cd_row19_col8" class="data row19 col8" >£23,271</td>
+      <td id="T_fe1cd_row19_col9" class="data row19 col9" >20</td>
+      <td id="T_fe1cd_row19_col10" class="data row19 col10" >2.80%</td>
+      <td id="T_fe1cd_row19_col11" class="data row19 col11" >£-816</td>
+      <td id="T_fe1cd_row19_col12" class="data row19 col12" >-3.39%</td>
+    </tr>
+    <tr>
+      <th id="T_fe1cd_level0_row20" class="row_heading level0 row20" >20</th>
+      <td id="T_fe1cd_row20_col0" class="data row20 col0" >2015</td>
+      <td id="T_fe1cd_row20_col1" class="data row20 col1" >big_meat</td>
+      <td id="T_fe1cd_row20_col2" class="data row20 col2" >1,914</td>
+      <td id="T_fe1cd_row20_col3" class="data row20 col3" >10</td>
+      <td id="T_fe1cd_row20_col4" class="data row20 col4" >3.90%</td>
+      <td id="T_fe1cd_row20_col5" class="data row20 col5" >468</td>
+      <td id="T_fe1cd_row20_col6" class="data row20 col6" >32.37%</td>
+      <td id="T_fe1cd_row20_col7" class="data row20 col7" >£13</td>
+      <td id="T_fe1cd_row20_col8" class="data row20 col8" >£22,968</td>
+      <td id="T_fe1cd_row20_col9" class="data row20 col9" >21</td>
+      <td id="T_fe1cd_row20_col10" class="data row20 col10" >2.80%</td>
+      <td id="T_fe1cd_row20_col11" class="data row20 col11" >£-303</td>
+      <td id="T_fe1cd_row20_col12" class="data row20 col12" >-1.30%</td>
+    </tr>
+    <tr>
+      <th id="T_fe1cd_level0_row21" class="row_heading level0 row21" >21</th>
+      <td id="T_fe1cd_row21_col0" class="data row21 col0" >2015</td>
+      <td id="T_fe1cd_row21_col1" class="data row21 col1" >pep_msh_pep</td>
+      <td id="T_fe1cd_row21_col2" class="data row21 col2" >1,359</td>
+      <td id="T_fe1cd_row21_col3" class="data row21 col3" >21</td>
+      <td id="T_fe1cd_row21_col4" class="data row21 col4" >2.70%</td>
+      <td id="T_fe1cd_row21_col5" class="data row21 col5" >-555</td>
+      <td id="T_fe1cd_row21_col6" class="data row21 col6" >-29.00%</td>
+      <td id="T_fe1cd_row21_col7" class="data row21 col7" >£14</td>
+      <td id="T_fe1cd_row21_col8" class="data row21 col8" >£18,834</td>
+      <td id="T_fe1cd_row21_col9" class="data row21 col9" >22</td>
+      <td id="T_fe1cd_row21_col10" class="data row21 col10" >2.30%</td>
+      <td id="T_fe1cd_row21_col11" class="data row21 col11" >£-4,134</td>
+      <td id="T_fe1cd_row21_col12" class="data row21 col12" >-18.00%</td>
+    </tr>
+    <tr>
+      <th id="T_fe1cd_level0_row22" class="row_heading level0 row22" >22</th>
+      <td id="T_fe1cd_row22_col0" class="data row22 col0" >2015</td>
+      <td id="T_fe1cd_row22_col1" class="data row22 col1" >ckn_alfredo</td>
+      <td id="T_fe1cd_row22_col2" class="data row22 col2" >987</td>
+      <td id="T_fe1cd_row22_col3" class="data row22 col3" >23</td>
+      <td id="T_fe1cd_row22_col4" class="data row22 col4" >2.00%</td>
+      <td id="T_fe1cd_row22_col5" class="data row22 col5" >-372</td>
+      <td id="T_fe1cd_row22_col6" class="data row22 col6" >-27.37%</td>
+      <td id="T_fe1cd_row22_col7" class="data row22 col7" >£17</td>
+      <td id="T_fe1cd_row22_col8" class="data row22 col8" >£16,900</td>
+      <td id="T_fe1cd_row22_col9" class="data row22 col9" >23</td>
+      <td id="T_fe1cd_row22_col10" class="data row22 col10" >2.10%</td>
+      <td id="T_fe1cd_row22_col11" class="data row22 col11" >£-1,934</td>
+      <td id="T_fe1cd_row22_col12" class="data row22 col12" >-10.27%</td>
+    </tr>
+    <tr>
+      <th id="T_fe1cd_level0_row23" class="row_heading level0 row23" >23</th>
+      <td id="T_fe1cd_row23_col0" class="data row23 col0" >2015</td>
+      <td id="T_fe1cd_row23_col1" class="data row23 col1" >ckn_pesto</td>
+      <td id="T_fe1cd_row23_col2" class="data row23 col2" >973</td>
+      <td id="T_fe1cd_row23_col3" class="data row23 col3" >25</td>
+      <td id="T_fe1cd_row23_col4" class="data row23 col4" >2.00%</td>
+      <td id="T_fe1cd_row23_col5" class="data row23 col5" >-14</td>
+      <td id="T_fe1cd_row23_col6" class="data row23 col6" >-1.42%</td>
+      <td id="T_fe1cd_row23_col7" class="data row23 col7" >£17</td>
+      <td id="T_fe1cd_row23_col8" class="data row23 col8" >£16,702</td>
+      <td id="T_fe1cd_row23_col9" class="data row23 col9" >24</td>
+      <td id="T_fe1cd_row23_col10" class="data row23 col10" >2.00%</td>
+      <td id="T_fe1cd_row23_col11" class="data row23 col11" >£-198</td>
+      <td id="T_fe1cd_row23_col12" class="data row23 col12" >-1.17%</td>
+    </tr>
+    <tr>
+      <th id="T_fe1cd_level0_row24" class="row_heading level0 row24" >24</th>
+      <td id="T_fe1cd_row24_col0" class="data row24 col0" >2015</td>
+      <td id="T_fe1cd_row24_col1" class="data row24 col1" >soppressata</td>
+      <td id="T_fe1cd_row24_col2" class="data row24 col2" >961</td>
+      <td id="T_fe1cd_row24_col3" class="data row24 col3" >27</td>
+      <td id="T_fe1cd_row24_col4" class="data row24 col4" >1.90%</td>
+      <td id="T_fe1cd_row24_col5" class="data row24 col5" >-12</td>
+      <td id="T_fe1cd_row24_col6" class="data row24 col6" >-1.23%</td>
+      <td id="T_fe1cd_row24_col7" class="data row24 col7" >£17</td>
+      <td id="T_fe1cd_row24_col8" class="data row24 col8" >£16,426</td>
+      <td id="T_fe1cd_row24_col9" class="data row24 col9" >25</td>
+      <td id="T_fe1cd_row24_col10" class="data row24 col10" >2.00%</td>
+      <td id="T_fe1cd_row24_col11" class="data row24 col11" >£-276</td>
+      <td id="T_fe1cd_row24_col12" class="data row24 col12" >-1.65%</td>
+    </tr>
+    <tr>
+      <th id="T_fe1cd_level0_row25" class="row_heading level0 row25" >25</th>
+      <td id="T_fe1cd_row25_col0" class="data row25 col0" >2015</td>
+      <td id="T_fe1cd_row25_col1" class="data row25 col1" >ital_veggie</td>
+      <td id="T_fe1cd_row25_col2" class="data row25 col2" >981</td>
+      <td id="T_fe1cd_row25_col3" class="data row25 col3" >24</td>
+      <td id="T_fe1cd_row25_col4" class="data row25 col4" >2.00%</td>
+      <td id="T_fe1cd_row25_col5" class="data row25 col5" >20</td>
+      <td id="T_fe1cd_row25_col6" class="data row25 col6" >2.08%</td>
+      <td id="T_fe1cd_row25_col7" class="data row25 col7" >£16</td>
+      <td id="T_fe1cd_row25_col8" class="data row25 col8" >£16,019</td>
+      <td id="T_fe1cd_row25_col9" class="data row25 col9" >26</td>
+      <td id="T_fe1cd_row25_col10" class="data row25 col10" >2.00%</td>
+      <td id="T_fe1cd_row25_col11" class="data row25 col11" >£-406</td>
+      <td id="T_fe1cd_row25_col12" class="data row25 col12" >-2.47%</td>
+    </tr>
+    <tr>
+      <th id="T_fe1cd_level0_row26" class="row_heading level0 row26" >26</th>
+      <td id="T_fe1cd_row26_col0" class="data row26 col0" >2015</td>
+      <td id="T_fe1cd_row26_col1" class="data row26 col1" >calabrese</td>
+      <td id="T_fe1cd_row26_col2" class="data row26 col2" >937</td>
+      <td id="T_fe1cd_row26_col3" class="data row26 col3" >29</td>
+      <td id="T_fe1cd_row26_col4" class="data row26 col4" >1.90%</td>
+      <td id="T_fe1cd_row26_col5" class="data row26 col5" >-44</td>
+      <td id="T_fe1cd_row26_col6" class="data row26 col6" >-4.49%</td>
+      <td id="T_fe1cd_row26_col7" class="data row26 col7" >£17</td>
+      <td id="T_fe1cd_row26_col8" class="data row26 col8" >£15,934</td>
+      <td id="T_fe1cd_row26_col9" class="data row26 col9" >27</td>
+      <td id="T_fe1cd_row26_col10" class="data row26 col10" >1.90%</td>
+      <td id="T_fe1cd_row26_col11" class="data row26 col11" >£-85</td>
+      <td id="T_fe1cd_row26_col12" class="data row26 col12" >-0.53%</td>
+    </tr>
+    <tr>
+      <th id="T_fe1cd_level0_row27" class="row_heading level0 row27" >27</th>
+      <td id="T_fe1cd_row27_col0" class="data row27 col0" >2015</td>
+      <td id="T_fe1cd_row27_col1" class="data row27 col1" >spin_pesto</td>
+      <td id="T_fe1cd_row27_col2" class="data row27 col2" >970</td>
+      <td id="T_fe1cd_row27_col3" class="data row27 col3" >26</td>
+      <td id="T_fe1cd_row27_col4" class="data row27 col4" >2.00%</td>
+      <td id="T_fe1cd_row27_col5" class="data row27 col5" >33</td>
+      <td id="T_fe1cd_row27_col6" class="data row27 col6" >3.52%</td>
+      <td id="T_fe1cd_row27_col7" class="data row27 col7" >£16</td>
+      <td id="T_fe1cd_row27_col8" class="data row27 col8" >£15,596</td>
+      <td id="T_fe1cd_row27_col9" class="data row27 col9" >28</td>
+      <td id="T_fe1cd_row27_col10" class="data row27 col10" >1.90%</td>
+      <td id="T_fe1cd_row27_col11" class="data row27 col11" >£-338</td>
+      <td id="T_fe1cd_row27_col12" class="data row27 col12" >-2.12%</td>
+    </tr>
+    <tr>
+      <th id="T_fe1cd_level0_row28" class="row_heading level0 row28" >28</th>
+      <td id="T_fe1cd_row28_col0" class="data row28 col0" >2015</td>
+      <td id="T_fe1cd_row28_col1" class="data row28 col1" >mediterraneo</td>
+      <td id="T_fe1cd_row28_col2" class="data row28 col2" >934</td>
+      <td id="T_fe1cd_row28_col3" class="data row28 col3" >30</td>
+      <td id="T_fe1cd_row28_col4" class="data row28 col4" >1.90%</td>
+      <td id="T_fe1cd_row28_col5" class="data row28 col5" >-36</td>
+      <td id="T_fe1cd_row28_col6" class="data row28 col6" >-3.71%</td>
+      <td id="T_fe1cd_row28_col7" class="data row28 col7" >£17</td>
+      <td id="T_fe1cd_row28_col8" class="data row28 col8" >£15,360</td>
+      <td id="T_fe1cd_row28_col9" class="data row28 col9" >29</td>
+      <td id="T_fe1cd_row28_col10" class="data row28 col10" >1.90%</td>
+      <td id="T_fe1cd_row28_col11" class="data row28 col11" >£-236</td>
+      <td id="T_fe1cd_row28_col12" class="data row28 col12" >-1.51%</td>
+    </tr>
+    <tr>
+      <th id="T_fe1cd_level0_row29" class="row_heading level0 row29" >29</th>
+      <td id="T_fe1cd_row29_col0" class="data row29 col0" >2015</td>
+      <td id="T_fe1cd_row29_col1" class="data row29 col1" >spinach_supr</td>
+      <td id="T_fe1cd_row29_col2" class="data row29 col2" >950</td>
+      <td id="T_fe1cd_row29_col3" class="data row29 col3" >28</td>
+      <td id="T_fe1cd_row29_col4" class="data row29 col4" >1.90%</td>
+      <td id="T_fe1cd_row29_col5" class="data row29 col5" >16</td>
+      <td id="T_fe1cd_row29_col6" class="data row29 col6" >1.71%</td>
+      <td id="T_fe1cd_row29_col7" class="data row29 col7" >£16</td>
+      <td id="T_fe1cd_row29_col8" class="data row29 col8" >£15,278</td>
+      <td id="T_fe1cd_row29_col9" class="data row29 col9" >30</td>
+      <td id="T_fe1cd_row29_col10" class="data row29 col10" >1.90%</td>
+      <td id="T_fe1cd_row29_col11" class="data row29 col11" >£-83</td>
+      <td id="T_fe1cd_row29_col12" class="data row29 col12" >-0.54%</td>
+    </tr>
+    <tr>
+      <th id="T_fe1cd_level0_row30" class="row_heading level0 row30" >30</th>
+      <td id="T_fe1cd_row30_col0" class="data row30 col0" >2015</td>
+      <td id="T_fe1cd_row30_col1" class="data row30 col1" >green_garden</td>
+      <td id="T_fe1cd_row30_col2" class="data row30 col2" >997</td>
+      <td id="T_fe1cd_row30_col3" class="data row30 col3" >22</td>
+      <td id="T_fe1cd_row30_col4" class="data row30 col4" >2.00%</td>
+      <td id="T_fe1cd_row30_col5" class="data row30 col5" >47</td>
+      <td id="T_fe1cd_row30_col6" class="data row30 col6" >4.95%</td>
+      <td id="T_fe1cd_row30_col7" class="data row30 col7" >£14</td>
+      <td id="T_fe1cd_row30_col8" class="data row30 col8" >£13,956</td>
+      <td id="T_fe1cd_row30_col9" class="data row30 col9" >31</td>
+      <td id="T_fe1cd_row30_col10" class="data row30 col10" >1.70%</td>
+      <td id="T_fe1cd_row30_col11" class="data row30 col11" >£-1,322</td>
+      <td id="T_fe1cd_row30_col12" class="data row30 col12" >-8.65%</td>
+    </tr>
+    <tr>
+      <th id="T_fe1cd_level0_row31" class="row_heading level0 row31" >31</th>
+      <td id="T_fe1cd_row31_col0" class="data row31 col0" >2015</td>
+      <td id="T_fe1cd_row31_col1" class="data row31 col1" >brie_carre</td>
+      <td id="T_fe1cd_row31_col2" class="data row31 col2" >490</td>
+      <td id="T_fe1cd_row31_col3" class="data row31 col3" >31</td>
+      <td id="T_fe1cd_row31_col4" class="data row31 col4" >1.00%</td>
+      <td id="T_fe1cd_row31_col5" class="data row31 col5" >-507</td>
+      <td id="T_fe1cd_row31_col6" class="data row31 col6" >-50.85%</td>
+      <td id="T_fe1cd_row31_col7" class="data row31 col7" >£24</td>
+      <td id="T_fe1cd_row31_col8" class="data row31 col8" >£11,588</td>
+      <td id="T_fe1cd_row31_col9" class="data row31 col9" >32</td>
+      <td id="T_fe1cd_row31_col10" class="data row31 col10" >1.40%</td>
+      <td id="T_fe1cd_row31_col11" class="data row31 col11" >£-2,367</td>
+      <td id="T_fe1cd_row31_col12" class="data row31 col12" >-16.96%</td>
+    </tr>
+  </tbody>
+</table>
+
+    </body>
+    </html>
+    
