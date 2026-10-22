@@ -505,3 +505,7 @@ Cloud platforms (AWS, Azure) and data engineering tools (Snowflake, Hadoop) are 
 
 ### Closing Thoughts
 This project enhanced my SQL skills and provided valuable insights into the data analyst job market. The findings from the analysis serve as a guid to prioritising skill development and job search efforts. Aspiring data analysts can better position themselves in a competitivve job market by focusing on high-demand, high-salary skills. This exploration highlights the importaance of continuous learning and adaptation to emerging trends inthe field of data analytics...
+
+### 📬 Contact
+*Built by [Arkyl Trulock](https://github.com/ArkylTrulock)*  
+For collaborations or feedback: vanalytics1120@gmail.com
