@@ -148,5 +148,5 @@ This project demonstrates how a retailer could:
 
 ## 📬 Contact
 *Built by [Arkyl Trulock](https://github.com/ArkylTrulock)*  
-For collaborations or feedback: X@gmail.com  
+For collaborations or feedback: vanalytics1120@gmail.com  
 
