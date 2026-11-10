@@ -1,5 +1,6 @@
 # `👋 Introduction`:
 **🏠📊 Dive into the California Housing Market!. 😎👌**
+
 ![Data Analysis](https://img.shields.io/badge/Data%20Analysis%20Type-Descriptive,%20Diagnostic%20&%20Predictive-blueviolet?labelColor=darkblue)
 ![Status](https://img.shields.io/badge/Status-Complete-brightgreen?labelColor=crimson)
 ![Toolset](https://img.shields.io/badge/Toolset-Pandas%2C%20Numpy%2C%20Seaborn-turquoise?labelColor=gold)
