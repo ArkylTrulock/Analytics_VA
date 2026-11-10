@@ -81,17 +81,17 @@
 - --
 ![Cluster Map](../California_Housing_Market_Data_Analysis/2_Unsupervised_Learning/Assets_SSH_Analysis/Py_01_MHV_MIPP_MI_Per_Geographic_Cluster_Geospatial_KMeans_Cluster_Bubble_Map.png)
 *Generated using seaborn library*.
-- --
+
 **Cluster Map - Ocean Proximity And Median House Value Per Geographic Cluster**:
 - --
 ![Cluster Map](../California_Housing_Market_Data_Analysis/2_Unsupervised_Learning/Assets_SSH_Analysis/Py_02_Ocean_Proximity_And_MHV_Per_Geographic_Cluster_Geospatial_KMeans_Cluster_Bubble_Map.png)
 *Generated using seaborn library*.
-- --
+
 **Cluster Map - Housing Strategy & Median House Value Per Geographic Cluster**:
 - --
 ![Cluster Map](../California_Housing_Market_Data_Analysis/2_Unsupervised_Learning/Assets_SSH_Analysis/Py_05_Housing_Strategy_And_MHV_Per_Geographic_Cluster_Geospatial_KMeans_Cluster_Bubble_Map.png)
 *Generated using seaborn library*.
-- --
+
 **Bar Plot - Analysis of Location Name Statistics 1**:
 - --
 ![Bar Plot](../California_Housing_Market_Data_Analysis/2_Unsupervised_Learning/Assets_SSH_Analysis/Py_09_Analysis_Of_Location_Name_Statistics_Barplot1.png)
