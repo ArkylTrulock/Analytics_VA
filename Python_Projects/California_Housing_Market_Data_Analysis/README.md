@@ -1,5 +1,5 @@
 #
-![Data Analysis](https://img.shields.io/badge/Data%20Analysis%20Type-Descriptive,%20Diagnostic%20&%20Predictive-blueviolet?labelColor=darkblue)
+![Data Analysis](https://img.shields.io/badge/Data%20Analysis%20Type-Descriptive,%20Diagnostic,%20Predictive%20&%20Prescriptive-blueviolet?labelColor=darkblue)
 ![Status](https://img.shields.io/badge/Status-Complete-brightgreen?labelColor=crimson)
 ![Toolset](https://img.shields.io/badge/Toolset-Pandas%2C%20Numpy%2C%20Seaborn-turquoise?labelColor=gold)
 #
@@ -44,11 +44,11 @@
 - --
   7. **Provide data-driven prescriptive recommendations for housing strategy selection by location**.
 #
-# 🧰 Tech Stack:
+# `🧰 Tech Stack`:
 - Python (`pandas`, `numpy`, `seaborn`) 
 - Jupyter Notebook
 #
-# 🧠 Methods & Tools:
+# `🧠 Methods & Tools`:
 **Python Libraries**:
 
 - **`Pandas`**: **Data analysis and manipulation**. 
@@ -125,6 +125,6 @@
 - **`Market Analysis & Efficiency`**: **Reveals trends and dynamics to improve overall real estate market transparency and liquidity**.
 - **`Policy-Making & Urban Planning`**: **Supports governments in forecasting housing affordability, costs of living, and development policies**.
 #
-## 📬 Contact
+## `📬 Contact`:
 *Built by [Arkyl Trulock](https://github.com/ArkylTrulock)*  
 For collaborations or feedback: vanalytics1120@gmail.com
