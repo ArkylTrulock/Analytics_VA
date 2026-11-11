@@ -20,8 +20,8 @@
     - **[Charts/Assets](https://github.com/ArkylTrulock/Analytics_VA/tree/main/Python_Projects/California_Housing_Market_Data_Analysis/3_Supervised_Learning/Assets_MHP_Prediction)**
 - --
 3.**[California Housing Market Dashboard](https://california-housing-market-app.streamlit.app)**
-  - **`NB`: `🙏 Please click on "Yes, Get this app back up!", then wait for a few seconds for the streamlit app to wakeup 👍`**
-    - **`Thank you for your patience!`**
+  - **`NB`: `🙏 Please click on "Yes, Get this app back up!", then wait for a few seconds for the streamlit app to wakeup.`**
+    - **`🙏 Thank you for your patience!`**
 #
 # `🤖 Project Overview`:
 **I developed a machine learning housing analytics model using KMeans clustering and regression analysis to carry out**:
